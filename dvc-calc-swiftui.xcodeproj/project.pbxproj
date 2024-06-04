@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E6AC8AF22C0D7B110052A91A /* dvc.store in Resources */ = {isa = PBXBuildFile; fileRef = E6AC8AF12C0D7AF70052A91A /* dvc.store */; };
+		E6AC8AF62C0EB6490052A91A /* dvc.store in Resources */ = {isa = PBXBuildFile; fileRef = E6AC8AF52C0EB6490052A91A /* dvc.store */; };
+		E6AC8AF92C0EBDC00052A91A /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AF82C0EBDC00052A91A /* Resort.swift */; };
+		E6AC8AFB2C0EBDFA0052A91A /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */; };
+		E6AC8AFD2C0EBE170052A91A /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AFC2C0EBE170052A91A /* ViewType.swift */; };
+		E6AC8AFF2C0EBE2D0052A91A /* PointValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AFE2C0EBE2D0052A91A /* PointValue.swift */; };
+		E6AC8B012C0EC16D0052A91A /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8B002C0EC16D0052A91A /* CalculatorView.swift */; };
+		E6AC8B032C0EC4BE0052A91A /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8B022C0EC4BE0052A91A /* TripsView.swift */; };
+		E6AC8B062C0EC55B0052A91A /* ContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8B052C0EC55B0052A91A /* ContractsView.swift */; };
 		E6D8F60B2BF70063004C6916 /* dvc_calc_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8F60A2BF70063004C6916 /* dvc_calc_swiftuiApp.swift */; };
 		E6D8F60D2BF70063004C6916 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8F60C2BF70063004C6916 /* ContentView.swift */; };
 		E6D8F60F2BF70067004C6916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D8F60E2BF70067004C6916 /* Assets.xcassets */; };
@@ -15,7 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E6AC8AF12C0D7AF70052A91A /* dvc.store */ = {isa = PBXFileReference; lastKnownFileType = file; path = dvc.store; sourceTree = "<group>"; };
+		E6AC8AF52C0EB6490052A91A /* dvc.store */ = {isa = PBXFileReference; lastKnownFileType = file; path = dvc.store; sourceTree = "<group>"; };
+		E6AC8AF82C0EBDC00052A91A /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
+		E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
+		E6AC8AFC2C0EBE170052A91A /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		E6AC8AFE2C0EBE2D0052A91A /* PointValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointValue.swift; sourceTree = "<group>"; };
+		E6AC8B002C0EC16D0052A91A /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		E6AC8B022C0EC4BE0052A91A /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		E6AC8B052C0EC55B0052A91A /* ContractsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsView.swift; sourceTree = "<group>"; };
 		E6D8F6072BF70063004C6916 /* dvc-calc-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dvc-calc-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D8F60A2BF70063004C6916 /* dvc_calc_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dvc_calc_swiftuiApp.swift; sourceTree = "<group>"; };
 		E6D8F60C2BF70063004C6916 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +48,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6AC8AF72C0EBDA70052A91A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6AC8AF82C0EBDC00052A91A /* Resort.swift */,
+				E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */,
+				E6AC8AFC2C0EBE170052A91A /* ViewType.swift */,
+				E6AC8AFE2C0EBE2D0052A91A /* PointValue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6AC8B042C0EC4CA0052A91A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6D8F60C2BF70063004C6916 /* ContentView.swift */,
+				E6AC8B022C0EC4BE0052A91A /* TripsView.swift */,
+				E6AC8B002C0EC16D0052A91A /* CalculatorView.swift */,
+				E6AC8B052C0EC55B0052A91A /* ContractsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E6D8F5FE2BF70063004C6916 = {
 			isa = PBXGroup;
 			children = (
@@ -53,9 +89,10 @@
 		E6D8F6092BF70063004C6916 /* dvc-calc-swiftui */ = {
 			isa = PBXGroup;
 			children = (
-				E6AC8AF12C0D7AF70052A91A /* dvc.store */,
+				E6AC8B042C0EC4CA0052A91A /* Views */,
+				E6AC8AF72C0EBDA70052A91A /* Models */,
+				E6AC8AF52C0EB6490052A91A /* dvc.store */,
 				E6D8F60A2BF70063004C6916 /* dvc_calc_swiftuiApp.swift */,
-				E6D8F60C2BF70063004C6916 /* ContentView.swift */,
 				E6D8F60E2BF70067004C6916 /* Assets.xcassets */,
 				E6D8F6102BF70067004C6916 /* Preview Content */,
 			);
@@ -129,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6D8F6122BF70067004C6916 /* Preview Assets.xcassets in Resources */,
-				E6AC8AF22C0D7B110052A91A /* dvc.store in Resources */,
+				E6AC8AF62C0EB6490052A91A /* dvc.store in Resources */,
 				E6D8F60F2BF70067004C6916 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6AC8AFB2C0EBDFA0052A91A /* RoomType.swift in Sources */,
+				E6AC8B012C0EC16D0052A91A /* CalculatorView.swift in Sources */,
+				E6AC8B062C0EC55B0052A91A /* ContractsView.swift in Sources */,
 				E6D8F60D2BF70063004C6916 /* ContentView.swift in Sources */,
+				E6AC8AFD2C0EBE170052A91A /* ViewType.swift in Sources */,
+				E6AC8AF92C0EBDC00052A91A /* Resort.swift in Sources */,
+				E6AC8AFF2C0EBE2D0052A91A /* PointValue.swift in Sources */,
 				E6D8F60B2BF70063004C6916 /* dvc_calc_swiftuiApp.swift in Sources */,
+				E6AC8B032C0EC4BE0052A91A /* TripsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
