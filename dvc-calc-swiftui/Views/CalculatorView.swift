@@ -11,14 +11,20 @@ import SwiftData
 struct CalculatorView: View {
     
     @Query var resorts: [Resort]
-    @Query(filter: #Predicate<PointValue> { pointValue in
-        pointValue.viewType.roomType.roomName == "Tower Studio"
-    }) var pointValues: [PointValue]
+    
+    @State var checkInDate = Date()
+    @State var checkOutDate =  Calendar.current.date(byAdding: .day, value: 7, to: Date())!
     
     var body: some View {
-        ScrollView {
-            Image("dvcCalc")
-                .imageScale(.large)
+        VStack {
+            Image("logo")
+            
+            HStack {
+                DatePicker("Check In Date", selection: $checkInDate, displayedComponents: [.date])
+                DatePicker("Check Out Date", selection: $checkOutDate, displayedComponents: [.date])
+            }
+            .labelsHidden()
+            
             
             ForEach(resorts) { resort in
                 VStack {
@@ -33,22 +39,10 @@ struct CalculatorView: View {
                 }
                 Spacer()
             }
-        
-            ForEach(pointValues) { pointValue in
-                VStack {
-                    Text(pointValue.viewType.roomType.roomName)
-                    HStack {
-                        Text(pointValue.startDate, format: .dateTime.month().day())
-                        Text(" - ")
-                        Text(pointValue.endDate, format: .dateTime.month().day())
-                    }
-                    
-                    Text("Weekday Rate: \(pointValue.weekdayRate)")
-                    Text("Weekend Rate: \(pointValue.weekendRate)")
-                }
-            }
         }
-        .padding()
+//        .padding()
+        .frame(maxWidth: .infinity)
+        .background(Color("BackgroundColor"))
     }
 }
 

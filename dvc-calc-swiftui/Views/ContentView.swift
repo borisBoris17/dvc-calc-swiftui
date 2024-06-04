@@ -30,6 +30,7 @@ struct ContentView: View {
                 }
                 .tag(2)
         }
+//        .background(Color("BackgroundColor"))
     }
 }
 
