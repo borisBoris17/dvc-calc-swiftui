@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import HorizonCalendar
 
 struct CalculatorView: View {
     
@@ -14,10 +15,15 @@ struct CalculatorView: View {
     
     @State var checkInDate = Date()
     @State var checkOutDate =  Calendar.current.date(byAdding: .day, value: 7, to: Date())!
+    @State private var showDateInput = false
     
     var body: some View {
         VStack {
             Image("logo")
+            
+            Button("input dates") {
+                showDateInput.toggle()
+            }
             
             HStack {
                 DatePicker("Check In Date", selection: $checkInDate, displayedComponents: [.date])
@@ -43,6 +49,9 @@ struct CalculatorView: View {
 //        .padding()
         .frame(maxWidth: .infinity)
         .background(Color("BackgroundColor"))
+        .sheet(isPresented: $showDateInput) {
+            CalendarView()
+        }
     }
 }
 

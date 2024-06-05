@@ -15,6 +15,9 @@
 		E6AC8B012C0EC16D0052A91A /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8B002C0EC16D0052A91A /* CalculatorView.swift */; };
 		E6AC8B032C0EC4BE0052A91A /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8B022C0EC4BE0052A91A /* TripsView.swift */; };
 		E6AC8B062C0EC55B0052A91A /* ContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8B052C0EC55B0052A91A /* ContractsView.swift */; };
+		E6AC8B092C0F504E0052A91A /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = E6AC8B082C0F504E0052A91A /* HorizonCalendar */; };
+		E6AC8B0B2C0FFF6D0052A91A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8B0A2C0FFF6D0052A91A /* CalendarView.swift */; };
+		E6AC8B0D2C0FFFB60052A91A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8B0C2C0FFFB60052A91A /* Date+Extension.swift */; };
 		E6D8F60B2BF70063004C6916 /* dvc_calc_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8F60A2BF70063004C6916 /* dvc_calc_swiftuiApp.swift */; };
 		E6D8F60D2BF70063004C6916 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8F60C2BF70063004C6916 /* ContentView.swift */; };
 		E6D8F60F2BF70067004C6916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D8F60E2BF70067004C6916 /* Assets.xcassets */; };
@@ -30,6 +33,8 @@
 		E6AC8B002C0EC16D0052A91A /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		E6AC8B022C0EC4BE0052A91A /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
 		E6AC8B052C0EC55B0052A91A /* ContractsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractsView.swift; sourceTree = "<group>"; };
+		E6AC8B0A2C0FFF6D0052A91A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E6AC8B0C2C0FFFB60052A91A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		E6D8F6072BF70063004C6916 /* dvc-calc-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dvc-calc-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D8F60A2BF70063004C6916 /* dvc_calc_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dvc_calc_swiftuiApp.swift; sourceTree = "<group>"; };
 		E6D8F60C2BF70063004C6916 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6AC8B092C0F504E0052A91A /* HorizonCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 				E6AC8B022C0EC4BE0052A91A /* TripsView.swift */,
 				E6AC8B002C0EC16D0052A91A /* CalculatorView.swift */,
 				E6AC8B052C0EC55B0052A91A /* ContractsView.swift */,
+				E6AC8B0A2C0FFF6D0052A91A /* CalendarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +102,7 @@
 				E6D8F60A2BF70063004C6916 /* dvc_calc_swiftuiApp.swift */,
 				E6D8F60E2BF70067004C6916 /* Assets.xcassets */,
 				E6D8F6102BF70067004C6916 /* Preview Content */,
+				E6AC8B0C2C0FFFB60052A91A /* Date+Extension.swift */,
 			);
 			path = "dvc-calc-swiftui";
 			sourceTree = "<group>";
@@ -123,6 +131,9 @@
 			dependencies = (
 			);
 			name = "dvc-calc-swiftui";
+			packageProductDependencies = (
+				E6AC8B082C0F504E0052A91A /* HorizonCalendar */,
+			);
 			productName = "dvc-calc-swiftui";
 			productReference = E6D8F6072BF70063004C6916 /* dvc-calc-swiftui.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +162,9 @@
 				Base,
 			);
 			mainGroup = E6D8F5FE2BF70063004C6916;
+			packageReferences = (
+				E6AC8B072C0F504E0052A91A /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
+			);
 			productRefGroup = E6D8F6082BF70063004C6916 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,6 +192,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6AC8B0B2C0FFF6D0052A91A /* CalendarView.swift in Sources */,
+				E6AC8B0D2C0FFFB60052A91A /* Date+Extension.swift in Sources */,
 				E6AC8AFB2C0EBDFA0052A91A /* RoomType.swift in Sources */,
 				E6AC8B012C0EC16D0052A91A /* CalculatorView.swift in Sources */,
 				E6AC8B062C0EC55B0052A91A /* ContractsView.swift in Sources */,
@@ -392,6 +408,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E6AC8B072C0F504E0052A91A /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/HorizonCalendar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E6AC8B082C0F504E0052A91A /* HorizonCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6AC8B072C0F504E0052A91A /* XCRemoteSwiftPackageReference "HorizonCalendar" */;
+			productName = HorizonCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E6D8F5FF2BF70063004C6916 /* Project object */;
 }
