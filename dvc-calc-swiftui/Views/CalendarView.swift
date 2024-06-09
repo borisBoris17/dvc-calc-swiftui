@@ -8,26 +8,44 @@
 import SwiftUI
 
 struct CalendarView: View {
-    @State private var color: Color = .blue
+    //    @State private var color: Color = .blue
     @State private var firstDayOfMonth = Date.now.startOfMonth
-    @State private var checkInDate: Date? = nil
-    @State private var checkOutDate: Date? = nil
+    @Binding var checkInDate: Date?
+    @Binding var checkOutDate: Date?
     let daysOfWeek = Date.capitalizedFirstLettersOfWeekdays
     let columns = Array(repeating: GridItem(.flexible()), count: 7)
     @State private var days: [Date] = []
     var body: some View {
         VStack {
-            LabeledContent("Calendar Color") {
-                ColorPicker("", selection: $color, supportsOpacity: false)
+            HStack {
+                Button {
+                    firstDayOfMonth = Calendar.current.date(byAdding: .month, value: -1, to: firstDayOfMonth)!
+                } label: {
+                    Image(systemName: "chevron.left")
+                }
+                
+                Spacer()
+                
+                Text("\(firstDayOfMonth.formatted(Date.FormatStyle().month(.wide))) \(firstDayOfMonth.formatted(Date.FormatStyle().year(.defaultDigits)))")
+                    .fontWeight(.black)
+                    .foregroundStyle(.primary)
+                    .frame(maxWidth: .infinity)
+                
+                Spacer()
+                
+                Button {
+                    firstDayOfMonth = Calendar.current.date(byAdding: .month, value: 1, to: firstDayOfMonth)!
+                } label: {
+                    Image(systemName: "chevron.right")
+                }
             }
-            //            LabeledContent("Date/Time") {
-            //                DatePicker("", selection: $checkInDate)
-            //            }
+            .padding(.bottom)
+            
             HStack {
                 ForEach(daysOfWeek.indices, id: \.self) { index in
                     Text(daysOfWeek[index])
                         .fontWeight(.black)
-                        .foregroundStyle(color)
+                        .foregroundStyle(.primary)
                         .frame(maxWidth: .infinity)
                 }
             }
@@ -37,26 +55,28 @@ struct CalendarView: View {
                         Text("")
                     } else {
                         Button {
-                            if checkInDate != nil {
-                                if checkOutDate != nil {
-                                    checkInDate = nil
-                                    checkOutDate = nil
-                                    return
-                                } else {
-                                    if day > checkInDate! {
-                                        checkOutDate = day
-                                    } else {
+                            withAnimation {
+                                if checkInDate != nil {
+                                    if checkOutDate != nil {
                                         checkInDate = nil
                                         checkOutDate = nil
+                                        return
+                                    } else {
+                                        if day > checkInDate! {
+                                            checkOutDate = day
+                                        } else {
+                                            checkInDate = nil
+                                            checkOutDate = nil
+                                        }
                                     }
+                                } else {
+                                    checkInDate = day
                                 }
-                            } else {
-                                checkInDate = day
                             }
                         } label: {
                             Text(day.formatted(.dateTime.day()))
                                 .fontWeight(.bold)
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(.primary)
                                 .frame(maxWidth: .infinity, minHeight: 40)
                                 .background(
                                     ZStack {
@@ -101,5 +121,14 @@ struct CalendarView: View {
 }
 
 #Preview {
-    CalendarView()
+    
+    struct Preview: View {
+        @State var checkInDate: Date? = nil
+        @State var checkOutDate: Date? = nil
+        var body: some View {
+            CalendarView(checkInDate: $checkInDate, checkOutDate: $checkOutDate)
+        }
+    }
+    
+    return Preview()
 }
