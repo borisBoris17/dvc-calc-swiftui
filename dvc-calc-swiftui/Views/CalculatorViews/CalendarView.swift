@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CalendarView: View {
     //    @State private var color: Color = .blue
-    @State private var firstDayOfMonth = Date.now.startOfMonth
+//    @State private var firstDayOfMonth = Date.now.startOfMonth
+    @State private var firstDayOfMonth = Calendar.current.date(from: DateComponents(year: 2025, month: 1, day: 1))!.startOfMonth
     @Binding var checkInDate: Date?
     @Binding var checkOutDate: Date?
     let daysOfWeek = Date.capitalizedFirstLettersOfWeekdays
