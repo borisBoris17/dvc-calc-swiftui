@@ -21,6 +21,7 @@ struct CalculatorView: View {
     @State private var selectedResort: Resort? = nil
     @State private var selectedRoomCategory = ""
     @State private var selectedResorts: [Resort] = []
+    @State private var selectedResortIndicies: [Bool] = []
     
     let roomTypeCategories = ["Studio", "One-Bedroom", "Two-Bedroom", "Three-Bedroom"]
     
@@ -57,7 +58,6 @@ struct CalculatorView: View {
                             }
                             .padding([.leading, .top])
                             
-                            
                             Divider()
                                 .frame(height: 3)
                                 .padding(.leading)
@@ -70,9 +70,11 @@ struct CalculatorView: View {
                         )
                     }
                     .buttonStyle(PlainButtonStyle())
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
                 .padding([.horizontal, .bottom])
                 
+                // Resorts as a Menu
                 VStack {
                     HStack {
                         Text("Resorts")
@@ -80,6 +82,43 @@ struct CalculatorView: View {
                         
                         Spacer()
                     }
+                    
+                    VStack {
+                        NavigationLink(value: "Reosrts") {
+                            HStack {
+                                Text("Resorts")
+                                    .padding()
+                                
+                                Spacer()
+                            }
+                        }
+                        .navigationDestination(for: String.self) { _ in
+                            ResortSelectView(resorts: resorts, selectedIndexes: $selectedResortIndicies)
+                        }
+                    }
+                    .frame(maxWidth: .infinity)
+                    .background(
+                        Rectangle()
+                            .foregroundStyle(.white.opacity(0.5))
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .onTapGesture {
+                        print("onTap...")
+                        path.append("Resorts")
+                    }
+                    
+                }
+                .padding([.horizontal, .bottom])
+                
+                // Resorts as a Picker
+                VStack {
+                    HStack {
+                        Text("Resorts")
+                            .fontWeight(.bold)
+                        
+                        Spacer()
+                    }
+                    
                     VStack {
                         HStack {
                             Picker(selection: $selectedResort, label: Text("Resort")) {
@@ -103,6 +142,8 @@ struct CalculatorView: View {
                         Rectangle()
                             .foregroundStyle(.white.opacity(0.5))
                     )
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    
                 }
                 .padding([.horizontal, .bottom])
                 
@@ -113,6 +154,7 @@ struct CalculatorView: View {
                         
                         Spacer()
                     }
+                    
                     VStack {
                         HStack {
                             Picker(selection: $selectedRoomCategory, label: Text("Room Types")) {
@@ -136,6 +178,8 @@ struct CalculatorView: View {
                         Rectangle()
                             .foregroundStyle(.white.opacity(0.5))
                     )
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    
                 }
                 .padding([.horizontal, .bottom])
                 
@@ -156,8 +200,10 @@ struct CalculatorView: View {
                 if selectedResorts.count == 0 {
                     for resort in resorts {
                         selectedResorts.append(resort)
+                        selectedResortIndicies.append(false)
                     }
                 }
+                
             }
         }
         .sheet(isPresented: $showDateInput) {

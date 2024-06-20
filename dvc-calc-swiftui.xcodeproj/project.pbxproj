@@ -13,6 +13,7 @@
 		E6A1003A2C1E91FE006BCE1E /* ViewTypePointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100392C1E91FE006BCE1E /* ViewTypePointsView.swift */; };
 		E6A1003C2C213505006BCE1E /* RoomTypePointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1003B2C213505006BCE1E /* RoomTypePointsView.swift */; };
 		E6A1003F2C2147BC006BCE1E /* ResortPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1003E2C2147BC006BCE1E /* ResortPointsView.swift */; };
+		E6A100412C23E779006BCE1E /* ResortSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100402C23E778006BCE1E /* ResortSelectView.swift */; };
 		E6AC8AF62C0EB6490052A91A /* dvc-old.store in Resources */ = {isa = PBXBuildFile; fileRef = E6AC8AF52C0EB6490052A91A /* dvc-old.store */; };
 		E6AC8AF92C0EBDC00052A91A /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AF82C0EBDC00052A91A /* Resort.swift */; };
 		E6AC8AFB2C0EBDFA0052A91A /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */; };
@@ -37,6 +38,7 @@
 		E6A100392C1E91FE006BCE1E /* ViewTypePointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTypePointsView.swift; sourceTree = "<group>"; };
 		E6A1003B2C213505006BCE1E /* RoomTypePointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTypePointsView.swift; sourceTree = "<group>"; };
 		E6A1003E2C2147BC006BCE1E /* ResortPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortPointsView.swift; sourceTree = "<group>"; };
+		E6A100402C23E778006BCE1E /* ResortSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortSelectView.swift; sourceTree = "<group>"; };
 		E6AC8AF52C0EB6490052A91A /* dvc-old.store */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dvc-old.store"; sourceTree = "<group>"; };
 		E6AC8AF82C0EBDC00052A91A /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
 		E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		E6A100342C17FFBA006BCE1E /* CalculatorViews */ = {
 			isa = PBXGroup;
 			children = (
+				E6A100402C23E778006BCE1E /* ResortSelectView.swift */,
 				E6AC8B0A2C0FFF6D0052A91A /* CalendarView.swift */,
 				E6AC8B002C0EC16D0052A91A /* CalculatorView.swift */,
 				E6A100352C17FFE1006BCE1E /* ResultsView.swift */,
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A100412C23E779006BCE1E /* ResortSelectView.swift in Sources */,
 				E6AC8B0B2C0FFF6D0052A91A /* CalendarView.swift in Sources */,
 				E6A100362C17FFE1006BCE1E /* ResultsView.swift in Sources */,
 				E6A100382C180D0E006BCE1E /* CalculatedPointsForDayView.swift in Sources */,

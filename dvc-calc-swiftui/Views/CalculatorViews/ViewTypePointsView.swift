@@ -14,12 +14,13 @@ struct ViewTypePointsView: View {
     
     @State private var dateRange: [Date] = []
     @State private var totalPointsForStay: Int16 = 0
+    @State private var showDetails = true
     
     var body: some View {
         VStack {
             HStack {
                 VStack {
-                    Text(viewType.viewName)
+                    Text(viewType.viewName.count > 0 ? viewType.viewName : "Standard")
                         .fontWeight(.bold)
                     
                     Spacer()
@@ -30,7 +31,6 @@ struct ViewTypePointsView: View {
                 VStack {
                     Text("\(totalPointsForStay)")
                         .font(.title)
-//                        .fontWeight(.bold)
                         .padding(.bottom, -10)
                     
                     Text("points")
@@ -39,8 +39,34 @@ struct ViewTypePointsView: View {
             }
             .padding(.bottom)
             
-            ForEach(dateRange, id: \.self) { night in
-                CalculatedPointsForDayView(viewType: viewType, nightToStay: night, total: $totalPointsForStay)
+            
+            VStack {
+                HStack {
+                    Button {
+                        showDetails.toggle()
+                    } label: {
+                        Group {
+                            if showDetails {
+                                Text("Close Deatils")
+                            } else {
+                                Text("Details")
+                            }
+                        }
+                        .font(.subheadline)
+                        .underline()
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    
+                    Spacer()
+                    
+                    Button("Save") {
+                        print("TODO: save the trip...")
+                    }
+                }
+                
+                ForEach(dateRange, id: \.self) { night in
+                    CalculatedPointsForDayView(showDetails: showDetails, viewType: viewType, nightToStay: night, total: $totalPointsForStay)
+                }
             }
             .padding(.leading)
         }
@@ -50,6 +76,7 @@ struct ViewTypePointsView: View {
                 dateRange.append(night)
                 night = Calendar.current.date(byAdding: .day, value: 1, to: night)!
             }
+            showDetails = false
         }
     }
 }

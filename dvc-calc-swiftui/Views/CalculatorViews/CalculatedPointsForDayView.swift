@@ -11,11 +11,14 @@ import SwiftData
 struct CalculatedPointsForDayView: View {
     @Query private var pointValues: [PointValue]
     
+    var showDetails: Bool
     var viewType: ViewType
     var nightToStay: Date
     @Binding var total: Int16
     
-    init(viewType: ViewType, nightToStay: Date, total: Binding<Int16>) {
+    
+    init(showDetails: Bool, viewType: ViewType, nightToStay: Date, total: Binding<Int16>) {
+        self.showDetails = showDetails
         self.viewType = viewType
         let viewTypeId = viewType.id
         self._pointValues = Query(filter: #Predicate<PointValue> {
@@ -28,23 +31,16 @@ struct CalculatedPointsForDayView: View {
     
     var body: some View {
         VStack {
-            ForEach(pointValues) { pointValue in
-                if nightToStay.isFridaySaturday {
+            if showDetails {
+                ForEach(pointValues) { pointValue in
                     HStack {
                         Text(nightToStay.numericFormattedDate)
                         
                         Spacer()
                         
-                        Text("\(pointValue.weekendRate)")
+                        Text("\(nightToStay.isFridaySaturday ? pointValue.weekendRate : pointValue.weekdayRate)")
                     }
-                } else {
-                    HStack {
-                        Text(nightToStay.numericFormattedDate)
-                        
-                        Spacer()
-                        
-                        Text("\(pointValue.weekdayRate)")
-                    }
+                    
                 }
             }
         }
@@ -56,7 +52,6 @@ struct CalculatedPointsForDayView: View {
                     total = total + pointValues[0].weekdayRate
                 }
             }
-            
         }
     }
 }
