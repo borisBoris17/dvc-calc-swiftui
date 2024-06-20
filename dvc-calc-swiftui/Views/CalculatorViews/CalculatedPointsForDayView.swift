@@ -16,7 +16,6 @@ struct CalculatedPointsForDayView: View {
     @Binding var total: Int16
     
     init(viewType: ViewType, nightToStay: Date, total: Binding<Int16>) {
-        print(nightToStay)
         self.viewType = viewType
         let viewTypeId = viewType.id
         self._pointValues = Query(filter: #Predicate<PointValue> {
@@ -30,13 +29,32 @@ struct CalculatedPointsForDayView: View {
     var body: some View {
         VStack {
             ForEach(pointValues) { pointValue in
-                Text("\(pointValue.viewType.roomType.roomName) - \(pointValue.viewType.viewName) - \(pointValue.weekdayRate) - \(pointValue.weekendRate)")
+                if nightToStay.isFridaySaturday {
+                    HStack {
+                        Text(nightToStay.numericFormattedDate)
+                        
+                        Spacer()
+                        
+                        Text("\(pointValue.weekendRate)")
+                    }
+                } else {
+                    HStack {
+                        Text(nightToStay.numericFormattedDate)
+                        
+                        Spacer()
+                        
+                        Text("\(pointValue.weekdayRate)")
+                    }
+                }
             }
         }
         .onAppear() {
             if pointValues.count > 0 {
-                // TODO: just adding weekday, need to figure out which rate to pick to add to total
-                total = total + pointValues[0].weekdayRate
+                if nightToStay.isFridaySaturday {
+                    total = total + pointValues[0].weekendRate
+                } else {
+                    total = total + pointValues[0].weekdayRate
+                }
             }
             
         }

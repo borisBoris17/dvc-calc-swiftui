@@ -8,24 +8,21 @@
 import SwiftUI
 
 struct ResultsView: View {
-    @Binding var resort: Resort?
+    @Binding var resorts: [Resort]
     @Binding var roomCategory: String
     
     var checkInDate: Date
     var checkOutDate: Date
     
+    
     var body: some View {
-        if resort != nil {
-            ForEach(resort!.roomTypes.sorted()) { roomType in
-                if roomType.roomCategory == roomCategory || roomCategory == "" {
-                    ForEach(roomType.viewTypes.sorted()) { viewType in
-                        ViewTypePointsView(viewType: viewType, checkInDate: checkInDate, checkOutDate: checkOutDate)
-                    }
-                }
+        ScrollView {
+            ForEach(resorts) { resort in
+                ResortPointsView(resort: resort, roomCategory: roomCategory, checkInDate: checkInDate, checkOutDate: checkOutDate)
             }
         }
-        
-        Text("Results for \(resort?.resortName ?? "All Resorts") - \(roomCategory == "" ? "All Room Types" : roomCategory)")
+        .scrollIndicators(.hidden)
+        .padding(.horizontal)
     }
 }
 

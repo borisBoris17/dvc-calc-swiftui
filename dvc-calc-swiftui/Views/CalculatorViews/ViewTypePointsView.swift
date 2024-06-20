@@ -17,10 +17,32 @@ struct ViewTypePointsView: View {
     
     var body: some View {
         VStack {
-            Text("Total: \(totalPointsForStay)")
+            HStack {
+                VStack {
+                    Text(viewType.viewName)
+                        .fontWeight(.bold)
+                    
+                    Spacer()
+                }
+                
+                Spacer()
+                
+                VStack {
+                    Text("\(totalPointsForStay)")
+                        .font(.title)
+//                        .fontWeight(.bold)
+                        .padding(.bottom, -10)
+                    
+                    Text("points")
+                        .font(.subheadline)
+                }
+            }
+            .padding(.bottom)
+            
             ForEach(dateRange, id: \.self) { night in
                 CalculatedPointsForDayView(viewType: viewType, nightToStay: night, total: $totalPointsForStay)
             }
+            .padding(.leading)
         }
         .onAppear() {
             var night = checkInDate

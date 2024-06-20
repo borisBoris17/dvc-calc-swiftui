@@ -20,6 +20,7 @@ struct CalculatorView: View {
     @State private var checkOutDate: Date? = nil
     @State private var selectedResort: Resort? = nil
     @State private var selectedRoomCategory = ""
+    @State private var selectedResorts: [Resort] = []
     
     let roomTypeCategories = ["Studio", "One-Bedroom", "Two-Bedroom", "Three-Bedroom"]
     
@@ -33,7 +34,7 @@ struct CalculatorView: View {
     
     var body: some View {
         NavigationStack(path: $path) {
-            ScrollView {
+            VStack {
                 Image("logo")
                 
                 VStack {
@@ -139,7 +140,9 @@ struct CalculatorView: View {
                 .padding([.horizontal, .bottom])
                 
                 NavigationLink {
-                    ResultsView(resort: $selectedResort, roomCategory: $selectedRoomCategory, checkInDate: checkInDate ?? Date.now, checkOutDate: checkOutDate ?? Date.now)
+                    ResultsView(resorts: $selectedResorts, roomCategory: $selectedRoomCategory, checkInDate: checkInDate ?? Date.now, checkOutDate: checkOutDate ?? Date.now)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Color("BackgroundColor"))
                 } label: {
                     Text("Calculate")
                         .foregroundStyle(.white)
@@ -149,6 +152,13 @@ struct CalculatorView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("BackgroundColor"))
+            .onAppear() {
+                if selectedResorts.count == 0 {
+                    for resort in resorts {
+                        selectedResorts.append(resort)
+                    }
+                }
+            }
         }
         .sheet(isPresented: $showDateInput) {
             CalendarView(checkInDate: $checkInDate, checkOutDate: $checkOutDate)
