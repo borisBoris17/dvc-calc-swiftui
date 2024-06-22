@@ -20,10 +20,11 @@ struct CalculatorView: View {
     @State private var checkOutDate: Date? = nil
     @State private var selectedResort: Resort? = nil
     @State private var selectedRoomCategory = ""
-    @State private var selectedResorts: [Resort] = []
+    @State private var selectedResorts: [Resort: Bool] = [:]
+    @State private var selectedRoomCategories: [RoomCategory: Bool] = [:]
     @State private var selectedResortIndicies: [Bool] = []
     
-    let roomTypeCategories = ["Studio", "One-Bedroom", "Two-Bedroom", "Three-Bedroom"]
+    let roomTypeCategories = [RoomCategory(name: "Studio", order: 0), RoomCategory(name: "One-Bedroom", order: 1), RoomCategory(name: "Two-Bedroom", order: 2), RoomCategory(name: "Three-Bedroom", order: 3)]
     
     private var formatedCheckInDate: String {
         checkInDate?.formatted(date: .long, time: .omitted) ?? "Check In Date"
@@ -31,6 +32,26 @@ struct CalculatorView: View {
     
     private var formatedCheckOutDate: String {
         checkOutDate?.formatted(date: .long, time: .omitted) ?? "Check Out Date"
+    }
+    
+    func numSelectedResorts() -> Int {
+        var countSelectedResorts = 0
+        for value in selectedResorts.values {
+            if value {
+                countSelectedResorts += 1
+            }
+        }
+        return countSelectedResorts
+    }
+    
+    func numSelectedRoomTypes() -> Int {
+        var countSelectedRoomCategories = 0
+        for value in selectedRoomCategories.values {
+            if value {
+                countSelectedRoomCategories += 1
+            }
+        }
+        return countSelectedRoomCategories
     }
     
     var body: some View {
@@ -74,7 +95,6 @@ struct CalculatorView: View {
                 }
                 .padding([.horizontal, .bottom])
                 
-                // Resorts as a Menu
                 VStack {
                     HStack {
                         Text("Resorts")
@@ -85,15 +105,23 @@ struct CalculatorView: View {
                     
                     VStack {
                         NavigationLink(value: "Reosrts") {
-                            HStack {
-                                Text("Resorts")
-                                    .padding()
+                            VStack {
+                                HStack {
+                                    Text(numSelectedResorts() == 0 ? "Select Resorts..." : numSelectedResorts() == 1 ? "1 Resort Selected" : "\(numSelectedResorts()) Resorts Selected")
+                                        .padding([.leading, .top])
+                                    
+                                    Spacer()
+                                }
                                 
-                                Spacer()
+                                Divider()
+                                    .frame(height: 3)
+                                    .padding(.leading)
+                                    .background(Color.black)
                             }
                         }
+                        .buttonStyle(PlainButtonStyle())
                         .navigationDestination(for: String.self) { _ in
-                            ResortSelectView(resorts: resorts, selectedIndexes: $selectedResortIndicies)
+                            ResortSelectView(resorts: $selectedResorts)
                         }
                     }
                     .frame(maxWidth: .infinity)
@@ -103,47 +131,8 @@ struct CalculatorView: View {
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .onTapGesture {
-                        print("onTap...")
                         path.append("Resorts")
                     }
-                    
-                }
-                .padding([.horizontal, .bottom])
-                
-                // Resorts as a Picker
-                VStack {
-                    HStack {
-                        Text("Resorts")
-                            .fontWeight(.bold)
-                        
-                        Spacer()
-                    }
-                    
-                    VStack {
-                        HStack {
-                            Picker(selection: $selectedResort, label: Text("Resort")) {
-                                Text("All Resorts").tag(Optional<Resort>(nil))
-                                ForEach(resorts) { resort in
-                                    Text(resort.resortName).tag(Optional(resort))
-                                }
-                            }
-                            .accentColor(.primary)
-                            
-                            Spacer()
-                        }
-                        
-                        Divider()
-                            .frame(height: 3)
-                            .padding(.leading)
-                            .background(Color.black)
-                    }
-                    .frame(maxWidth: .infinity)
-                    .background(
-                        Rectangle()
-                            .foregroundStyle(.white.opacity(0.5))
-                    )
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                    
                 }
                 .padding([.horizontal, .bottom])
                 
@@ -156,22 +145,25 @@ struct CalculatorView: View {
                     }
                     
                     VStack {
-                        HStack {
-                            Picker(selection: $selectedRoomCategory, label: Text("Room Types")) {
-                                Text("All Types").tag("")
-                                ForEach(roomTypeCategories, id: \.self) {
-                                    Text($0).tag($0)
+                        NavigationLink(value: "Room Types") {
+                            VStack {
+                                HStack {
+                                    Text(numSelectedRoomTypes() == 0 ? "Select Room Types..." : numSelectedRoomTypes() == 1 ? "1 Room Type Selected" : "\(numSelectedRoomTypes()) Room Types Selected")
+                                        .padding([.leading, .top])
+                                    
+                                    Spacer()
                                 }
+                                
+                                Divider()
+                                    .frame(height: 3)
+                                    .padding(.leading)
+                                    .background(Color.black)
                             }
-                            .accentColor(.primary)
-                            
-                            Spacer()
                         }
-                        
-                        Divider()
-                            .frame(height: 3)
-                            .padding(.leading)
-                            .background(Color.black)
+                        .buttonStyle(PlainButtonStyle())
+                        .navigationDestination(for: String.self) { _ in
+                            RoomTypeSelectView(roomTypes: $selectedRoomCategories)
+                        }
                     }
                     .frame(maxWidth: .infinity)
                     .background(
@@ -179,9 +171,47 @@ struct CalculatorView: View {
                             .foregroundStyle(.white.opacity(0.5))
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 10))
-                    
+                    .onTapGesture {
+                        path.append("Room Types")
+                    }
                 }
                 .padding([.horizontal, .bottom])
+                
+//                VStack {
+//                    HStack {
+//                        Text("Room Types")
+//                            .fontWeight(.bold)
+//                        
+//                        Spacer()
+//                    }
+//                    
+//                    VStack {
+//                        HStack {
+//                            Picker(selection: $selectedRoomCategory, label: Text("Room Types")) {
+//                                Text("All Types").tag("")
+//                                ForEach(roomTypeCategories, id: \.self) {
+//                                    Text($0).tag($0)
+//                                }
+//                            }
+//                            .accentColor(.primary)
+//                            
+//                            Spacer()
+//                        }
+//                        
+//                        Divider()
+//                            .frame(height: 3)
+//                            .padding(.leading)
+//                            .background(Color.black)
+//                    }
+//                    .frame(maxWidth: .infinity)
+//                    .background(
+//                        Rectangle()
+//                            .foregroundStyle(.white.opacity(0.5))
+//                    )
+//                    .clipShape(RoundedRectangle(cornerRadius: 10))
+//                    
+//                }
+//                .padding([.horizontal, .bottom])
                 
                 NavigationLink {
                     ResultsView(resorts: $selectedResorts, roomCategory: $selectedRoomCategory, checkInDate: checkInDate ?? Date.now, checkOutDate: checkOutDate ?? Date.now)
@@ -199,11 +229,15 @@ struct CalculatorView: View {
             .onAppear() {
                 if selectedResorts.count == 0 {
                     for resort in resorts {
-                        selectedResorts.append(resort)
-                        selectedResortIndicies.append(false)
+                        selectedResorts[resort] = false
+                        //                        selectedResortIndicies.append(false)
                     }
                 }
-                
+                if selectedRoomCategories.count == 0 {
+                    for roomCategory in roomTypeCategories {
+                        selectedRoomCategories[roomCategory] = false
+                    }
+                }
             }
         }
         .sheet(isPresented: $showDateInput) {

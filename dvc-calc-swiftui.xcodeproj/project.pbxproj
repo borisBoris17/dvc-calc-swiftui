@@ -14,6 +14,9 @@
 		E6A1003C2C213505006BCE1E /* RoomTypePointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1003B2C213505006BCE1E /* RoomTypePointsView.swift */; };
 		E6A1003F2C2147BC006BCE1E /* ResortPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1003E2C2147BC006BCE1E /* ResortPointsView.swift */; };
 		E6A100412C23E779006BCE1E /* ResortSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100402C23E778006BCE1E /* ResortSelectView.swift */; };
+		E6A100432C268D5E006BCE1E /* RoomTypeSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100422C268D5E006BCE1E /* RoomTypeSelectView.swift */; };
+		E6A100452C268F8D006BCE1E /* iOSCheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100442C268F8D006BCE1E /* iOSCheckboxToggleStyle.swift */; };
+		E6A100472C269101006BCE1E /* RoomCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100462C269101006BCE1E /* RoomCategory.swift */; };
 		E6AC8AF62C0EB6490052A91A /* dvc-old.store in Resources */ = {isa = PBXBuildFile; fileRef = E6AC8AF52C0EB6490052A91A /* dvc-old.store */; };
 		E6AC8AF92C0EBDC00052A91A /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AF82C0EBDC00052A91A /* Resort.swift */; };
 		E6AC8AFB2C0EBDFA0052A91A /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */; };
@@ -39,6 +42,9 @@
 		E6A1003B2C213505006BCE1E /* RoomTypePointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTypePointsView.swift; sourceTree = "<group>"; };
 		E6A1003E2C2147BC006BCE1E /* ResortPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortPointsView.swift; sourceTree = "<group>"; };
 		E6A100402C23E778006BCE1E /* ResortSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortSelectView.swift; sourceTree = "<group>"; };
+		E6A100422C268D5E006BCE1E /* RoomTypeSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTypeSelectView.swift; sourceTree = "<group>"; };
+		E6A100442C268F8D006BCE1E /* iOSCheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		E6A100462C269101006BCE1E /* RoomCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCategory.swift; sourceTree = "<group>"; };
 		E6AC8AF52C0EB6490052A91A /* dvc-old.store */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dvc-old.store"; sourceTree = "<group>"; };
 		E6AC8AF82C0EBDC00052A91A /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
 		E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 				E6A100392C1E91FE006BCE1E /* ViewTypePointsView.swift */,
 				E6A1003B2C213505006BCE1E /* RoomTypePointsView.swift */,
 				E6A1003E2C2147BC006BCE1E /* ResortPointsView.swift */,
+				E6A100422C268D5E006BCE1E /* RoomTypeSelectView.swift */,
 			);
 			path = CalculatorViews;
 			sourceTree = "<group>";
@@ -87,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				E6AC8B0C2C0FFFB60052A91A /* Date+Extension.swift */,
+				E6A100442C268F8D006BCE1E /* iOSCheckboxToggleStyle.swift */,
+				E6A100462C269101006BCE1E /* RoomCategory.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -237,14 +246,17 @@
 				E6AC8B0D2C0FFFB60052A91A /* Date+Extension.swift in Sources */,
 				E6A1003A2C1E91FE006BCE1E /* ViewTypePointsView.swift in Sources */,
 				E6AC8AFB2C0EBDFA0052A91A /* RoomType.swift in Sources */,
+				E6A100432C268D5E006BCE1E /* RoomTypeSelectView.swift in Sources */,
 				E6AC8B012C0EC16D0052A91A /* CalculatorView.swift in Sources */,
 				E6AC8B062C0EC55B0052A91A /* ContractsView.swift in Sources */,
 				E6A1003F2C2147BC006BCE1E /* ResortPointsView.swift in Sources */,
 				E6D8F60D2BF70063004C6916 /* ContentView.swift in Sources */,
+				E6A100472C269101006BCE1E /* RoomCategory.swift in Sources */,
 				E6AC8AFD2C0EBE170052A91A /* ViewType.swift in Sources */,
 				E6AC8AF92C0EBDC00052A91A /* Resort.swift in Sources */,
 				E6A1003C2C213505006BCE1E /* RoomTypePointsView.swift in Sources */,
 				E6AC8AFF2C0EBE2D0052A91A /* PointValue.swift in Sources */,
+				E6A100452C268F8D006BCE1E /* iOSCheckboxToggleStyle.swift in Sources */,
 				E6D8F60B2BF70063004C6916 /* dvc_calc_swiftuiApp.swift in Sources */,
 				E6AC8B032C0EC4BE0052A91A /* TripsView.swift in Sources */,
 			);

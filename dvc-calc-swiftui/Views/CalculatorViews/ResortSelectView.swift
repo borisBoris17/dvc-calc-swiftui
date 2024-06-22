@@ -8,29 +8,26 @@
 import SwiftUI
 
 struct ResortSelectView: View {
-    var resorts: [Resort]
-    @Binding var selectedIndexes: [Bool]
+    @Binding var resorts: [Resort : Bool]
     
     var body: some View {
         List {
-            ForEach(resorts.indices) { index in
+            ForEach(resorts.sorted(by: { $0.key.resortName < $1.key.resortName }), id: \.key) { key, value in
                 HStack {
-                    Text(resorts[index].resortName)
+                    Text(key.resortName)
                     
                     Spacer()
                     
-                    Toggle(isOn: $selectedIndexes[index]) {
-                        
+                    Toggle(isOn: Binding(
+                        get: { resorts[key] ?? false },
+                        set: { newValue in
+                            resorts[key] = newValue
+                        }
+                    )) {
+                        // Empty label
                     }
                     .toggleStyle(iOSCheckboxToggleStyle())
                     .accentColor(.primary)
-                    //                        .onChange(of: selectedIndexes[index]) {
-                    //                            if selectedIndexes[index] && !selectedGoals.contains(goal) {
-                    //                                selectedGoals.insert(goal)
-                    //                            } else if !isSelected && selectedGoals.contains(goal) {
-                    //                                selectedGoals.remove(goal)
-                    //                            }
-                    //                        }
                 }
             }
         }

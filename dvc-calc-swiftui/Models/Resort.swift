@@ -9,7 +9,15 @@ import Foundation
 import SwiftData
 
 @Model
-class Resort {
+class Resort: Hashable, Identifiable, Comparable {
+    static func < (lhs: Resort, rhs: Resort) -> Bool {
+        lhs.resortName < rhs.resortName
+    }
+    
+    static func > (lhs: Resort, rhs: Resort) -> Bool {
+        lhs.resortName > rhs.resortName
+    }
+    
     var id: UUID
     var resortName: String
     var roomTypes: [RoomType]

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ResultsView: View {
-    @Binding var resorts: [Resort]
+    @Binding var resorts: [Resort : Bool]
     @Binding var roomCategory: String
     
     var checkInDate: Date
@@ -17,8 +17,10 @@ struct ResultsView: View {
     
     var body: some View {
         ScrollView {
-            ForEach(resorts) { resort in
-                ResortPointsView(resort: resort, roomCategory: roomCategory, checkInDate: checkInDate, checkOutDate: checkOutDate)
+            ForEach(resorts.sorted(by: { $0.key.resortName < $1.key.resortName }), id: \.key) { (key, value) in
+                if value {
+                    ResortPointsView(resort: key, roomCategory: roomCategory, checkInDate: checkInDate, checkOutDate: checkOutDate)
+                }
             }
         }
         .scrollIndicators(.hidden)
