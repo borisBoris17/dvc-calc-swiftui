@@ -9,13 +9,18 @@ import Foundation
 import SwiftData
 
 @Model
-class Resort: Hashable, Identifiable, Comparable {
+class Resort: Identifiable, HashableDisplayable {
+    
     static func < (lhs: Resort, rhs: Resort) -> Bool {
         lhs.resortName < rhs.resortName
     }
     
     static func > (lhs: Resort, rhs: Resort) -> Bool {
         lhs.resortName > rhs.resortName
+    }
+    
+    func display() -> String {
+        resortName
     }
     
     var id: UUID

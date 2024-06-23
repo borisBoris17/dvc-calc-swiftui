@@ -7,9 +7,13 @@
 
 import Foundation
 
-struct RoomCategory: Hashable, Comparable {
+struct RoomCategory: HashableDisplayable {
     var name: String
     var order: Int
+    
+    func display() -> String {
+        name
+    }
     
     static func < (lhs: RoomCategory, rhs: RoomCategory) -> Bool {
         lhs.order < rhs.order

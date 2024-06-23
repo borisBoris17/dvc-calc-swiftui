@@ -184,9 +184,9 @@ struct CalculatorView: View {
             }
             .navigationDestination(for: String.self) { destination in
                 if destination == "Resorts" {
-                    ResortSelectView(resorts: $selectedResorts)
+                    MultiSelectView(options: $selectedResorts, title: destination)
                 } else {
-                    RoomTypeSelectView(roomTypes: $selectedRoomCategories)
+                    MultiSelectView(options: $selectedRoomCategories, title: destination)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)

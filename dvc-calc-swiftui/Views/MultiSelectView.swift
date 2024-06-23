@@ -1,25 +1,26 @@
 //
-//  MultiSelect.swift
+//  MultiSelectView.swift
 //  dvc-calc-swiftui
 //
-//  Created by tucker bichsel on 19/06/2024.
+//  Created by tucker bichsel on 22/06/2024.
 //
 
 import SwiftUI
 
-struct ResortSelectView: View {
-    @Binding var resorts: [Resort : Bool]
+struct MultiSelectView<T: HashableDisplayable>: View {
+    @Binding var options: [T : Bool]
     @State private var selectAll = false
+    var title: String
     
-    func isAllResortsSelected() -> Bool {
-        let selectedResorts = resorts.filter { $0.value == true }
-        return resorts.count == selectedResorts.count
+    func isAllOptionsSelected() -> Bool {
+        let selectedOptions = options.filter { $0.value == true }
+        return options.count == selectedOptions.count
     }
     
     var body: some View {
         List {
             HStack {
-                Text(isAllResortsSelected() ? "Deselect All" : "Select All")
+                Text(isAllOptionsSelected() ? "Deselect All" : "Select All")
                 
                 Spacer()
                 
@@ -29,28 +30,29 @@ struct ResortSelectView: View {
                 .toggleStyle(iOSCheckboxToggleStyle())
                 .accentColor(.primary)
                 .onChange(of: selectAll) {
-                    if isAllResortsSelected() {
-                        for (key, _) in resorts {
-                            resorts[key] = false
+                    print("change Select All")
+                    if isAllOptionsSelected() {
+                        for (key, _) in options {
+                            options[key] = false
                         }
                     } else {
-                        for (key, _) in resorts {
-                            resorts[key] = true
+                        for (key, _) in options {
+                            options[key] = true
                         }
                     }
                 }
             }
             
-            ForEach(resorts.sorted(by: { $0.key.resortName < $1.key.resortName }), id: \.key) { key, value in
+            ForEach(options.sorted(by: { $0.key < $1.key }), id: \.key) { key, value in
                 HStack {
-                    Text(key.resortName)
+                    Text(key.display())
                     
                     Spacer()
                     
                     Toggle(isOn: Binding(
-                        get: { resorts[key] ?? false },
+                        get: { options[key] ?? false },
                         set: { newValue in
-                            resorts[key] = newValue
+                            options[key] = newValue
                         }
                     )) {
                         // Empty label
@@ -61,14 +63,16 @@ struct ResortSelectView: View {
             }
         }
         .onAppear() {
-            if isAllResortsSelected() {
+            print("appear")
+            if isAllOptionsSelected() {
                 selectAll = true
             }
         }
-        .navigationTitle("Resorts")
+        .navigationTitle(title)
     }
 }
 
+//
 //#Preview {
-//    ResortSelectView()
+//    MultiSelectView()
 //}
