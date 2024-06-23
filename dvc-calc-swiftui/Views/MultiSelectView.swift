@@ -30,7 +30,6 @@ struct MultiSelectView<T: HashableDisplayable>: View {
                 .toggleStyle(iOSCheckboxToggleStyle())
                 .accentColor(.primary)
                 .onChange(of: selectAll) {
-                    print("change Select All")
                     if isAllOptionsSelected() {
                         for (key, _) in options {
                             options[key] = false
@@ -63,7 +62,6 @@ struct MultiSelectView<T: HashableDisplayable>: View {
             }
         }
         .onAppear() {
-            print("appear")
             if isAllOptionsSelected() {
                 selectAll = true
             }

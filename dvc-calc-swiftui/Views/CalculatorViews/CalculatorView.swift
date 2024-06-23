@@ -195,7 +195,6 @@ struct CalculatorView: View {
                 if selectedResorts.count == 0 {
                     for resort in resorts {
                         selectedResorts[resort] = true
-                        //                        selectedResortIndicies.append(false)
                     }
                 }
                 if selectedRoomCategories.count == 0 {
