@@ -104,7 +104,7 @@ struct CalculatorView: View {
                     }
                     
                     VStack {
-                        NavigationLink(value: "Reosrts") {
+                        NavigationLink(value: "Resorts") {
                             VStack {
                                 HStack {
                                     Text(numSelectedResorts() == 0 ? "Select Resorts..." : numSelectedResorts() == 1 ? "1 Resort Selected" : "\(numSelectedResorts()) Resorts Selected")
@@ -194,13 +194,13 @@ struct CalculatorView: View {
             .onAppear() {
                 if selectedResorts.count == 0 {
                     for resort in resorts {
-                        selectedResorts[resort] = false
+                        selectedResorts[resort] = true
                         //                        selectedResortIndicies.append(false)
                     }
                 }
                 if selectedRoomCategories.count == 0 {
                     for roomCategory in roomTypeCategories {
-                        selectedRoomCategories[roomCategory] = false
+                        selectedRoomCategories[roomCategory] = true
                     }
                 }
             }
