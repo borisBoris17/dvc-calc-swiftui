@@ -120,9 +120,6 @@ struct CalculatorView: View {
                             }
                         }
                         .buttonStyle(PlainButtonStyle())
-                        .navigationDestination(for: String.self) { _ in
-                            ResortSelectView(resorts: $selectedResorts)
-                        }
                     }
                     .frame(maxWidth: .infinity)
                     .background(
@@ -161,9 +158,6 @@ struct CalculatorView: View {
                             }
                         }
                         .buttonStyle(PlainButtonStyle())
-                        .navigationDestination(for: String.self) { _ in
-                            RoomTypeSelectView(roomTypes: $selectedRoomCategories)
-                        }
                     }
                     .frame(maxWidth: .infinity)
                     .background(
@@ -177,42 +171,6 @@ struct CalculatorView: View {
                 }
                 .padding([.horizontal, .bottom])
                 
-//                VStack {
-//                    HStack {
-//                        Text("Room Types")
-//                            .fontWeight(.bold)
-//                        
-//                        Spacer()
-//                    }
-//                    
-//                    VStack {
-//                        HStack {
-//                            Picker(selection: $selectedRoomCategory, label: Text("Room Types")) {
-//                                Text("All Types").tag("")
-//                                ForEach(roomTypeCategories, id: \.self) {
-//                                    Text($0).tag($0)
-//                                }
-//                            }
-//                            .accentColor(.primary)
-//                            
-//                            Spacer()
-//                        }
-//                        
-//                        Divider()
-//                            .frame(height: 3)
-//                            .padding(.leading)
-//                            .background(Color.black)
-//                    }
-//                    .frame(maxWidth: .infinity)
-//                    .background(
-//                        Rectangle()
-//                            .foregroundStyle(.white.opacity(0.5))
-//                    )
-//                    .clipShape(RoundedRectangle(cornerRadius: 10))
-//                    
-//                }
-//                .padding([.horizontal, .bottom])
-                
                 NavigationLink {
                     ResultsView(resorts: $selectedResorts, roomCategory: $selectedRoomCategory, checkInDate: checkInDate ?? Date.now, checkOutDate: checkOutDate ?? Date.now)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -222,6 +180,13 @@ struct CalculatorView: View {
                         .foregroundStyle(.white)
                         .padding()
                         .background(Capsule())
+                }
+            }
+            .navigationDestination(for: String.self) { destination in
+                if destination == "Resorts" {
+                    ResortSelectView(resorts: $selectedResorts)
+                } else {
+                    RoomTypeSelectView(roomTypes: $selectedRoomCategories)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
