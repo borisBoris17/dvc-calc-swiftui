@@ -19,16 +19,22 @@ struct MultiSelectView<T: HashableDisplayable>: View {
     
     var body: some View {
         List {
-            HStack {
-                Text(isAllOptionsSelected() ? "Deselect All" : "Select All")
-                
-                Spacer()
-                
-                Toggle(isOn: $selectAll) {
-                    // Empty label
+            HStack {                
+                Button {
+                    selectAll.toggle()
+                } label: {
+                    HStack {
+                        Text(isAllOptionsSelected() ? "Deselect All" : "Select All")
+                        
+                        Spacer()
+                        
+                        HStack {
+                            Image(systemName: isAllOptionsSelected() ? "checkmark.square" : "square")
+                        }
+                    }
+                    .contentShape(Rectangle())
                 }
-                .toggleStyle(iOSCheckboxToggleStyle())
-                .accentColor(.primary)
+                .buttonStyle(PlainButtonStyle())
                 .onChange(of: selectAll) {
                     if isAllOptionsSelected() {
                         for (key, _) in options {
