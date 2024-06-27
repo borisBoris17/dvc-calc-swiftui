@@ -171,11 +171,7 @@ struct CalculatorView: View {
                 }
                 .padding([.horizontal, .bottom])
                 
-                NavigationLink {
-                    ResultsView(resorts: $selectedResorts, roomCategories: $selectedRoomCategories, roomCategory: $selectedRoomCategory, checkInDate: checkInDate ?? Date.now, checkOutDate: checkOutDate ?? Date.now)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(Color("BackgroundColor"))
-                } label: {
+                NavigationLink(value: "Results") {
                     Text("Calculate")
                         .foregroundStyle(.white)
                         .padding()
@@ -185,8 +181,12 @@ struct CalculatorView: View {
             .navigationDestination(for: String.self) { destination in
                 if destination == "Resorts" {
                     MultiSelectView(options: $selectedResorts, title: destination)
-                } else {
+                } else if destination == "Room Types" {
                     MultiSelectView(options: $selectedRoomCategories, title: destination)
+                } else if destination == "Results" {
+                    ResultsView(resorts: $selectedResorts, roomCategories: $selectedRoomCategories, roomCategory: $selectedRoomCategory, checkInDate: checkInDate ?? Date.now, checkOutDate: checkOutDate ?? Date.now)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Color("BackgroundColor"))
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)

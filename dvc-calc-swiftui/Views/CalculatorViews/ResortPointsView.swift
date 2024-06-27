@@ -18,16 +18,10 @@ struct ResortPointsView: View {
     @State var hasRoomsToShow = false
     
     var body: some View {
-        VStack {
+        LazyVStack(alignment: .leading, spacing: 0, pinnedViews: [.sectionHeaders]) {
             if hasRoomsToShow {
-                VStack {
-                    HStack {
-                        Text(resort.resortName)
-                            .font(.title2)
-                            .fontWeight(.bold)
-                        
-                        Spacer()
-                    }
+                Section {
+                    
                     
                     ForEach(resort.roomTypes.sorted()) { roomType in
                         VStack {
@@ -38,6 +32,18 @@ struct ResortPointsView: View {
                             }
                         }
                     }
+                } header: {
+                    
+                    
+                    HStack {
+                        Text(resort.resortName)
+                            .font(.title2)
+                            .fontWeight(.bold)
+                        
+                        Spacer()
+                    }
+                    .padding(.vertical)
+                    .background(Color("BackgroundColor"))
                 }
             }
         }
