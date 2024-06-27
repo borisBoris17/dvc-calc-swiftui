@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ResortPointsView: View {
     var resort: Resort
+    @Binding var roomCategorie: [RoomCategory : Bool]
+
     var roomCategory: String
     var checkInDate: Date
     var checkOutDate: Date
@@ -31,7 +33,7 @@ struct ResortPointsView: View {
                         VStack {
                             if roomType.roomCategory == roomCategory || roomCategory == "" {
                                 VStack {
-                                    RoomTypePointsView(roomType: roomType, roomCategory: roomCategory, checkInDate: checkInDate, checkOutDate: checkOutDate)
+                                    RoomTypePointsView(roomType: roomType, roomCategorie: $roomCategorie, roomCategory: roomCategory, checkInDate: checkInDate, checkOutDate: checkOutDate)
                                 }
                             }
                         }

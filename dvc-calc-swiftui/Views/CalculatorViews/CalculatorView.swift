@@ -172,7 +172,7 @@ struct CalculatorView: View {
                 .padding([.horizontal, .bottom])
                 
                 NavigationLink {
-                    ResultsView(resorts: $selectedResorts, roomCategory: $selectedRoomCategory, checkInDate: checkInDate ?? Date.now, checkOutDate: checkOutDate ?? Date.now)
+                    ResultsView(resorts: $selectedResorts, roomCategories: $selectedRoomCategories, roomCategory: $selectedRoomCategory, checkInDate: checkInDate ?? Date.now, checkOutDate: checkOutDate ?? Date.now)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .background(Color("BackgroundColor"))
                 } label: {
