@@ -26,11 +26,11 @@ struct CalculatorView: View {
     
     let roomTypeCategories = [RoomCategory(name: "Studio", order: 0), RoomCategory(name: "One-Bedroom", order: 1), RoomCategory(name: "Two-Bedroom", order: 2), RoomCategory(name: "Three-Bedroom", order: 3)]
     
-    private var formatedCheckInDate: String {
+    var formatedCheckInDate: String {
         checkInDate?.formatted(date: .long, time: .omitted) ?? "Check In Date"
     }
     
-    private var formatedCheckOutDate: String {
+    var formatedCheckOutDate: String {
         checkOutDate?.formatted(date: .long, time: .omitted) ?? "Check Out Date"
     }
     
@@ -184,7 +184,7 @@ struct CalculatorView: View {
                 } else if destination == "Room Types" {
                     MultiSelectView(options: $selectedRoomCategories, title: destination)
                 } else if destination == "Results" {
-                    ResultsView(resorts: $selectedResorts, roomCategories: $selectedRoomCategories, roomCategory: $selectedRoomCategory, checkInDate: checkInDate ?? Date.now, checkOutDate: checkOutDate ?? Date.now)
+                    ResultsView(resorts: $selectedResorts, roomCategories: $selectedRoomCategories, roomCategory: $selectedRoomCategory, checkInDate: $checkInDate, checkOutDate: $checkOutDate)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .background(Color("BackgroundColor"))
                 }

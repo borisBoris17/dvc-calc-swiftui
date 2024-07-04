@@ -42,19 +42,11 @@ struct ViewTypePointsView: View {
             
             VStack {
                 HStack {
-                    Button {
+                    Button(showDetails ? "Close Deatils" : "Details") {
                         showDetails.toggle()
-                    } label: {
-                        Group {
-                            if showDetails {
-                                Text("Close Deatils")
-                            } else {
-                                Text("Details")
-                            }
-                        }
-                        .font(.subheadline)
-                        .underline()
                     }
+                    .font(.subheadline)
+                    .underline()
                     .buttonStyle(PlainButtonStyle())
                     
                     Spacer()

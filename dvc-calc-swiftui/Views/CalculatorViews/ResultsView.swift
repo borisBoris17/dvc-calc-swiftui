@@ -13,13 +13,22 @@ struct ResultsView: View {
     
     @Binding var roomCategory: String
     
-    var checkInDate: Date
-    var checkOutDate: Date
+    @State var showDateInput = false
     
+    @Binding var checkInDate: Date?
+    @Binding var checkOutDate: Date?
     
     var body: some View {
         ScrollView {
             HStack {
+                Button("Dates") {
+                    showDateInput.toggle()
+                }
+                .buttonStyle(PlainButtonStyle())
+                .foregroundStyle(.white)
+                .padding()
+                .background(Capsule())
+                
                 NavigationLink(value: "Room Types") {
                     VStack {
                         Text("Room Types")
@@ -28,6 +37,7 @@ struct ResultsView: View {
                             .background(Capsule())
                     }
                 }
+                .buttonStyle(PlainButtonStyle())
                 
                 NavigationLink(value: "Resorts") {
                     VStack {
@@ -37,17 +47,22 @@ struct ResultsView: View {
                             .background(Capsule())
                     }
                 }
+                .buttonStyle(PlainButtonStyle())
                 
                 Spacer()
             }
             ForEach(resorts.sorted(by: { $0.key.resortName < $1.key.resortName }), id: \.key) { (key, value) in
-                if value {
-                    ResortPointsView(resort: key, roomCategorie: $roomCategories, roomCategory: roomCategory, checkInDate: checkInDate, checkOutDate: checkOutDate)
+                if value && checkInDate != nil && checkOutDate != nil {
+                    ResortPointsView(resort: key, roomCategorie: $roomCategories, roomCategory: roomCategory, checkInDate: checkInDate!, checkOutDate: checkOutDate!)
                 }
             }
         }
         .scrollIndicators(.hidden)
         .padding(.horizontal)
+        .sheet(isPresented: $showDateInput) {
+            CalendarView(checkInDate: $checkInDate, checkOutDate: $checkOutDate)
+                .presentationDetents([.medium])
+        }
     }
 }
 
