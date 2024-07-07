@@ -30,16 +30,19 @@ struct ResortPointsView: View {
                             }
                         }
                     }
+                    .padding()
                 } header: {
                     HStack {
                         Text(resort.resortName)
+                            .foregroundStyle(Color.background)
                             .font(.title2)
                             .fontWeight(.bold)
                         
                         Spacer()
                     }
-                    .padding(.vertical)
-                    .background(Color("BackgroundColor"))
+                    .padding(.horizontal)
+                    .padding(.vertical, 10)
+                    .background(.accent)
                 }
             }
         }

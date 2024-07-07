@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ViewTypePointsView: View {
+    @Environment(\.modelContext) var modelContext
+    
     var viewType: ViewType
     var checkInDate: Date
     var checkOutDate: Date
@@ -52,7 +54,10 @@ struct ViewTypePointsView: View {
                     Spacer()
                     
                     Button("Save") {
-                        print("TODO: save the trip...")
+                        let trip = Trip(resortId: viewType.roomType.resort.id, checkInDate: checkInDate, checkOutDate: checkOutDate)
+                        modelContext.insert(trip)
+                        
+                        try? modelContext.save()
                     }
                 }
                 
@@ -63,10 +68,14 @@ struct ViewTypePointsView: View {
             .padding(.leading)
         }
         .onAppear() {
-            var night = checkInDate
-            while (night < checkOutDate){
-                dateRange.append(night)
-                night = Calendar.current.date(byAdding: .day, value: 1, to: night)!
+            if dateRange.count == 0 {
+                var night = checkInDate
+                while (night < checkOutDate){
+                    dateRange.append(night)
+                    night = Calendar.current.date(byAdding: .day, value: 1, to: night)!
+                }
+            } else {
+                totalPointsForStay = 0
             }
             showDetails = false
         }

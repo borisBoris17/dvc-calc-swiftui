@@ -175,7 +175,10 @@ struct CalculatorView: View {
                     Text("Calculate")
                         .foregroundStyle(.white)
                         .padding()
-                        .background(Capsule())
+                        .background(
+                            RoundedRectangle(cornerRadius: 15)
+                                .fill(.accent)
+                        )
                 }
             }
             .navigationDestination(for: String.self) { destination in

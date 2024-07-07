@@ -48,7 +48,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Contracts", systemImage: "doc.plaintext")
                 }
-                .tag(2)
+                .tag(3)
         }
         //        .background(Color("BackgroundColor"))
     }

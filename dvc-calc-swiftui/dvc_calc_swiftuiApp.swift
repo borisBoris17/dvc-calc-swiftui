@@ -35,7 +35,8 @@ struct dvc_calc_swiftuiApp: App {
             }
             
             let config = ModelConfiguration(url: documentURL)
-            container = try ModelContainer(for: Resort.self, PointValue.self, configurations: config)
+            let config2 = ModelConfiguration(for: Trip.self)
+            container = try ModelContainer(for: Resort.self, PointValue.self, Trip.self, configurations: config)
         } catch {
             fatalError("Failed to create model container: \(error)")
         }

@@ -20,37 +20,61 @@ struct ResultsView: View {
     
     var body: some View {
         ScrollView {
-            HStack {
-                Button("Dates") {
-                    showDateInput.toggle()
-                }
-                .buttonStyle(PlainButtonStyle())
-                .foregroundStyle(.white)
-                .padding()
-                .background(Capsule())
-                
-                NavigationLink(value: "Room Types") {
-                    VStack {
-                        Text("Room Types")
-                            .foregroundStyle(.white)
-                            .padding()
-                            .background(Capsule())
+            ScrollView(.horizontal) {
+                HStack {
+                    Button {
+                        showDateInput.toggle()
+                    } label: {
+                        HStack {
+                            Image(systemName: "calendar")
+                            
+                            Text("Dates")
+                        }
                     }
-                }
-                .buttonStyle(PlainButtonStyle())
-                
-                NavigationLink(value: "Resorts") {
-                    VStack {
-                        Text("Resorts")
-                            .foregroundStyle(.white)
-                            .padding()
-                            .background(Capsule())
+                    .buttonStyle(PlainButtonStyle())
+                    .foregroundStyle(Color.background)
+                    .fontWeight(.bold)
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(.accent)
+                    )
+                    
+                    NavigationLink(value: "Resorts") {
+                        HStack {
+                            Image(systemName: "slider.vertical.3")
+                            
+                            Text("Resorts")
+                        }
+                        .foregroundStyle(Color.background)
+                        .fontWeight(.bold)
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 15)
+                                .fill(.accent)
+                        )
                     }
+                    .buttonStyle(PlainButtonStyle())
+                    
+                    NavigationLink(value: "Room Types") {
+                        HStack {
+                            Image(systemName: "slider.vertical.3")
+                            
+                            Text("Room Types")
+                        }
+                        .foregroundStyle(Color.background)
+                            .fontWeight(.bold)
+                            .padding()
+                            .background(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .fill(.accent)
+                            )
+                    }
+                    .buttonStyle(PlainButtonStyle())
                 }
-                .buttonStyle(PlainButtonStyle())
-                
-                Spacer()
             }
+            .padding(.horizontal)
+            
             ForEach(resorts.sorted(by: { $0.key.resortName < $1.key.resortName }), id: \.key) { (key, value) in
                 if value && checkInDate != nil && checkOutDate != nil {
                     ResortPointsView(resort: key, roomCategorie: $roomCategories, roomCategory: roomCategory, checkInDate: checkInDate!, checkOutDate: checkOutDate!)
@@ -58,7 +82,6 @@ struct ResultsView: View {
             }
         }
         .scrollIndicators(.hidden)
-        .padding(.horizontal)
         .sheet(isPresented: $showDateInput) {
             CalendarView(checkInDate: $checkInDate, checkOutDate: $checkOutDate)
                 .presentationDetents([.medium])

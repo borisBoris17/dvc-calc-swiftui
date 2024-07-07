@@ -17,6 +17,8 @@
 		E6A100472C269101006BCE1E /* RoomCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100462C269101006BCE1E /* RoomCategory.swift */; };
 		E6A100492C27DA3E006BCE1E /* Displayable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100482C27DA3E006BCE1E /* Displayable+Protocol.swift */; };
 		E6A1004B2C27DAE1006BCE1E /* MultiSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1004A2C27DAE1006BCE1E /* MultiSelectView.swift */; };
+		E6A1004D2C364EFE006BCE1E /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1004C2C364EFE006BCE1E /* Trip.swift */; };
+		E6A100502C365BA5006BCE1E /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1004F2C365BA5006BCE1E /* TripView.swift */; };
 		E6AC8AF62C0EB6490052A91A /* dvc-old.store in Resources */ = {isa = PBXBuildFile; fileRef = E6AC8AF52C0EB6490052A91A /* dvc-old.store */; };
 		E6AC8AF92C0EBDC00052A91A /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AF82C0EBDC00052A91A /* Resort.swift */; };
 		E6AC8AFB2C0EBDFA0052A91A /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */; };
@@ -45,6 +47,8 @@
 		E6A100462C269101006BCE1E /* RoomCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCategory.swift; sourceTree = "<group>"; };
 		E6A100482C27DA3E006BCE1E /* Displayable+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Displayable+Protocol.swift"; sourceTree = "<group>"; };
 		E6A1004A2C27DAE1006BCE1E /* MultiSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectView.swift; sourceTree = "<group>"; };
+		E6A1004C2C364EFE006BCE1E /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		E6A1004F2C365BA5006BCE1E /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
 		E6AC8AF52C0EB6490052A91A /* dvc-old.store */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dvc-old.store"; sourceTree = "<group>"; };
 		E6AC8AF82C0EBDC00052A91A /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
 		E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
@@ -99,6 +103,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E6A1004E2C365B8B006BCE1E /* TripViews */ = {
+			isa = PBXGroup;
+			children = (
+				E6AC8B022C0EC4BE0052A91A /* TripsView.swift */,
+				E6A1004F2C365BA5006BCE1E /* TripView.swift */,
+			);
+			path = TripViews;
+			sourceTree = "<group>";
+		};
 		E6AC8AF72C0EBDA70052A91A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +119,7 @@
 				E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */,
 				E6AC8AFC2C0EBE170052A91A /* ViewType.swift */,
 				E6AC8AFE2C0EBE2D0052A91A /* PointValue.swift */,
+				E6A1004C2C364EFE006BCE1E /* Trip.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -113,9 +127,9 @@
 		E6AC8B042C0EC4CA0052A91A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E6A1004E2C365B8B006BCE1E /* TripViews */,
 				E6A100342C17FFBA006BCE1E /* CalculatorViews */,
 				E6D8F60C2BF70063004C6916 /* ContentView.swift */,
-				E6AC8B022C0EC4BE0052A91A /* TripsView.swift */,
 				E6AC8B052C0EC55B0052A91A /* ContractsView.swift */,
 				E6A1004A2C27DAE1006BCE1E /* MultiSelectView.swift */,
 			);
@@ -246,11 +260,13 @@
 				E6AC8B0D2C0FFFB60052A91A /* Date+Extension.swift in Sources */,
 				E6A1003A2C1E91FE006BCE1E /* ViewTypePointsView.swift in Sources */,
 				E6AC8AFB2C0EBDFA0052A91A /* RoomType.swift in Sources */,
+				E6A100502C365BA5006BCE1E /* TripView.swift in Sources */,
 				E6AC8B012C0EC16D0052A91A /* CalculatorView.swift in Sources */,
 				E6AC8B062C0EC55B0052A91A /* ContractsView.swift in Sources */,
 				E6A1003F2C2147BC006BCE1E /* ResortPointsView.swift in Sources */,
 				E6A1004B2C27DAE1006BCE1E /* MultiSelectView.swift in Sources */,
 				E6D8F60D2BF70063004C6916 /* ContentView.swift in Sources */,
+				E6A1004D2C364EFE006BCE1E /* Trip.swift in Sources */,
 				E6A100472C269101006BCE1E /* RoomCategory.swift in Sources */,
 				E6AC8AFD2C0EBE170052A91A /* ViewType.swift in Sources */,
 				E6AC8AF92C0EBDC00052A91A /* Resort.swift in Sources */,

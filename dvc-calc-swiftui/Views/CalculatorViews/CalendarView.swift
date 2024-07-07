@@ -77,22 +77,24 @@ struct CalendarView: View {
                         } label: {
                             Text(day.formatted(.dateTime.day()))
                                 .fontWeight(.bold)
-                                .foregroundStyle(.primary)
+                                .foregroundStyle(checkInDate?.startOfDay == day.startOfDay || checkOutDate?.startOfDay == day.startOfDay
+                                                 ? Color.background
+                                                 : .primary)
                                 .frame(maxWidth: .infinity, minHeight: 40)
                                 .background(
                                     ZStack {
                                         if checkInDate != nil && checkOutDate != nil {
                                             if day == checkInDate {
                                                 Rectangle()
-                                                    .foregroundStyle(.red)
+                                                    .foregroundStyle(Color.background)
                                                     .offset(x: 20)
                                             } else if day == checkOutDate {
                                                 Rectangle()
-                                                    .foregroundStyle(.red)
+                                                    .foregroundStyle(Color.background)
                                                     .offset(x: -20)
                                             } else if day > checkInDate! && day < checkOutDate! {
                                                 Rectangle()
-                                                    .foregroundStyle(.red)
+                                                    .foregroundStyle(Color.background)
                                                     .containerRelativeFrame(.horizontal) { size, axis in
                                                         size * 1/6
                                                     }
@@ -101,7 +103,7 @@ struct CalendarView: View {
                                         Circle()
                                             .foregroundStyle(
                                                 checkInDate?.startOfDay == day.startOfDay || checkOutDate?.startOfDay == day.startOfDay
-                                                ? .purple
+                                                ? .accent
                                                 : .clear
                                             )
                                     }
