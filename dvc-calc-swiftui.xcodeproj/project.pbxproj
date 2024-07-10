@@ -19,6 +19,9 @@
 		E6A1004B2C27DAE1006BCE1E /* MultiSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1004A2C27DAE1006BCE1E /* MultiSelectView.swift */; };
 		E6A1004D2C364EFE006BCE1E /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1004C2C364EFE006BCE1E /* Trip.swift */; };
 		E6A100502C365BA5006BCE1E /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1004F2C365BA5006BCE1E /* TripView.swift */; };
+		E6A100522C3A3070006BCE1E /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100512C3A3070006BCE1E /* Contract.swift */; };
+		E6A100552C3A43AC006BCE1E /* ContractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100542C3A43AC006BCE1E /* ContractView.swift */; };
+		E6A100572C3CD5CE006BCE1E /* VacationPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100562C3CD5CE006BCE1E /* VacationPoints.swift */; };
 		E6AC8AF62C0EB6490052A91A /* dvc-old.store in Resources */ = {isa = PBXBuildFile; fileRef = E6AC8AF52C0EB6490052A91A /* dvc-old.store */; };
 		E6AC8AF92C0EBDC00052A91A /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AF82C0EBDC00052A91A /* Resort.swift */; };
 		E6AC8AFB2C0EBDFA0052A91A /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */; };
@@ -49,6 +52,9 @@
 		E6A1004A2C27DAE1006BCE1E /* MultiSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectView.swift; sourceTree = "<group>"; };
 		E6A1004C2C364EFE006BCE1E /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		E6A1004F2C365BA5006BCE1E /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+		E6A100512C3A3070006BCE1E /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
+		E6A100542C3A43AC006BCE1E /* ContractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractView.swift; sourceTree = "<group>"; };
+		E6A100562C3CD5CE006BCE1E /* VacationPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationPoints.swift; sourceTree = "<group>"; };
 		E6AC8AF52C0EB6490052A91A /* dvc-old.store */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dvc-old.store"; sourceTree = "<group>"; };
 		E6AC8AF82C0EBDC00052A91A /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
 		E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
@@ -112,6 +118,15 @@
 			path = TripViews;
 			sourceTree = "<group>";
 		};
+		E6A100532C3A3621006BCE1E /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				E6AC8B052C0EC55B0052A91A /* ContractsView.swift */,
+				E6A100542C3A43AC006BCE1E /* ContractView.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
 		E6AC8AF72C0EBDA70052A91A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +135,8 @@
 				E6AC8AFC2C0EBE170052A91A /* ViewType.swift */,
 				E6AC8AFE2C0EBE2D0052A91A /* PointValue.swift */,
 				E6A1004C2C364EFE006BCE1E /* Trip.swift */,
+				E6A100512C3A3070006BCE1E /* Contract.swift */,
+				E6A100562C3CD5CE006BCE1E /* VacationPoints.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,10 +144,10 @@
 		E6AC8B042C0EC4CA0052A91A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E6A100532C3A3621006BCE1E /* Contracts */,
 				E6A1004E2C365B8B006BCE1E /* TripViews */,
 				E6A100342C17FFBA006BCE1E /* CalculatorViews */,
 				E6D8F60C2BF70063004C6916 /* ContentView.swift */,
-				E6AC8B052C0EC55B0052A91A /* ContractsView.swift */,
 				E6A1004A2C27DAE1006BCE1E /* MultiSelectView.swift */,
 			);
 			path = Views;
@@ -264,6 +281,7 @@
 				E6AC8B012C0EC16D0052A91A /* CalculatorView.swift in Sources */,
 				E6AC8B062C0EC55B0052A91A /* ContractsView.swift in Sources */,
 				E6A1003F2C2147BC006BCE1E /* ResortPointsView.swift in Sources */,
+				E6A100572C3CD5CE006BCE1E /* VacationPoints.swift in Sources */,
 				E6A1004B2C27DAE1006BCE1E /* MultiSelectView.swift in Sources */,
 				E6D8F60D2BF70063004C6916 /* ContentView.swift in Sources */,
 				E6A1004D2C364EFE006BCE1E /* Trip.swift in Sources */,
@@ -274,6 +292,8 @@
 				E6AC8AFF2C0EBE2D0052A91A /* PointValue.swift in Sources */,
 				E6A100452C268F8D006BCE1E /* iOSCheckboxToggleStyle.swift in Sources */,
 				E6D8F60B2BF70063004C6916 /* dvc_calc_swiftuiApp.swift in Sources */,
+				E6A100522C3A3070006BCE1E /* Contract.swift in Sources */,
+				E6A100552C3A43AC006BCE1E /* ContractView.swift in Sources */,
 				E6AC8B032C0EC4BE0052A91A /* TripsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

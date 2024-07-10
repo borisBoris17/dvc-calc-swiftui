@@ -12,20 +12,10 @@ struct TripView: View {
     var trip: Trip
     
     @Query private var resorts: [Resort] = []
-//    @State private var resort: Resort?
     
     init(trip: Trip) {
         self.trip = trip
         let resortId = trip.resortId
-        
-//        let query = Query(filter: #Predicate<Resort> {
-//                    $0.id == resortId
-//                }, sort: \.resortName)
-//
-//        
-//        if let foundResort = query.wrappedValue.first {
-//            self.resort = foundResort
-//        }
         
         self._resorts = Query(filter: #Predicate<Resort> {
             $0.id == resortId
@@ -36,6 +26,11 @@ struct TripView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(resorts[0].resortName)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.bottom)
+                
+                Text("\(resorts[0].id)")
                     .font(.title)
                     .fontWeight(.bold)
                     .padding(.bottom)
