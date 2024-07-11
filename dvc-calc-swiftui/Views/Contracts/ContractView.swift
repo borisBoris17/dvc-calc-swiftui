@@ -9,10 +9,14 @@ import SwiftUI
 import SwiftData
 
 struct ContractView: View {
+    @State private var showDeleteAlert = false
+    
     var contract: Contract
     @Query private var resorts: [Resort] = []
     
+    let thisYear = Calendar.current.component(.year, from: Date())
     
+    @Environment(\.modelContext) var modelContext
     
     init(contract: Contract) {
         self.contract = contract
@@ -48,7 +52,7 @@ struct ContractView: View {
                     .font(.headline)
                 
                 ForEach(contract.vactionPointsYears.sorted()) { vactionPoints in
-                    if vactionPoints.year < 2027 {
+                    if vactionPoints.year >= thisYear - 1 && vactionPoints.year <= thisYear + 1 {
                         HStack {
                             Text("\(String(vactionPoints.year))")
                             
@@ -59,7 +63,26 @@ struct ContractView: View {
                     }
                 }
             }
-            .padding([.horizontal, .bottom])
+            .padding(.horizontal)
+            
+            HStack {
+                Spacer()
+                
+                Button("Remove", role: .destructive) {
+                    showDeleteAlert = true
+                }
+                .alert(isPresented: $showDeleteAlert) {
+                    Alert(
+                        title: Text("Are you sure you want to delete this Contract?"),
+                        message: Text("This is a permanent action and will effect Trips using this Contract."),
+                        primaryButton: .destructive(Text("Delete")) {
+                            modelContext.delete(contract)
+                        },
+                        secondaryButton: .cancel()
+                    )
+                }
+            }
+            .padding()
         }
         .background(
             RoundedRectangle(cornerRadius: 10, style: .continuous)

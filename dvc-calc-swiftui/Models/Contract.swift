@@ -30,7 +30,7 @@ class Contract: Comparable {
     var points: Int
     var useYear: UseYear
     var expirationYear: Int
-    @Relationship(inverse: \VacationPoints.contract) var vactionPointsYears: [VacationPoints] = []
+    @Relationship(deleteRule: .cascade, inverse: \VacationPoints.contract) var vactionPointsYears: [VacationPoints] = []
     
     init(id: UUID = UUID(), resortId: UUID, points: Int, useYear: UseYear, expirationYear: Int) {
         self.id = id
