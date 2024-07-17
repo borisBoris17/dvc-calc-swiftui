@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct MultiSelectView<T: HashableDisplayable>: View {
     @Binding var options: [T : Bool]
     @State private var selectAll = false
     var title: String
+    
+    @Query var resorts: [Resort]
     
     func isAllOptionsSelected() -> Bool {
         let selectedOptions = options.filter { $0.value == true }
@@ -19,7 +22,7 @@ struct MultiSelectView<T: HashableDisplayable>: View {
     
     var body: some View {
         List {
-            HStack {                
+            HStack {
                 Button {
                     selectAll.toggle()
                 } label: {
@@ -68,6 +71,11 @@ struct MultiSelectView<T: HashableDisplayable>: View {
             }
         }
         .onAppear() {
+            if title == "Resorts" && options.count == 0 {
+                for resort in resorts {
+                    options[resort as! T] = true
+                }
+            }
             if isAllOptionsSelected() {
                 selectAll = true
             }

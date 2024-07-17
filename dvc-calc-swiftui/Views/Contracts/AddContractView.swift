@@ -88,8 +88,8 @@ struct AddContractView: View {
                 ToolbarItem {
                     Button("Save") {
                         let contractSize = Int(points) ?? 0
-                        let contractExpireYear = getExpireYear(resort: selectedResort!)
-                        let contract = Contract(resortId: selectedResort!.id, points: contractSize, useYear: selectedUseYear!, expirationYear: contractExpireYear)
+                        let contractExpireYear = Int(selectedResort!.expireYear)
+                        let contract = Contract(resortId: selectedResort!.id, points: contractSize, useYear: selectedUseYear!)
                         modelContext.insert(contract)
                         
                         var vactionPointsYears: [VacationPoints] = []

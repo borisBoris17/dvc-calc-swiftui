@@ -25,11 +25,13 @@ class Resort: Identifiable, HashableDisplayable {
     
     var id: UUID
     var resortName: String
+    var expireYear: Int16
     var roomTypes: [RoomType]
 
-    init(id: UUID, name: String, roomTypes: [RoomType]) {
+    init(id: UUID, name: String, expireYear: Int16, roomTypes: [RoomType]) {
         self.id = id
         self.resortName = name
+        self.expireYear = expireYear
         self.roomTypes = roomTypes
     }
 }
