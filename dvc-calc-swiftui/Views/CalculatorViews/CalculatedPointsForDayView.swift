@@ -22,7 +22,7 @@ struct CalculatedPointsForDayView: View {
         self.viewType = viewType
         let viewTypeId = viewType.id
         self._pointValues = Query(filter: #Predicate<PointValue> {
-            $0.viewType.id == viewTypeId && $0.startDate <= nightToStay && $0.endDate >= nightToStay
+            $0.viewTypeId == viewTypeId && $0.startDate <= nightToStay && $0.endDate >= nightToStay
         }, sort: \.weekdayRate)
         
         self.nightToStay = nightToStay

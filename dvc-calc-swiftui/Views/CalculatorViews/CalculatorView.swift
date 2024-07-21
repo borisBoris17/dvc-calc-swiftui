@@ -7,7 +7,6 @@
 
 import SwiftUI
 import SwiftData
-import HorizonCalendar
 
 struct CalculatorView: View {
     

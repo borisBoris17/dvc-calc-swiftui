@@ -11,12 +11,14 @@ struct ViewTypePointsView: View {
     @Environment(\.modelContext) var modelContext
     
     var viewType: ViewType
+    var roomType: RoomType
     var checkInDate: Date
     var checkOutDate: Date
     
     @State private var dateRange: [Date] = []
     @State private var totalPointsForStay: Int16 = 0
     @State private var showDetails = true
+    @State private var showSaveTrip = false
     
     var body: some View {
         VStack {
@@ -54,10 +56,7 @@ struct ViewTypePointsView: View {
                     Spacer()
                     
                     Button("Save") {
-                        let trip = Trip(resortId: viewType.roomType.resort.id, checkInDate: checkInDate, checkOutDate: checkOutDate)
-                        modelContext.insert(trip)
-                        
-                        try? modelContext.save()
+                        showSaveTrip.toggle()
                     }
                 }
                 
@@ -78,6 +77,9 @@ struct ViewTypePointsView: View {
                 totalPointsForStay = 0
             }
             showDetails = false
+        }
+        .sheet(isPresented: $showSaveTrip) {
+            SaveTripView(checkInDate: checkInDate, checkOutDate: checkOutDate, points: totalPointsForStay, resortId: roomType.resortId, roomTypeId: roomType.id, viewTypeId: viewType.id)
         }
     }
 }

@@ -32,7 +32,7 @@ struct RoomTypePointsView: View {
                             }
                             
                             ForEach(roomType.viewTypes.sorted()) { viewType in
-                                ViewTypePointsView(viewType: viewType, checkInDate: checkInDate, checkOutDate: checkOutDate)
+                                ViewTypePointsView(viewType: viewType, roomType: roomType, checkInDate: checkInDate, checkOutDate: checkOutDate)
                                     .padding(10)
                                     .background(
                                         RoundedRectangle(cornerRadius: 10, style: .continuous)

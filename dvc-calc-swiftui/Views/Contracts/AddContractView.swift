@@ -10,6 +10,7 @@ import SwiftData
 
 struct AddContractView: View {
     @State private var selectedResort: Resort? = nil
+    @State private var name = ""
     @State private var points = "200"
     @State private var selectedUseYear: UseYear? = nil
     
@@ -20,19 +21,23 @@ struct AddContractView: View {
     
     var availableUseYears: [UseYear] = [.February, .March, .April, .June, .August, .September, .October, .December]
     
-    func getExpireYear(resort: Resort) -> Int {
-        var expireYear = 2070
-        if resort.resortName == "Disney's Polynesian Villas & Bungalows" {
-            expireYear = 2066
-        } else if resort.resortName == "Disney's Riviera Resort" {
-            expireYear = 2070
-        }
-        return expireYear
-    }
-    
     var body: some View {
         NavigationStack {
             Form {
+                Section {
+                    HStack {
+                        Text("Name")
+                        
+                        Spacer()
+                        
+                        TextField("Name", text: $name)
+                            .multilineTextAlignment(.trailing)
+                    }
+                } footer: {
+                    Text("Default name is resort name - points - use year")
+                        .font(.footnote)
+                }
+                
                 HStack {
                     Text("Home Resort")
                     
@@ -89,7 +94,8 @@ struct AddContractView: View {
                     Button("Save") {
                         let contractSize = Int(points) ?? 0
                         let contractExpireYear = Int(selectedResort!.expireYear)
-                        let contract = Contract(resortId: selectedResort!.id, points: contractSize, useYear: selectedUseYear!)
+                        let contractName = name.count > 0 ? name : "\(selectedResort!.shortName)-\(selectedUseYear!.rawValue.prefix(3))-\(points)"
+                        let contract = Contract(resortId: selectedResort!.id, points: contractSize, useYear: selectedUseYear!, name: contractName)
                         modelContext.insert(contract)
                         
                         var vactionPointsYears: [VacationPoints] = []
