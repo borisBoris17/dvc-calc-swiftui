@@ -99,7 +99,7 @@ struct AddContractView: View {
                         modelContext.insert(contract)
                         
                         var vactionPointsYears: [VacationPoints] = []
-                        let currentYear = Calendar.current.component(.year, from: Date())
+                        let currentYear = selectedUseYear?.pointAllotmentYear ?? Calendar.current.component(.year, from: Date())
                         for year in ((currentYear - 1)..<contractExpireYear) {
                             let vacationPoints = VacationPoints(year: year, contract: contract, points: contractSize)
                             

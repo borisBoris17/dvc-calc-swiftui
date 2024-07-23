@@ -62,7 +62,7 @@ struct SaveTripView: View {
                     
                     Spacer()
                     
-                    TextField("Points Borrowed From Last Year", text: $pointsBorrowedFromLastYear)
+                    TextField("Points Borrowed From Last Year", text: $pointsBorrowedFromNextYear)
                         .multilineTextAlignment(.trailing)
                         .keyboardType(.numberPad)
                 }
@@ -73,10 +73,24 @@ struct SaveTripView: View {
                     Button("Save") {
                         let fromLastYear = Int(pointsBorrowedFromLastYear) ?? 0
                         let fromNextYear = Int(pointsBorrowedFromNextYear) ?? 0
-                        let trip = Trip(resortId: resortId, roomTypeId: roomTypeId, viewTypeId: viewTypeId, checkInDate: checkInDate, checkOutDate: checkOutDate, points: points, contract: selectedContract)
+                        let trip = Trip(resortId: resortId, roomTypeId: roomTypeId, viewTypeId: viewTypeId, checkInDate: checkInDate, checkOutDate: checkOutDate, points: points, borrowedFromLastYear: fromLastYear, borrowedFromNextYear: fromNextYear, contract: selectedContract)
                         modelContext.insert(trip)
                         
                         // TODO: update the VacationPoints on the Contract
+                        if let selectedContract = selectedContract {
+                            let activeUseYear = selectedContract.useYear.pointAllotmentYear
+                            for vacationPoints in selectedContract.vactionPointsYears.sorted() {
+                                if vacationPoints.year >= activeUseYear - 1 && vacationPoints.year <= activeUseYear + 1 {
+                                    if vacationPoints.year == activeUseYear - 1 {
+                                        vacationPoints.points = vacationPoints.points - fromLastYear
+                                    } else if vacationPoints.year == activeUseYear {
+                                        vacationPoints.points = vacationPoints.points - (Int(points) - fromLastYear - fromNextYear)
+                                    } else {
+                                        vacationPoints.points = vacationPoints.points - fromNextYear
+                                    }
+                                }
+                            }
+                        }
                         
                         try? modelContext.save()
                         dismiss()

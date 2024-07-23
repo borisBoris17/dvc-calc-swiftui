@@ -36,6 +36,7 @@
 		E6B2725E2C47761C0030B632 /* SaveTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B2725D2C47761C0030B632 /* SaveTripView.swift */; };
 		E6B272602C477D180030B632 /* dvc.store in Resources */ = {isa = PBXBuildFile; fileRef = E6B2725F2C477D180030B632 /* dvc.store */; };
 		E6B272642C48DA3A0030B632 /* dvc.json in Resources */ = {isa = PBXBuildFile; fileRef = E6B272632C48DA390030B632 /* dvc.json */; };
+		E6B272662C4CBD7C0030B632 /* UseYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B272652C4CBD7C0030B632 /* UseYear.swift */; };
 		E6D8F60B2BF70063004C6916 /* dvc_calc_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8F60A2BF70063004C6916 /* dvc_calc_swiftuiApp.swift */; };
 		E6D8F60D2BF70063004C6916 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8F60C2BF70063004C6916 /* ContentView.swift */; };
 		E6D8F60F2BF70067004C6916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D8F60E2BF70067004C6916 /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 		E6B2725D2C47761C0030B632 /* SaveTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTripView.swift; sourceTree = "<group>"; };
 		E6B2725F2C477D180030B632 /* dvc.store */ = {isa = PBXFileReference; lastKnownFileType = file; path = dvc.store; sourceTree = "<group>"; };
 		E6B272632C48DA390030B632 /* dvc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dvc.json; sourceTree = "<group>"; };
+		E6B272652C4CBD7C0030B632 /* UseYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseYear.swift; sourceTree = "<group>"; };
 		E6D8F6072BF70063004C6916 /* dvc-calc-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dvc-calc-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D8F60A2BF70063004C6916 /* dvc_calc_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dvc_calc_swiftuiApp.swift; sourceTree = "<group>"; };
 		E6D8F60C2BF70063004C6916 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				E6A100442C268F8D006BCE1E /* iOSCheckboxToggleStyle.swift */,
 				E6A100462C269101006BCE1E /* RoomCategory.swift */,
 				E6A100482C27DA3E006BCE1E /* Displayable+Protocol.swift */,
+				E6B272652C4CBD7C0030B632 /* UseYear.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				E6A1003F2C2147BC006BCE1E /* ResortPointsView.swift in Sources */,
 				E6A100572C3CD5CE006BCE1E /* VacationPoints.swift in Sources */,
 				E6A1004B2C27DAE1006BCE1E /* MultiSelectView.swift in Sources */,
+				E6B272662C4CBD7C0030B632 /* UseYear.swift in Sources */,
 				E6D8F60D2BF70063004C6916 /* ContentView.swift in Sources */,
 				E6A1004D2C364EFE006BCE1E /* Trip.swift in Sources */,
 				E6A100472C269101006BCE1E /* RoomCategory.swift in Sources */,

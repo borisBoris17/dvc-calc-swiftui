@@ -21,15 +21,19 @@ class Trip: Comparable {
     var checkInDate: Date
     var checkOutDate: Date
     var points: Int16
+    var borrowedFromLastYear: Int
+    var borrowedFromNextYear: Int
     var contract: Contract? = nil
     
-    init(resortId: UUID, roomTypeId: UUID, viewTypeId: UUID, checkInDate: Date, checkOutDate: Date, points: Int16, contract: Contract?) {
+    init(resortId: UUID, roomTypeId: UUID, viewTypeId: UUID, checkInDate: Date, checkOutDate: Date, points: Int16, borrowedFromLastYear: Int, borrowedFromNextYear: Int, contract: Contract?) {
         self.resortId = resortId
         self.roomTypeId = roomTypeId
         self.viewTypeId = viewTypeId
         self.checkInDate = checkInDate
         self.checkOutDate = checkOutDate
         self.points = points
+        self.borrowedFromLastYear = borrowedFromLastYear
+        self.borrowedFromNextYear = borrowedFromNextYear
         self.contract = contract
     }
 }
