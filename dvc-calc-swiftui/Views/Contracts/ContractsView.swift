@@ -24,7 +24,7 @@ struct ContractsView: View {
             
             ScrollView {
                 ForEach(contracts) { contract in
-                    ContractView(contract: contract, pointAllotmentYear: contract.useYear.pointAllotmentYear)
+                    ContractView(contract: contract, pointAllotmentYear: contract.useYear.getAllotmentYearByDate(date: Date()))
                         .padding()
                 }
                 

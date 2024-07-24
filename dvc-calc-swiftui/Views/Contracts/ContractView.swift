@@ -65,6 +65,7 @@ struct ContractView: View {
                                     TextField("Points", text: $updatedPointValues[index])
                                         .textFieldStyle(.roundedBorder)
                                         .multilineTextAlignment(.trailing)
+                                        .keyboardType(.numberPad)
                                 } else {
                                     Text("\(contract.vactionPointsYears.sorted()[index].points)")
                                         .padding(7)

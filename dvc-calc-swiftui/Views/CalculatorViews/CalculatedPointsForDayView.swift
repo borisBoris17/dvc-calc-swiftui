@@ -14,10 +14,10 @@ struct CalculatedPointsForDayView: View {
     var showDetails: Bool
     var viewType: ViewType
     var nightToStay: Date
-    @Binding var total: Int16
+    @Binding var total: Int
     
     
-    init(showDetails: Bool, viewType: ViewType, nightToStay: Date, total: Binding<Int16>) {
+    init(showDetails: Bool, viewType: ViewType, nightToStay: Date, total: Binding<Int>) {
         self.showDetails = showDetails
         self.viewType = viewType
         let viewTypeId = viewType.id
@@ -47,9 +47,9 @@ struct CalculatedPointsForDayView: View {
         .onAppear() {
             if pointValues.count > 0 {
                 if nightToStay.isFridaySaturday {
-                    total = total + pointValues[0].weekendRate
+                    total = total + Int(pointValues[0].weekendRate)
                 } else {
-                    total = total + pointValues[0].weekdayRate
+                    total = total + Int(pointValues[0].weekdayRate)
                 }
             }
         }

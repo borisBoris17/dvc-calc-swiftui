@@ -39,10 +39,17 @@ enum UseYear: String, Codable {
     }
     
     var pointAllotmentYear: Int {
-        var currentMonth = Calendar.current.component(.month, from: Date())
+        let currentMonth = Calendar.current.component(.month, from: Date())
         var currentYear = Calendar.current.component(.year, from: Date())
         if currentMonth < self.monthNumber { currentYear -= 1}
         return currentYear
+    }
+    
+    func getAllotmentYearByDate(date: Date) -> Int {
+        let allotmentMonth = Calendar.current.component(.month, from: Date())
+        var allotmentYear = Calendar.current.component(.year, from: Date())
+        if allotmentMonth < self.monthNumber { allotmentYear -= 1}
+        return allotmentYear
     }
 }
 

@@ -1408,5 +1408,3481 @@
         "roomName": "Three-Bedroom Grand Villa"
       }
     ]
-  }
+  },
+  {
+      "expireYear": 2057,
+      "resortName": "Disney's Animal Kingdome Villas - Kidani Village",
+      "shortName": "Kidani Village",
+      "roomTypes": [
+        {
+          "roomCategory": "Studio",
+          "id": "CEAA8DA7-8AF0-4D30-8AED-F63D330C98AD",
+          "roomName": "Deluxe Studio",
+          "viewTypes": [
+            {
+              "viewName": "Value",
+              "id": "A376F451-D450-4BDA-8FFC-365564981815",
+              "roomTypeId": "CEAA8DA7-8AF0-4D30-8AED-F63D330C98AD",
+              "pointValues": [
+                {
+                  "weekdayRate": 16,
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "weekendRate": 17,
+                  "id": "0A6DB383-92B4-4ABC-BE3C-E1F979B386F0",
+                  "endDate": 766818000,
+                  "startDate": 766213200
+                },
+                {
+                  "id": "DB54D06E-D79F-4ACB-9CEB-B98E290BECB0",
+                  "endDate": 768891600,
+                  "weekendRate": 11,
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "startDate": 767768400,
+                  "weekdayRate": 8
+                },
+                {
+                  "weekdayRate": 12,
+                  "startDate": 766904400,
+                  "weekendRate": 14,
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "id": "0C9CF29C-1494-4FEC-B9E0-0F43C3E270ED",
+                  "endDate": 767682000
+                },
+                {
+                  "endDate": 780901200,
+                  "startDate": 778395600,
+                  "weekdayRate": 7,
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "weekendRate": 10,
+                  "id": "49974430-4F80-4770-8684-3F508CCB8965"
+                },
+                {
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "endDate": 759996000,
+                  "id": "43B36557-D418-4C01-906C-F838237D3162",
+                  "weekendRate": 11,
+                  "startDate": 757404000,
+                  "weekdayRate": 8
+                },
+                {
+                  "endDate": 778309200,
+                  "startDate": 771310800,
+                  "id": "F79ABB96-771E-4E2B-AB71-C02CBB69EC15",
+                  "weekdayRate": 9,
+                  "weekendRate": 12,
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815"
+                },
+                {
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "weekendRate": 13,
+                  "endDate": 786175200,
+                  "startDate": 786088800,
+                  "id": "E964A320-E3E1-4883-8E6C-18A0F24C8354",
+                  "weekdayRate": 10
+                },
+                {
+                  "startDate": 788248800,
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "id": "CA10C0B7-7C07-44BE-9D0D-8CF97D7FE811",
+                  "weekdayRate": 16,
+                  "weekendRate": 17,
+                  "endDate": 788853600
+                },
+                {
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "weekdayRate": 12,
+                  "id": "E2FA0668-E6A0-4CBC-8A07-B23157726C4C",
+                  "endDate": 786002400,
+                  "weekendRate": 14,
+                  "startDate": 785829600
+                },
+                {
+                  "weekendRate": 14,
+                  "startDate": 761378400,
+                  "endDate": 766126800,
+                  "id": "E4190D8A-3F6D-4C7D-952B-C07F880D11F9",
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "weekdayRate": 12
+                },
+                {
+                  "endDate": 788162400,
+                  "id": "679A3196-CBDC-4866-901C-98F41E0D4C42",
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "startDate": 786261600,
+                  "weekdayRate": 8,
+                  "weekendRate": 12
+                },
+                {
+                  "weekdayRate": 9,
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "id": "CD2C215C-7EFE-4303-899F-752742E2B84B",
+                  "startDate": 760082400,
+                  "endDate": 761292000,
+                  "weekendRate": 12
+                },
+                {
+                  "endDate": 771224400,
+                  "weekdayRate": 8,
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815",
+                  "weekendRate": 12,
+                  "startDate": 768978000,
+                  "id": "0C0D1748-B185-4E08-B984-D6E2D1A03576"
+                },
+                {
+                  "startDate": 780987600,
+                  "id": "8BF64A89-02A1-47F2-B92C-08BACE2896E7",
+                  "endDate": 785743200,
+                  "weekdayRate": 10,
+                  "weekendRate": 13,
+                  "viewTypeId": "A376F451-D450-4BDA-8FFC-365564981815"
+                }
+              ],
+              "roomCapacity": 4,
+              "order": 1
+            },
+            {
+              "viewName": "Standard",
+              "id": "52200CDC-25EB-422A-83D3-92C3C9CB404D",
+              "pointValues": [
+                {
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D",
+                  "id": "8C4B9716-5CC0-4E83-B942-F18A0A119CE2",
+                  "weekdayRate": 16,
+                  "startDate": 761378400,
+                  "endDate": 766126800,
+                  "weekendRate": 18
+                },
+                {
+                  "endDate": 759996000,
+                  "id": "181A0C47-5FFE-4DC2-81BC-93DF4C898A3E",
+                  "weekdayRate": 12,
+                  "weekendRate": 14,
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D",
+                  "startDate": 757404000
+                },
+                {
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D",
+                  "endDate": 768891600,
+                  "startDate": 767768400,
+                  "weekdayRate": 12,
+                  "weekendRate": 14,
+                  "id": "9EFDD449-780F-4F3E-9C8E-3D282E720170"
+                },
+                {
+                  "endDate": 786175200,
+                  "startDate": 786088800,
+                  "weekdayRate": 15,
+                  "id": "2D658404-2647-4CEA-8275-468620964A7C",
+                  "weekendRate": 16,
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D"
+                },
+                {
+                  "startDate": 788248800,
+                  "id": "19C4092A-552C-4780-9BF4-B1325CF666DA",
+                  "endDate": 788853600,
+                  "weekdayRate": 21,
+                  "weekendRate": 23,
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D"
+                },
+                {
+                  "weekdayRate": 10,
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D",
+                  "endDate": 780901200,
+                  "weekendRate": 13,
+                  "startDate": 778395600,
+                  "id": "21BC41CB-405C-4090-8C71-5D1687444DB5"
+                },
+                {
+                  "endDate": 788162400,
+                  "id": "B1CA5E8E-D3F0-4FE3-8D8E-FAAB3543F5D8",
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D",
+                  "weekendRate": 15,
+                  "startDate": 786261600,
+                  "weekdayRate": 13
+                },
+                {
+                  "weekendRate": 18,
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D",
+                  "startDate": 766904400,
+                  "endDate": 767682000,
+                  "id": "D0DAC2EA-90B4-465C-BAA0-FC69A8C291D6",
+                  "weekdayRate": 16
+                },
+                {
+                  "id": "2C8866DB-F9F2-4E24-B461-9C379802153B",
+                  "weekdayRate": 14,
+                  "startDate": 771310800,
+                  "weekendRate": 15,
+                  "endDate": 778309200,
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D"
+                },
+                {
+                  "startDate": 760082400,
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D",
+                  "weekdayRate": 14,
+                  "id": "141C15D3-105A-4B93-8154-8F6904EE544F",
+                  "weekendRate": 15,
+                  "endDate": 761292000
+                },
+                {
+                  "endDate": 771224400,
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D",
+                  "id": "97011B4E-E9D1-4D87-8A5C-3CF07CE3B02E",
+                  "weekdayRate": 13,
+                  "startDate": 768978000,
+                  "weekendRate": 15
+                },
+                {
+                  "id": "93DD6954-C05A-4249-A159-551CA80F0F84",
+                  "endDate": 785743200,
+                  "weekdayRate": 15,
+                  "startDate": 780987600,
+                  "weekendRate": 16,
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D"
+                },
+                {
+                  "endDate": 786002400,
+                  "id": "9A7A100B-9F11-46A8-87DF-B789E2AAC45B",
+                  "startDate": 785829600,
+                  "weekdayRate": 16,
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D",
+                  "weekendRate": 18
+                },
+                {
+                  "startDate": 766213200,
+                  "endDate": 766818000,
+                  "weekendRate": 23,
+                  "weekdayRate": 21,
+                  "viewTypeId": "52200CDC-25EB-422A-83D3-92C3C9CB404D",
+                  "id": "8B02FBEA-2B69-4190-A1D7-64CFC10C60B8"
+                }
+              ],
+              "roomCapacity": 4,
+              "roomTypeId": "CEAA8DA7-8AF0-4D30-8AED-F63D330C98AD",
+              "order": 2
+            },
+            {
+              "id": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+              "roomTypeId": "CEAA8DA7-8AF0-4D30-8AED-F63D330C98AD",
+              "viewName": "Kilimanjaro Club Concierge",
+              "order": 4,
+              "pointValues": [
+                {
+                  "weekdayRate": 23,
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "endDate": 786175200,
+                  "startDate": 786088800,
+                  "id": "4856159B-C616-4AD1-8A8B-9D86F9FB6CB3",
+                  "weekendRate": 25
+                },
+                {
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "endDate": 768891600,
+                  "startDate": 767768400,
+                  "id": "85E2E1FD-CDEC-451A-B4F0-43ECD893FF5B",
+                  "weekdayRate": 20,
+                  "weekendRate": 23
+                },
+                {
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "weekdayRate": 23,
+                  "id": "F7E64AD0-0634-48A4-8F0A-441B309E324F",
+                  "weekendRate": 26,
+                  "endDate": 767682000,
+                  "startDate": 766904400
+                },
+                {
+                  "endDate": 788853600,
+                  "startDate": 788248800,
+                  "id": "8367EC5B-1FB9-4A46-B2F7-76DC95D66ACA",
+                  "weekendRate": 36,
+                  "weekdayRate": 33,
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F"
+                },
+                {
+                  "weekdayRate": 21,
+                  "startDate": 768978000,
+                  "id": "0D5869A0-A68F-45EC-A019-84E1DA60891F",
+                  "weekendRate": 24,
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "endDate": 771224400
+                },
+                {
+                  "startDate": 771310800,
+                  "id": "323D01CE-41CC-44EA-AF28-43C217EC1A72",
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "weekendRate": 24,
+                  "endDate": 778309200,
+                  "weekdayRate": 22
+                },
+                {
+                  "weekendRate": 26,
+                  "weekdayRate": 23,
+                  "startDate": 785829600,
+                  "endDate": 786002400,
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "id": "DF3AE129-D9C0-4A96-94F8-7F5F6C4F818A"
+                },
+                {
+                  "startDate": 786261600,
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "weekendRate": 24,
+                  "id": "712D625B-EC4F-4C91-8D6D-F7182A28CE16",
+                  "weekdayRate": 21,
+                  "endDate": 788162400
+                },
+                {
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "weekdayRate": 23,
+                  "id": "E79A2B18-8A2E-459E-91C1-5F8CB8FF4EF6",
+                  "endDate": 785743200,
+                  "weekendRate": 25,
+                  "startDate": 780987600
+                },
+                {
+                  "weekendRate": 26,
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "startDate": 761378400,
+                  "weekdayRate": 23,
+                  "endDate": 766126800,
+                  "id": "82FE686E-B2BB-478B-AAB2-25AE2A30D4C2"
+                },
+                {
+                  "endDate": 759996000,
+                  "weekdayRate": 20,
+                  "weekendRate": 23,
+                  "id": "38C868B3-7392-4AC9-926D-0A7956804AAF",
+                  "startDate": 757404000,
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F"
+                },
+                {
+                  "id": "EF8DD792-85FC-48DC-9FF2-61F6A042D02F",
+                  "weekendRate": 24,
+                  "weekdayRate": 22,
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "endDate": 761292000,
+                  "startDate": 760082400
+                },
+                {
+                  "weekdayRate": 33,
+                  "id": "0C9C99A0-3F68-4D37-981D-188D21AD4B6C",
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "endDate": 766818000,
+                  "weekendRate": 36,
+                  "startDate": 766213200
+                },
+                {
+                  "viewTypeId": "04AD1D8D-098E-4E6D-99F1-567BFA84115F",
+                  "id": "035AD686-E6E5-4435-8BFB-E5B5206B9EEA",
+                  "weekendRate": 22,
+                  "startDate": 778395600,
+                  "endDate": 780901200,
+                  "weekdayRate": 18
+                }
+              ],
+              "roomCapacity": 4
+            },
+            {
+              "roomTypeId": "CEAA8DA7-8AF0-4D30-8AED-F63D330C98AD",
+              "roomCapacity": 4,
+              "pointValues": [
+                {
+                  "weekdayRate": 19,
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8",
+                  "weekendRate": 20,
+                  "startDate": 786088800,
+                  "id": "DDC643DF-24BF-4319-97A4-DCF50A345084",
+                  "endDate": 786175200
+                },
+                {
+                  "weekendRate": 20,
+                  "endDate": 778309200,
+                  "id": "E7A493CA-D5B8-43F7-ADA6-8E0BB2D19BF4",
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8",
+                  "startDate": 771310800,
+                  "weekdayRate": 17
+                },
+                {
+                  "startDate": 785829600,
+                  "weekdayRate": 19,
+                  "endDate": 786002400,
+                  "id": "12D49421-FBE3-4B9D-9DC1-EFA8527A1604",
+                  "weekendRate": 22,
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8"
+                },
+                {
+                  "endDate": 788853600,
+                  "weekdayRate": 27,
+                  "weekendRate": 29,
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8",
+                  "id": "318A8DCC-F00F-46AB-ACF7-7C1AD4B6FE29",
+                  "startDate": 788248800
+                },
+                {
+                  "startDate": 767768400,
+                  "weekendRate": 17,
+                  "endDate": 768891600,
+                  "id": "71D4F7FC-535A-4682-B51E-8A90D66DEC0E",
+                  "weekdayRate": 15,
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8"
+                },
+                {
+                  "id": "2C296D5F-C6A1-4392-BF7E-173E909F7C44",
+                  "weekdayRate": 19,
+                  "weekendRate": 22,
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8",
+                  "startDate": 761378400,
+                  "endDate": 766126800
+                },
+                {
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8",
+                  "startDate": 786261600,
+                  "weekdayRate": 16,
+                  "weekendRate": 18,
+                  "endDate": 788162400,
+                  "id": "5781DD35-BD52-484A-AB0B-38FBFB54EFC1"
+                },
+                {
+                  "startDate": 768978000,
+                  "id": "43C622BC-8D36-419D-866E-326974795FE5",
+                  "weekdayRate": 16,
+                  "weekendRate": 18,
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8",
+                  "endDate": 771224400
+                },
+                {
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8",
+                  "weekendRate": 16,
+                  "startDate": 778395600,
+                  "id": "AD588FA8-37DA-41EB-88EA-25F95365B4EE",
+                  "endDate": 780901200,
+                  "weekdayRate": 13
+                },
+                {
+                  "weekdayRate": 17,
+                  "startDate": 760082400,
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8",
+                  "id": "67839816-5DE1-46B6-918D-5EFDB612136B",
+                  "weekendRate": 20,
+                  "endDate": 761292000
+                },
+                {
+                  "endDate": 785743200,
+                  "weekendRate": 20,
+                  "weekdayRate": 19,
+                  "startDate": 780987600,
+                  "id": "055A44EB-C054-46F7-96F3-8F5EA5688452",
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8"
+                },
+                {
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8",
+                  "weekdayRate": 19,
+                  "endDate": 767682000,
+                  "startDate": 766904400,
+                  "id": "74184FC2-EA47-4EE0-8F1C-FEBE696F7200",
+                  "weekendRate": 22
+                },
+                {
+                  "endDate": 766818000,
+                  "id": "56C7AF32-FF4E-47FE-AF99-14B08F2857CF",
+                  "weekdayRate": 27,
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8",
+                  "weekendRate": 29,
+                  "startDate": 766213200
+                },
+                {
+                  "id": "CEAF0AC2-D7E1-48C0-8E3B-56F01540C536",
+                  "startDate": 757404000,
+                  "weekdayRate": 15,
+                  "endDate": 759996000,
+                  "weekendRate": 17,
+                  "viewTypeId": "56F0A687-125F-4BFD-826A-37AE046566A8"
+                }
+              ],
+              "viewName": "Savanna",
+              "order": 3,
+              "id": "56F0A687-125F-4BFD-826A-37AE046566A8"
+            }
+          ],
+          "order": 1,
+          "resortId": "079A5480-7E5D-4219-896C-4BC1F1A62F8E"
+        },
+        {
+          "roomName": "Two-Bedroom Villa",
+          "viewTypes": [
+            {
+              "order": 3,
+              "viewName": "Savanna",
+              "pointValues": [
+                {
+                  "endDate": 780901200,
+                  "id": "980E1DF5-1CDA-4196-BAED-FEB254BCEE6C",
+                  "weekdayRate": 35,
+                  "weekendRate": 43,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "startDate": 778395600
+                },
+                {
+                  "startDate": 788248800,
+                  "weekdayRate": 70,
+                  "weekendRate": 76,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "endDate": 788853600,
+                  "id": "3693DA9D-828A-4EB0-AE5E-AFC652A806AD"
+                },
+                {
+                  "weekdayRate": 39,
+                  "endDate": 768891600,
+                  "id": "B3215781-00FA-477F-874B-D51DC1C1A436",
+                  "startDate": 767768400,
+                  "weekendRate": 48,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7"
+                },
+                {
+                  "endDate": 771224400,
+                  "id": "7384462B-F165-4F9E-A948-628D6376E01B",
+                  "weekendRate": 50,
+                  "weekdayRate": 42,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "startDate": 768978000
+                },
+                {
+                  "id": "C8622313-0B67-409D-9C14-F91B9EE341F8",
+                  "weekdayRate": 52,
+                  "endDate": 767682000,
+                  "weekendRate": 61,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "startDate": 766904400
+                },
+                {
+                  "weekendRate": 57,
+                  "endDate": 786175200,
+                  "id": "0277A703-CDA2-4516-B77A-28129FF00C2B",
+                  "startDate": 786088800,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "weekdayRate": 47
+                },
+                {
+                  "id": "6EB8DA29-7EEF-4F8B-BBD2-5E9AC40F34DD",
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "startDate": 760082400,
+                  "endDate": 761292000,
+                  "weekdayRate": 43,
+                  "weekendRate": 52
+                },
+                {
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "weekdayRate": 52,
+                  "endDate": 786002400,
+                  "weekendRate": 61,
+                  "id": "F033FC72-E241-46F6-BC50-DD68F6B814D6",
+                  "startDate": 785829600
+                },
+                {
+                  "startDate": 766213200,
+                  "id": "5E13895D-42AD-4A05-B7C0-F989A33527E2",
+                  "weekendRate": 76,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "endDate": 766818000,
+                  "weekdayRate": 70
+                },
+                {
+                  "weekdayRate": 52,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "startDate": 761378400,
+                  "weekendRate": 61,
+                  "endDate": 766126800,
+                  "id": "AFC21FB5-69FE-46ED-AF54-09E8C83FF9A1"
+                },
+                {
+                  "weekdayRate": 47,
+                  "weekendRate": 57,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "endDate": 785743200,
+                  "startDate": 780987600,
+                  "id": "857584D8-EA08-4313-9497-9A749F7E1B75"
+                },
+                {
+                  "endDate": 788162400,
+                  "startDate": 786261600,
+                  "id": "4DF5F1D7-6B33-47FC-B9B7-69D9657A6412",
+                  "weekdayRate": 42,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "weekendRate": 50
+                },
+                {
+                  "endDate": 778309200,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "startDate": 771310800,
+                  "id": "E269B5D4-F9BF-4C86-A8A3-70FB50AC5B11",
+                  "weekendRate": 52,
+                  "weekdayRate": 43
+                },
+                {
+                  "id": "886C01F7-2AD1-4323-83F1-95CA1A6BA6C7",
+                  "weekendRate": 48,
+                  "viewTypeId": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+                  "startDate": 757404000,
+                  "endDate": 759996000,
+                  "weekdayRate": 39
+                }
+              ],
+              "roomCapacity": 9,
+              "id": "3957636F-7BE6-453C-B970-CA88D6404AC7",
+              "roomTypeId": "3E176860-A6C8-477C-838D-85DA5E60B357"
+            },
+            {
+              "roomTypeId": "3E176860-A6C8-477C-838D-85DA5E60B357",
+              "pointValues": [
+                {
+                  "endDate": 780901200,
+                  "id": "BB8239F2-C3CF-4B9F-A4A6-9B6C7649760E",
+                  "weekdayRate": 51,
+                  "startDate": 778395600,
+                  "weekendRate": 58,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D"
+                },
+                {
+                  "weekdayRate": 66,
+                  "weekendRate": 77,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D",
+                  "endDate": 766126800,
+                  "startDate": 761378400,
+                  "id": "036EA725-91B8-42C7-86B2-9B32F4431697"
+                },
+                {
+                  "startDate": 786088800,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D",
+                  "id": "E108453A-EC1B-436F-98AE-1831860287EF",
+                  "weekdayRate": 61,
+                  "weekendRate": 71,
+                  "endDate": 786175200
+                },
+                {
+                  "endDate": 788853600,
+                  "weekdayRate": 88,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D",
+                  "startDate": 788248800,
+                  "weekendRate": 98,
+                  "id": "4F6605CA-2BFD-4CBA-856C-C95A22B83FCF"
+                },
+                {
+                  "endDate": 771224400,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D",
+                  "weekdayRate": 58,
+                  "startDate": 768978000,
+                  "id": "86FCD03F-E38C-40FF-9850-E4286F32CA67",
+                  "weekendRate": 66
+                },
+                {
+                  "endDate": 761292000,
+                  "weekdayRate": 60,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D",
+                  "startDate": 760082400,
+                  "weekendRate": 66,
+                  "id": "A53A5935-D559-467D-9E04-6070D3801E96"
+                },
+                {
+                  "id": "ED2840EB-E10D-4D9F-A9AF-5E15587A7A4E",
+                  "weekendRate": 63,
+                  "endDate": 768891600,
+                  "weekdayRate": 55,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D",
+                  "startDate": 767768400
+                },
+                {
+                  "endDate": 767682000,
+                  "startDate": 766904400,
+                  "id": "41E46D0F-72C4-4A64-A175-2ACB546B9F1A",
+                  "weekdayRate": 66,
+                  "weekendRate": 77,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D"
+                },
+                {
+                  "endDate": 766818000,
+                  "weekendRate": 98,
+                  "startDate": 766213200,
+                  "id": "1F8A9E33-3E68-4BF5-9ECA-E9F4B45B854B",
+                  "weekdayRate": 88,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D"
+                },
+                {
+                  "weekendRate": 63,
+                  "weekdayRate": 55,
+                  "startDate": 757404000,
+                  "endDate": 759996000,
+                  "id": "A5D22875-E5F6-4DBB-9E39-424CBE89F3B3",
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D"
+                },
+                {
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D",
+                  "id": "127A0C08-E38D-42C3-87FB-62A3FA05CF33",
+                  "endDate": 778309200,
+                  "weekdayRate": 60,
+                  "startDate": 771310800,
+                  "weekendRate": 66
+                },
+                {
+                  "startDate": 780987600,
+                  "weekdayRate": 61,
+                  "weekendRate": 71,
+                  "endDate": 785743200,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D",
+                  "id": "BDBD8EB0-98BE-4037-B445-BA50BC56CBE6"
+                },
+                {
+                  "weekendRate": 77,
+                  "id": "E3A30884-2CC8-4AA1-A82F-2D51DC0BC94F",
+                  "weekdayRate": 66,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D",
+                  "startDate": 785829600,
+                  "endDate": 786002400
+                },
+                {
+                  "startDate": 786261600,
+                  "id": "CC55CE99-A61D-4906-BE8B-9ABAD71968C5",
+                  "weekendRate": 66,
+                  "weekdayRate": 58,
+                  "endDate": 788162400,
+                  "viewTypeId": "330C246B-A8E5-4B56-9D2B-65565CDB861D"
+                }
+              ],
+              "roomCapacity": 9,
+              "viewName": "Kilimanjaro Club Concierge",
+              "id": "330C246B-A8E5-4B56-9D2B-65565CDB861D",
+              "order": 4
+            },
+            {
+              "roomTypeId": "3E176860-A6C8-477C-838D-85DA5E60B357",
+              "viewName": "Standard",
+              "roomCapacity": 9,
+              "order": 2,
+              "id": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+              "pointValues": [
+                {
+                  "id": "C222DCF0-4EF3-4791-8F8A-EA61FA355D1D",
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "endDate": 771224400,
+                  "weekdayRate": 32,
+                  "weekendRate": 39,
+                  "startDate": 768978000
+                },
+                {
+                  "startDate": 771310800,
+                  "id": "24C12B38-81CA-427F-9DD9-342840A9DAFB",
+                  "weekendRate": 40,
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "weekdayRate": 35,
+                  "endDate": 778309200
+                },
+                {
+                  "id": "8B64E4D2-31BC-48C9-8F98-F0B329F91C0B",
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "weekdayRate": 55,
+                  "weekendRate": 60,
+                  "endDate": 788853600,
+                  "startDate": 788248800
+                },
+                {
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "startDate": 785829600,
+                  "weekendRate": 48,
+                  "weekdayRate": 40,
+                  "id": "00A82005-A552-49F5-A311-1E4847B736CD",
+                  "endDate": 786002400
+                },
+                {
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "startDate": 767768400,
+                  "id": "0F807178-3F73-42B7-A80A-C1CB15AA229E",
+                  "weekendRate": 37,
+                  "endDate": 768891600,
+                  "weekdayRate": 31
+                },
+                {
+                  "id": "3F079914-4209-48C1-8B66-6D9391D99F27",
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "endDate": 766126800,
+                  "startDate": 761378400,
+                  "weekendRate": 48,
+                  "weekdayRate": 40
+                },
+                {
+                  "endDate": 785743200,
+                  "startDate": 780987600,
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "weekendRate": 44,
+                  "id": "1481E9A4-5EDF-460C-B0FD-2DDC500C8862",
+                  "weekdayRate": 36
+                },
+                {
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "startDate": 786088800,
+                  "id": "924758D7-F423-42FF-B352-80C3CDEC3F21",
+                  "weekdayRate": 36,
+                  "endDate": 786175200,
+                  "weekendRate": 44
+                },
+                {
+                  "weekdayRate": 35,
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "weekendRate": 40,
+                  "startDate": 760082400,
+                  "endDate": 761292000,
+                  "id": "1499447A-4DBC-414B-9200-E863BB47E063"
+                },
+                {
+                  "id": "9766B750-683F-47F2-82C5-D970A6066571",
+                  "weekendRate": 39,
+                  "weekdayRate": 32,
+                  "startDate": 786261600,
+                  "endDate": 788162400,
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E"
+                },
+                {
+                  "weekendRate": 37,
+                  "startDate": 757404000,
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "weekdayRate": 31,
+                  "id": "DE3C2EE5-E802-47E4-A0DD-1E89FBC60F72",
+                  "endDate": 759996000
+                },
+                {
+                  "id": "BDEB6F0B-B1EF-4408-B589-46F75514D601",
+                  "endDate": 766818000,
+                  "startDate": 766213200,
+                  "weekdayRate": 55,
+                  "weekendRate": 60,
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E"
+                },
+                {
+                  "id": "67D028CF-2E73-41E7-A32E-2C45ADD7FCD2",
+                  "weekdayRate": 40,
+                  "startDate": 766904400,
+                  "weekendRate": 48,
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "endDate": 767682000
+                },
+                {
+                  "startDate": 778395600,
+                  "endDate": 780901200,
+                  "viewTypeId": "258DFB79-9EB3-497B-8730-BD1CFFC2E66E",
+                  "id": "19A4F73D-1A76-4BEF-86AC-646ED2294198",
+                  "weekdayRate": 28,
+                  "weekendRate": 34
+                }
+              ]
+            },
+            {
+              "viewName": "Value",
+              "id": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+              "roomTypeId": "3E176860-A6C8-477C-838D-85DA5E60B357",
+              "pointValues": [
+                {
+                  "weekendRate": 35,
+                  "startDate": 780987600,
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+                  "weekdayRate": 30,
+                  "endDate": 785743200,
+                  "id": "12F4BBB0-F3E1-4B33-83B4-14CB86BC00C6"
+                },
+                {
+                  "weekendRate": 32,
+                  "id": "294F3A0A-46D2-4E56-8C39-CCE4B904EFA6",
+                  "startDate": 768978000,
+                  "endDate": 771224400,
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+                  "weekdayRate": 27
+                },
+                {
+                  "weekendRate": 36,
+                  "id": "719A6A1F-371F-4D27-B40B-7D17FFC75499",
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+                  "startDate": 785829600,
+                  "endDate": 786002400,
+                  "weekdayRate": 31
+                },
+                {
+                  "id": "3E1C0147-D8D6-4B51-B6C6-88C024862E95",
+                  "endDate": 766126800,
+                  "startDate": 761378400,
+                  "weekendRate": 36,
+                  "weekdayRate": 31,
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0"
+                },
+                {
+                  "weekdayRate": 29,
+                  "startDate": 771310800,
+                  "endDate": 778309200,
+                  "weekendRate": 34,
+                  "id": "614D30FB-9BAA-4C0D-9395-E45091D77323",
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0"
+                },
+                {
+                  "startDate": 767768400,
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+                  "id": "742430AC-3DC4-46D3-8470-0B1815D3BED0",
+                  "endDate": 768891600,
+                  "weekdayRate": 25,
+                  "weekendRate": 31
+                },
+                {
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+                  "endDate": 788853600,
+                  "startDate": 788248800,
+                  "weekdayRate": 43,
+                  "id": "36EE7D8A-4BF9-4B46-8A61-DD3D93450B62",
+                  "weekendRate": 48
+                },
+                {
+                  "startDate": 786088800,
+                  "weekendRate": 35,
+                  "endDate": 786175200,
+                  "id": "0750313B-1190-4CBC-BFC1-9EAC91F0714C",
+                  "weekdayRate": 30,
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0"
+                },
+                {
+                  "endDate": 788162400,
+                  "id": "10E4E8FD-5FCA-4E29-BC7E-797C924E7112",
+                  "weekdayRate": 27,
+                  "weekendRate": 32,
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+                  "startDate": 786261600
+                },
+                {
+                  "endDate": 767682000,
+                  "id": "D8A3FD79-BF30-412D-AFBC-5D21ED9D59A4",
+                  "weekdayRate": 31,
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+                  "weekendRate": 36,
+                  "startDate": 766904400
+                },
+                {
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+                  "weekdayRate": 25,
+                  "startDate": 757404000,
+                  "endDate": 759996000,
+                  "id": "ABE35138-6C7B-47DE-815A-6390D79E609F",
+                  "weekendRate": 31
+                },
+                {
+                  "id": "F2DC80D0-C069-4420-A4AA-A108DF0163CA",
+                  "endDate": 761292000,
+                  "weekendRate": 34,
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+                  "startDate": 760082400,
+                  "weekdayRate": 29
+                },
+                {
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+                  "id": "7F5A137B-C42C-485D-9814-111CC1697B57",
+                  "weekendRate": 28,
+                  "weekdayRate": 22,
+                  "endDate": 780901200,
+                  "startDate": 778395600
+                },
+                {
+                  "weekendRate": 48,
+                  "viewTypeId": "DA7AF8C5-D887-4BC5-A520-2C44164D82A0",
+                  "endDate": 766818000,
+                  "startDate": 766213200,
+                  "id": "7AAD025D-0ED7-474F-86E0-4189EC6931BA",
+                  "weekdayRate": 43
+                }
+              ],
+              "order": 1,
+              "roomCapacity": 9
+            }
+          ],
+          "order": 4,
+          "resortId": "079A5480-7E5D-4219-896C-4BC1F1A62F8E",
+          "id": "3E176860-A6C8-477C-838D-85DA5E60B357",
+          "roomCategory": "Two-Bedroom"
+        },
+        {
+          "viewTypes": [
+            {
+              "id": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB",
+              "roomCapacity": 5,
+              "order": 1,
+              "roomTypeId": "0E2F58F3-7E8B-4308-9008-F19672A27541",
+              "viewName": "Value",
+              "pointValues": [
+                {
+                  "weekendRate": 27,
+                  "id": "994FA69E-0D23-41E3-AA1C-FD08167A2153",
+                  "startDate": 761378400,
+                  "weekdayRate": 24,
+                  "endDate": 766126800,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB"
+                },
+                {
+                  "startDate": 788248800,
+                  "weekdayRate": 31,
+                  "id": "E9CB10AB-07C2-49AE-B281-0B4F06A1050F",
+                  "weekendRate": 35,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB",
+                  "endDate": 788853600
+                },
+                {
+                  "weekdayRate": 19,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB",
+                  "weekendRate": 21,
+                  "id": "6A43E94B-B2AE-4068-B7FC-7019FF6CC84D",
+                  "endDate": 759996000,
+                  "startDate": 757404000
+                },
+                {
+                  "id": "9942EF80-38CC-4B31-9BED-27915AC0FD0F",
+                  "weekdayRate": 24,
+                  "startDate": 766904400,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB",
+                  "endDate": 767682000,
+                  "weekendRate": 27
+                },
+                {
+                  "id": "D43DEA74-CE53-456B-B288-506AA5D2018C",
+                  "weekendRate": 26,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB",
+                  "weekdayRate": 23,
+                  "endDate": 785743200,
+                  "startDate": 780987600
+                },
+                {
+                  "weekendRate": 24,
+                  "startDate": 771310800,
+                  "endDate": 778309200,
+                  "id": "E4636A85-6165-4765-92D4-9A44A4814AEC",
+                  "weekdayRate": 21,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB"
+                },
+                {
+                  "endDate": 788162400,
+                  "startDate": 786261600,
+                  "id": "25E14EBC-C296-4069-8AB1-25683E6AC149",
+                  "weekendRate": 22,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB",
+                  "weekdayRate": 20
+                },
+                {
+                  "endDate": 766818000,
+                  "id": "17851811-4D08-4172-AF7D-9952AC2CF5C1",
+                  "weekendRate": 35,
+                  "weekdayRate": 31,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB",
+                  "startDate": 766213200
+                },
+                {
+                  "weekdayRate": 17,
+                  "id": "709FBA3F-16E6-498E-81CA-FF2BC96B3072",
+                  "endDate": 780901200,
+                  "weekendRate": 20,
+                  "startDate": 778395600,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB"
+                },
+                {
+                  "weekendRate": 21,
+                  "startDate": 767768400,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB",
+                  "id": "CC6E9AF0-9D23-4F3C-9C81-092482B58B23",
+                  "endDate": 768891600,
+                  "weekdayRate": 19
+                },
+                {
+                  "weekdayRate": 24,
+                  "weekendRate": 27,
+                  "id": "BA200F2C-AD59-46D7-9EE2-9347C0B4FF1A",
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB",
+                  "startDate": 785829600,
+                  "endDate": 786002400
+                },
+                {
+                  "startDate": 786088800,
+                  "weekdayRate": 23,
+                  "weekendRate": 26,
+                  "id": "201A633E-75DA-41E4-B9C5-2BD1A70C02C9",
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB",
+                  "endDate": 786175200
+                },
+                {
+                  "weekendRate": 24,
+                  "id": "7F2CBE85-CB44-4E55-9F87-73BAA1A9D7F5",
+                  "endDate": 761292000,
+                  "weekdayRate": 21,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB",
+                  "startDate": 760082400
+                },
+                {
+                  "weekendRate": 22,
+                  "id": "F87A446E-E526-4450-84AA-CDEAC5FD1400",
+                  "endDate": 771224400,
+                  "startDate": 768978000,
+                  "weekdayRate": 20,
+                  "viewTypeId": "1C305440-B9C9-4FEF-82F9-01E0B8E534AB"
+                }
+              ]
+            },
+            {
+              "roomCapacity": 5,
+              "order": 4,
+              "viewName": "Kilimanjaro Club Concierge",
+              "pointValues": [
+                {
+                  "id": "2DAE010C-9153-4AA6-A146-782B1A4D6C79",
+                  "weekdayRate": 46,
+                  "weekendRate": 53,
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D",
+                  "startDate": 780987600,
+                  "endDate": 785743200
+                },
+                {
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D",
+                  "id": "84E93C6B-F60F-460F-9136-1DE8E664E20E",
+                  "weekdayRate": 38,
+                  "weekendRate": 43,
+                  "endDate": 780901200,
+                  "startDate": 778395600
+                },
+                {
+                  "startDate": 766213200,
+                  "weekdayRate": 65,
+                  "weekendRate": 73,
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D",
+                  "id": "816A37C3-5404-443E-8688-67A19BB8D072",
+                  "endDate": 766818000
+                },
+                {
+                  "weekendRate": 50,
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D",
+                  "endDate": 761292000,
+                  "id": "27288DF4-96B6-4EED-A96F-C6302C57CBFC",
+                  "startDate": 760082400,
+                  "weekdayRate": 44
+                },
+                {
+                  "id": "9DD54557-3658-4B2E-8F68-FDBB0E8A74B4",
+                  "weekdayRate": 49,
+                  "startDate": 766904400,
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D",
+                  "weekendRate": 56,
+                  "endDate": 767682000
+                },
+                {
+                  "endDate": 788162400,
+                  "id": "3329ACC4-FD17-4030-98DD-44A8E84B510B",
+                  "weekdayRate": 43,
+                  "weekendRate": 49,
+                  "startDate": 786261600,
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D"
+                },
+                {
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D",
+                  "endDate": 786175200,
+                  "weekendRate": 53,
+                  "startDate": 786088800,
+                  "id": "3BAB0954-E9FE-48CB-B32A-638E5266722D",
+                  "weekdayRate": 46
+                },
+                {
+                  "startDate": 788248800,
+                  "id": "EFE3C87F-654E-4A97-ADD8-AC8A06B7702F",
+                  "weekdayRate": 65,
+                  "weekendRate": 73,
+                  "endDate": 788853600,
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D"
+                },
+                {
+                  "startDate": 768978000,
+                  "weekendRate": 49,
+                  "id": "242AD37E-F54E-4F8E-BADC-D3A144B9835E",
+                  "weekdayRate": 43,
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D",
+                  "endDate": 771224400
+                },
+                {
+                  "startDate": 785829600,
+                  "endDate": 786002400,
+                  "id": "B62C0AF6-22F2-4647-94D0-8D2E9A53BE1A",
+                  "weekendRate": 56,
+                  "weekdayRate": 49,
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D"
+                },
+                {
+                  "startDate": 761378400,
+                  "weekdayRate": 49,
+                  "endDate": 766126800,
+                  "weekendRate": 56,
+                  "id": "F4DC2694-B7ED-40FC-BD56-2B5D087CC16D",
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D"
+                },
+                {
+                  "weekendRate": 50,
+                  "startDate": 771310800,
+                  "id": "DF0BE434-2F29-4039-A031-2480291C2027",
+                  "weekdayRate": 44,
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D",
+                  "endDate": 778309200
+                },
+                {
+                  "id": "B26F5060-3D33-413F-9D84-90B10EBA1E07",
+                  "startDate": 757404000,
+                  "weekendRate": 46,
+                  "weekdayRate": 41,
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D",
+                  "endDate": 759996000
+                },
+                {
+                  "endDate": 768891600,
+                  "startDate": 767768400,
+                  "id": "E04B1C73-FEA5-470B-BAAB-8FAC8DF16346",
+                  "weekdayRate": 41,
+                  "weekendRate": 46,
+                  "viewTypeId": "2575D766-393D-41CA-BEF8-712D6899CB6D"
+                }
+              ],
+              "id": "2575D766-393D-41CA-BEF8-712D6899CB6D",
+              "roomTypeId": "0E2F58F3-7E8B-4308-9008-F19672A27541"
+            },
+            {
+              "roomCapacity": 5,
+              "viewName": "Standard",
+              "pointValues": [
+                {
+                  "weekdayRate": 27,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C",
+                  "weekendRate": 30,
+                  "endDate": 761292000,
+                  "startDate": 760082400,
+                  "id": "496F1F34-7424-47DA-A4F1-A2232B087B7E"
+                },
+                {
+                  "endDate": 786002400,
+                  "startDate": 785829600,
+                  "weekendRate": 35,
+                  "id": "A9119A9E-1508-41D6-B519-7389DF8A6FAB",
+                  "weekdayRate": 32,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C"
+                },
+                {
+                  "endDate": 788162400,
+                  "id": "23E7EE53-A1D8-42F4-8F18-3A787125DD13",
+                  "weekdayRate": 26,
+                  "startDate": 786261600,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C",
+                  "weekendRate": 29
+                },
+                {
+                  "weekendRate": 35,
+                  "endDate": 766126800,
+                  "startDate": 761378400,
+                  "id": "DF2E973F-8A8B-4CB8-A569-53339D50037E",
+                  "weekdayRate": 32,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C"
+                },
+                {
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C",
+                  "id": "03FEC690-8DD8-450A-8F22-870CB4590017",
+                  "weekdayRate": 29,
+                  "endDate": 785743200,
+                  "startDate": 780987600,
+                  "weekendRate": 32
+                },
+                {
+                  "startDate": 766213200,
+                  "weekdayRate": 38,
+                  "weekendRate": 45,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C",
+                  "endDate": 766818000,
+                  "id": "F42AE8A0-D1B5-422B-B082-3386FB087A5A"
+                },
+                {
+                  "weekendRate": 29,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C",
+                  "weekdayRate": 26,
+                  "id": "4EF231F6-A1C6-4D96-9761-D420E1CBD616",
+                  "endDate": 771224400,
+                  "startDate": 768978000
+                },
+                {
+                  "id": "478C0CD7-C20C-4196-8D34-D772B93405F5",
+                  "weekdayRate": 27,
+                  "weekendRate": 30,
+                  "endDate": 778309200,
+                  "startDate": 771310800,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C"
+                },
+                {
+                  "weekdayRate": 20,
+                  "endDate": 780901200,
+                  "id": "AE93E7EB-A9B3-4462-AD31-E1C93A8CDB88",
+                  "startDate": 778395600,
+                  "weekendRate": 25,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C"
+                },
+                {
+                  "id": "C47C993B-F45F-4D81-B573-4B1B78CC9F33",
+                  "weekdayRate": 29,
+                  "startDate": 786088800,
+                  "weekendRate": 32,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C",
+                  "endDate": 786175200
+                },
+                {
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C",
+                  "weekdayRate": 32,
+                  "endDate": 767682000,
+                  "weekendRate": 35,
+                  "id": "D9305F4B-E3CE-4BD5-A3D4-DC5CD7393BB1",
+                  "startDate": 766904400
+                },
+                {
+                  "startDate": 757404000,
+                  "weekendRate": 28,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C",
+                  "endDate": 759996000,
+                  "id": "AE942962-DA14-4F7C-AC1E-CFD4B9D27086",
+                  "weekdayRate": 24
+                },
+                {
+                  "weekendRate": 45,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C",
+                  "id": "156AE8F0-344B-4158-812B-23758BFB6315",
+                  "weekdayRate": 38,
+                  "endDate": 788853600,
+                  "startDate": 788248800
+                },
+                {
+                  "weekendRate": 28,
+                  "startDate": 767768400,
+                  "viewTypeId": "F21B74FC-A0C0-4DF7-921C-9661C240681C",
+                  "id": "C3D7F607-9D8A-4DE7-B36A-9608C577F264",
+                  "endDate": 768891600,
+                  "weekdayRate": 24
+                }
+              ],
+              "id": "F21B74FC-A0C0-4DF7-921C-9661C240681C",
+              "order": 2,
+              "roomTypeId": "0E2F58F3-7E8B-4308-9008-F19672A27541"
+            },
+            {
+              "id": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+              "roomTypeId": "0E2F58F3-7E8B-4308-9008-F19672A27541",
+              "pointValues": [
+                {
+                  "id": "97DB7DBB-1639-4F90-BA8D-B4B0393431C9",
+                  "weekdayRate": 34,
+                  "weekendRate": 36,
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+                  "endDate": 761292000,
+                  "startDate": 760082400
+                },
+                {
+                  "weekdayRate": 35,
+                  "endDate": 785743200,
+                  "startDate": 780987600,
+                  "weekendRate": 39,
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+                  "id": "FF575D8B-30C6-4E09-BAB1-49983F37EDAF"
+                },
+                {
+                  "id": "727A6C9C-BD6D-453A-BEE2-035ABCC73507",
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+                  "weekendRate": 35,
+                  "weekdayRate": 33,
+                  "endDate": 788162400,
+                  "startDate": 786261600
+                },
+                {
+                  "id": "7BBCA1D9-B385-4198-BE43-2723D1B0FD57",
+                  "endDate": 766818000,
+                  "weekdayRate": 47,
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+                  "weekendRate": 52,
+                  "startDate": 766213200
+                },
+                {
+                  "startDate": 757404000,
+                  "endDate": 759996000,
+                  "id": "4EAAC5FC-DB26-4992-B0AF-F5996DACA8EC",
+                  "weekdayRate": 31,
+                  "weekendRate": 34,
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A"
+                },
+                {
+                  "weekdayRate": 38,
+                  "weekendRate": 41,
+                  "endDate": 786002400,
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+                  "id": "5215640F-67EA-4E56-B83C-8705CB7ED5B8",
+                  "startDate": 785829600
+                },
+                {
+                  "weekdayRate": 38,
+                  "startDate": 761378400,
+                  "weekendRate": 41,
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+                  "endDate": 766126800,
+                  "id": "5B7C052F-1431-4DC4-9E7A-40D1EC9C98D0"
+                },
+                {
+                  "id": "AAA23208-E998-4FB4-BAFE-AC472C261AD2",
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+                  "startDate": 786088800,
+                  "weekendRate": 39,
+                  "endDate": 786175200,
+                  "weekdayRate": 35
+                },
+                {
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+                  "weekdayRate": 47,
+                  "startDate": 788248800,
+                  "endDate": 788853600,
+                  "id": "7252EF9B-6FA5-426E-9B7C-E19E813C2DF6",
+                  "weekendRate": 52
+                },
+                {
+                  "endDate": 778309200,
+                  "startDate": 771310800,
+                  "weekdayRate": 34,
+                  "weekendRate": 36,
+                  "id": "A8646382-D1F8-4AE6-957A-BFABA35688E4",
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A"
+                },
+                {
+                  "weekendRate": 35,
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+                  "weekdayRate": 33,
+                  "startDate": 768978000,
+                  "id": "EA9579F2-AA5B-4308-97A4-52F19E4F7F78",
+                  "endDate": 771224400
+                },
+                {
+                  "startDate": 767768400,
+                  "weekdayRate": 31,
+                  "endDate": 768891600,
+                  "id": "DB4F9133-5A6D-4524-AB37-1DDF21203D42",
+                  "weekendRate": 34,
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A"
+                },
+                {
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+                  "endDate": 780901200,
+                  "weekdayRate": 27,
+                  "weekendRate": 31,
+                  "startDate": 778395600,
+                  "id": "571A05C4-17E6-435B-8C1F-0F5718C61AF8"
+                },
+                {
+                  "id": "B8733AAC-BDC5-4F3F-BF74-B16BDCFF0A35",
+                  "weekendRate": 41,
+                  "startDate": 766904400,
+                  "viewTypeId": "AD8417D5-ABB8-4923-BF06-972C2A20794A",
+                  "endDate": 767682000,
+                  "weekdayRate": 38
+                }
+              ],
+              "viewName": "Savanna",
+              "order": 3,
+              "roomCapacity": 5
+            }
+          ],
+          "roomCategory": "One-Bedroom",
+          "order": 2,
+          "id": "0E2F58F3-7E8B-4308-9008-F19672A27541",
+          "resortId": "079A5480-7E5D-4219-896C-4BC1F1A62F8E",
+          "roomName": "One-Bedroom Villa"
+        },
+        {
+          "roomCategory": "Three-Bedroom",
+          "id": "3A1905AA-907B-4C4E-B4CF-DDA1BA4580BF",
+          "roomName": "Three-Bedroom Grand Villa",
+          "viewTypes": [
+            {
+              "roomCapacity": 12,
+              "viewName": "Savanna",
+              "id": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+              "pointValues": [
+                {
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "weekdayRate": 127,
+                  "id": "F09822A4-B35B-414B-84BD-0D613CC4D95C",
+                  "endDate": 766818000,
+                  "startDate": 766213200,
+                  "weekendRate": 144
+                },
+                {
+                  "startDate": 757404000,
+                  "id": "7F0C2501-6C0B-4EA8-86D2-B58143CCE2F8",
+                  "weekdayRate": 79,
+                  "weekendRate": 89,
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "endDate": 759996000
+                },
+                {
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "id": "BE69E72A-6F5E-4FF6-9AE3-C8BA866F73D5",
+                  "weekendRate": 89,
+                  "endDate": 768891600,
+                  "startDate": 767768400,
+                  "weekdayRate": 79
+                },
+                {
+                  "weekendRate": 100,
+                  "endDate": 761292000,
+                  "startDate": 760082400,
+                  "weekdayRate": 89,
+                  "id": "2DA4765B-8592-4E84-9484-C8DB55C1EAAE",
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835"
+                },
+                {
+                  "startDate": 766904400,
+                  "weekendRate": 121,
+                  "weekdayRate": 107,
+                  "endDate": 767682000,
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "id": "45FDAB01-F6FD-4DE2-9CEC-0DB8069E498B"
+                },
+                {
+                  "startDate": 786088800,
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "endDate": 786175200,
+                  "id": "C43460C6-4E94-4C75-98A6-D765C1439A12",
+                  "weekendRate": 110,
+                  "weekdayRate": 96
+                },
+                {
+                  "id": "3A5AE346-94A4-4491-A962-A9C8487D8498",
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "endDate": 785743200,
+                  "weekdayRate": 96,
+                  "startDate": 780987600,
+                  "weekendRate": 110
+                },
+                {
+                  "startDate": 786261600,
+                  "endDate": 788162400,
+                  "weekendRate": 96,
+                  "weekdayRate": 86,
+                  "id": "776E44CA-D5F0-4E7F-8422-D9475B4009E9",
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835"
+                },
+                {
+                  "id": "50AB8550-06DA-490D-B4F6-5B7E2732D03A",
+                  "weekdayRate": 127,
+                  "weekendRate": 144,
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "endDate": 788853600,
+                  "startDate": 788248800
+                },
+                {
+                  "id": "B3FD6735-9D76-488E-BFD2-80EB61EBFF27",
+                  "weekendRate": 100,
+                  "weekdayRate": 89,
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "startDate": 771310800,
+                  "endDate": 778309200
+                },
+                {
+                  "weekdayRate": 86,
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "id": "D26F4589-9CBA-42E4-AF53-3305FFF0CD0B",
+                  "startDate": 768978000,
+                  "weekendRate": 96,
+                  "endDate": 771224400
+                },
+                {
+                  "weekendRate": 85,
+                  "endDate": 780901200,
+                  "weekdayRate": 73,
+                  "startDate": 778395600,
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "id": "D861685B-B572-4310-9CBB-4D20AF544487"
+                },
+                {
+                  "weekdayRate": 107,
+                  "startDate": 761378400,
+                  "weekendRate": 121,
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "id": "1A4CCA6E-F6F2-423D-85C4-3B913F7C7C09",
+                  "endDate": 766126800
+                },
+                {
+                  "id": "F12905FF-E2DB-4212-AA9C-1988D3C99217",
+                  "weekdayRate": 107,
+                  "endDate": 786002400,
+                  "startDate": 785829600,
+                  "viewTypeId": "7C9D871B-E8DA-49EC-9F2B-645594DE1835",
+                  "weekendRate": 121
+                }
+              ],
+              "order": 2,
+              "roomTypeId": "3A1905AA-907B-4C4E-B4CF-DDA1BA4580BF"
+            },
+            {
+              "roomTypeId": "3A1905AA-907B-4C4E-B4CF-DDA1BA4580BF",
+              "pointValues": [
+                {
+                  "endDate": 768891600,
+                  "id": "FF840AB9-F526-4E6E-9999-E7A6B1B78DE1",
+                  "startDate": 767768400,
+                  "weekendRate": 82,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "weekdayRate": 73
+                },
+                {
+                  "startDate": 786261600,
+                  "id": "48945836-009F-4E4A-8020-08A3E0F79709",
+                  "endDate": 788162400,
+                  "weekendRate": 88,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "weekdayRate": 78
+                },
+                {
+                  "weekdayRate": 81,
+                  "id": "3E5C7EAF-97D0-463E-B150-7F28731AD2BF",
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "weekendRate": 91,
+                  "startDate": 760082400,
+                  "endDate": 761292000
+                },
+                {
+                  "id": "B0C275CB-4080-4664-8C54-7E5269D6BF22",
+                  "weekendRate": 78,
+                  "weekdayRate": 68,
+                  "startDate": 778395600,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "endDate": 780901200
+                },
+                {
+                  "startDate": 785829600,
+                  "id": "FAEDABA5-3AF7-4DD7-A65F-C39844935DDE",
+                  "endDate": 786002400,
+                  "weekdayRate": 97,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "weekendRate": 111
+                },
+                {
+                  "weekendRate": 111,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "endDate": 766126800,
+                  "id": "140F9EFA-EA2E-4352-BEC9-91A52E3CB7EB",
+                  "weekdayRate": 97,
+                  "startDate": 761378400
+                },
+                {
+                  "startDate": 766213200,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "weekdayRate": 117,
+                  "endDate": 766818000,
+                  "id": "66DDAD78-89B1-4160-8590-029F5F7006A0",
+                  "weekendRate": 135
+                },
+                {
+                  "endDate": 786175200,
+                  "id": "6C72AD08-3B37-457C-85C6-A7795A3F11AB",
+                  "weekendRate": 100,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "weekdayRate": 88,
+                  "startDate": 786088800
+                },
+                {
+                  "weekdayRate": 78,
+                  "endDate": 771224400,
+                  "id": "F5998CD8-EEE5-4A4C-99F8-B4A5D6D9355E",
+                  "weekendRate": 88,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "startDate": 768978000
+                },
+                {
+                  "weekendRate": 82,
+                  "weekdayRate": 73,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "endDate": 759996000,
+                  "startDate": 757404000,
+                  "id": "212D7412-A9C1-49F4-88E8-F04A41BA817F"
+                },
+                {
+                  "endDate": 788853600,
+                  "id": "E3508B79-AA64-4737-9AC1-62BA93858657",
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "weekendRate": 135,
+                  "weekdayRate": 117,
+                  "startDate": 788248800
+                },
+                {
+                  "weekendRate": 91,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "id": "115EC4CD-67F9-4CE8-9C6C-3BDF42C4E11D",
+                  "weekdayRate": 81,
+                  "endDate": 778309200,
+                  "startDate": 771310800
+                },
+                {
+                  "id": "58E65419-3CCC-4D0F-ABA8-ED0A0D4F38FF",
+                  "weekendRate": 111,
+                  "endDate": 767682000,
+                  "weekdayRate": 97,
+                  "startDate": 766904400,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF"
+                },
+                {
+                  "weekendRate": 100,
+                  "viewTypeId": "F2A7B484-8159-402A-86BF-FB35052C81DF",
+                  "startDate": 780987600,
+                  "endDate": 785743200,
+                  "weekdayRate": 88,
+                  "id": "77A8A38F-7D8F-4D17-BAAD-42CBC4793A77"
+                }
+              ],
+              "order": 1,
+              "roomCapacity": 12,
+              "viewName": "Standard",
+              "id": "F2A7B484-8159-402A-86BF-FB35052C81DF"
+            }
+          ],
+          "resortId": "079A5480-7E5D-4219-896C-4BC1F1A62F8E",
+          "order": 5
+        }
+      ],
+      "id": "079A5480-7E5D-4219-896C-4BC1F1A62F8E"
+    },
+  {
+      "id": "F0A10E95-5502-4C3A-AFE2-C7A0EF82D501",
+      "roomTypes": [
+        {
+          "order": 1,
+          "resortId": "F0A10E95-5502-4C3A-AFE2-C7A0EF82D501",
+          "viewTypes": [
+            {
+              "roomTypeId": "90763A37-CEF3-4554-8FBE-9D6F5623D418",
+              "pointValues": [
+                {
+                  "id": "18A1FDE8-1766-4B62-B587-DF7D5B5A76D5",
+                  "startDate": 757404000,
+                  "endDate": 759996000,
+                  "weekdayRate": 12,
+                  "weekendRate": 14,
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED"
+                },
+                {
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED",
+                  "weekendRate": 23,
+                  "id": "8F4A8C26-D253-4213-BD77-27384C371E29",
+                  "startDate": 766213200,
+                  "endDate": 766818000,
+                  "weekdayRate": 21
+                },
+                {
+                  "startDate": 760082400,
+                  "weekendRate": 15,
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED",
+                  "weekdayRate": 14,
+                  "id": "2A9CF8DA-4E02-4D82-8206-1BC9F08D745E",
+                  "endDate": 761292000
+                },
+                {
+                  "endDate": 786175200,
+                  "weekdayRate": 15,
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED",
+                  "weekendRate": 16,
+                  "id": "FBBFCB84-7A84-42D6-BCB7-32FF3378A186",
+                  "startDate": 786088800
+                },
+                {
+                  "endDate": 786002400,
+                  "weekdayRate": 16,
+                  "weekendRate": 18,
+                  "id": "D003257F-3E04-45DC-944F-38C424C63F38",
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED",
+                  "startDate": 785829600
+                },
+                {
+                  "id": "B258CFAF-57E7-4FC8-B399-052B58626334",
+                  "endDate": 766126800,
+                  "weekdayRate": 16,
+                  "startDate": 761378400,
+                  "weekendRate": 18,
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED"
+                },
+                {
+                  "weekdayRate": 12,
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED",
+                  "startDate": 767768400,
+                  "weekendRate": 14,
+                  "endDate": 768891600,
+                  "id": "496BA9CB-6B5B-4F16-9AEE-057EA70BC5AA"
+                },
+                {
+                  "startDate": 778395600,
+                  "endDate": 780901200,
+                  "id": "73FF7583-34FA-4275-B269-5D54F8B97642",
+                  "weekdayRate": 10,
+                  "weekendRate": 13,
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED"
+                },
+                {
+                  "weekdayRate": 14,
+                  "weekendRate": 15,
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED",
+                  "startDate": 771310800,
+                  "endDate": 778309200,
+                  "id": "7EA8CE45-1BB4-470B-9E5B-D24193F8A9D3"
+                },
+                {
+                  "id": "7AF8BDDA-D822-446C-B124-F8394577F4AB",
+                  "weekdayRate": 21,
+                  "startDate": 788248800,
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED",
+                  "endDate": 788853600,
+                  "weekendRate": 23
+                },
+                {
+                  "startDate": 766904400,
+                  "weekdayRate": 16,
+                  "weekendRate": 18,
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED",
+                  "endDate": 767682000,
+                  "id": "F1B9837F-D464-4940-BB5E-3381C6560EC4"
+                },
+                {
+                  "weekdayRate": 13,
+                  "weekendRate": 15,
+                  "id": "38289870-3B32-4A68-96C8-45404ED1B79F",
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED",
+                  "startDate": 786261600,
+                  "endDate": 788162400
+                },
+                {
+                  "endDate": 771224400,
+                  "startDate": 768978000,
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED",
+                  "id": "6039D745-21F8-456A-81C8-48CB88807F5A",
+                  "weekdayRate": 13,
+                  "weekendRate": 15
+                },
+                {
+                  "weekdayRate": 15,
+                  "id": "D37179C8-4C14-4008-B362-6A31AF48BE1C",
+                  "startDate": 780987600,
+                  "endDate": 785743200,
+                  "weekendRate": 16,
+                  "viewTypeId": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED"
+                }
+              ],
+              "id": "B34C20EC-5148-4DD5-BABB-21E2FC1F07ED",
+              "order": 2,
+              "viewName": "Standard",
+              "roomCapacity": 4
+            },
+            {
+              "order": 4,
+              "roomTypeId": "90763A37-CEF3-4554-8FBE-9D6F5623D418",
+              "id": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+              "viewName": "Kilimanjaro Club Concierge",
+              "roomCapacity": 4,
+              "pointValues": [
+                {
+                  "endDate": 786175200,
+                  "weekdayRate": 23,
+                  "id": "766DE505-7672-449A-8958-0207E97DDE04",
+                  "weekendRate": 25,
+                  "startDate": 786088800,
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893"
+                },
+                {
+                  "weekendRate": 36,
+                  "startDate": 766213200,
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+                  "weekdayRate": 33,
+                  "id": "ACC548EC-D324-4DC2-8C7A-28D48BA7A31A",
+                  "endDate": 766818000
+                },
+                {
+                  "startDate": 780987600,
+                  "id": "2060237D-F373-41AA-824A-E155F08322EE",
+                  "endDate": 785743200,
+                  "weekdayRate": 23,
+                  "weekendRate": 25,
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893"
+                },
+                {
+                  "startDate": 768978000,
+                  "weekdayRate": 21,
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+                  "id": "5F1E301C-748C-4010-A3E1-C1BBC49EE7F2",
+                  "weekendRate": 24,
+                  "endDate": 771224400
+                },
+                {
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+                  "weekdayRate": 20,
+                  "startDate": 767768400,
+                  "id": "3424792B-2DE7-4EE4-8538-01F9F80BD082",
+                  "endDate": 768891600,
+                  "weekendRate": 23
+                },
+                {
+                  "weekendRate": 26,
+                  "weekdayRate": 23,
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+                  "endDate": 767682000,
+                  "id": "A3D5B3A6-EC01-4912-BA7B-FCAF63538CC3",
+                  "startDate": 766904400
+                },
+                {
+                  "weekdayRate": 21,
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+                  "id": "1DC88B72-BF69-475F-B2F6-078DD3246093",
+                  "weekendRate": 24,
+                  "startDate": 786261600,
+                  "endDate": 788162400
+                },
+                {
+                  "startDate": 771310800,
+                  "weekendRate": 24,
+                  "weekdayRate": 22,
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+                  "endDate": 778309200,
+                  "id": "E76E1D0C-6AC4-453C-BFBE-5642A7B6FE00"
+                },
+                {
+                  "endDate": 759996000,
+                  "id": "BFAD104E-29E2-4B2B-ACB8-587BFE61EF1C",
+                  "weekdayRate": 20,
+                  "weekendRate": 23,
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+                  "startDate": 757404000
+                },
+                {
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+                  "weekdayRate": 33,
+                  "id": "8AB6170B-ADA4-4A7C-B0A2-783663C56136",
+                  "endDate": 788853600,
+                  "weekendRate": 36,
+                  "startDate": 788248800
+                },
+                {
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+                  "weekdayRate": 23,
+                  "id": "3A0EC6EF-A03C-4F9C-BC08-05CF6DE4A514",
+                  "startDate": 761378400,
+                  "endDate": 766126800,
+                  "weekendRate": 26
+                },
+                {
+                  "weekendRate": 24,
+                  "id": "45EE6AFE-F7F6-4F5B-88E2-EAD05E8DEC68",
+                  "endDate": 761292000,
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+                  "weekdayRate": 22,
+                  "startDate": 760082400
+                },
+                {
+                  "startDate": 785829600,
+                  "weekendRate": 26,
+                  "endDate": 786002400,
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893",
+                  "id": "DFA9C96D-02BF-4AC7-88E3-AC019BF442FB",
+                  "weekdayRate": 23
+                },
+                {
+                  "startDate": 778395600,
+                  "endDate": 780901200,
+                  "weekdayRate": 18,
+                  "id": "51F68E91-B32A-47A4-97A4-1AEA49999BB9",
+                  "weekendRate": 22,
+                  "viewTypeId": "889201BF-B7A0-42A6-9A7C-29D9622F9893"
+                }
+              ]
+            },
+            {
+              "roomTypeId": "90763A37-CEF3-4554-8FBE-9D6F5623D418",
+              "id": "77311A48-0798-4B6A-A469-0D5F8C338126",
+              "viewName": "Savanna",
+              "pointValues": [
+                {
+                  "id": "FE326D00-5A8F-4EA9-A270-149C97BD2512",
+                  "startDate": 761378400,
+                  "endDate": 766126800,
+                  "weekdayRate": 19,
+                  "weekendRate": 22,
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126"
+                },
+                {
+                  "startDate": 766213200,
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126",
+                  "endDate": 766818000,
+                  "id": "A1576B53-8B73-451B-A084-0D67CC550DF5",
+                  "weekdayRate": 27,
+                  "weekendRate": 29
+                },
+                {
+                  "weekendRate": 22,
+                  "endDate": 767682000,
+                  "weekdayRate": 19,
+                  "id": "37D1CA61-F3E8-4253-9B2F-8FE7AC1C81D0",
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126",
+                  "startDate": 766904400
+                },
+                {
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126",
+                  "weekdayRate": 17,
+                  "startDate": 771310800,
+                  "weekendRate": 20,
+                  "id": "9256973C-D886-42F0-A378-AB4D89A84817",
+                  "endDate": 778309200
+                },
+                {
+                  "endDate": 771224400,
+                  "startDate": 768978000,
+                  "id": "62775601-1BBC-45C6-A491-5CE29FDD7543",
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126",
+                  "weekdayRate": 16,
+                  "weekendRate": 18
+                },
+                {
+                  "weekendRate": 20,
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126",
+                  "startDate": 780987600,
+                  "id": "5EB739BF-96AB-468B-B396-D042A46CC881",
+                  "endDate": 785743200,
+                  "weekdayRate": 19
+                },
+                {
+                  "endDate": 786002400,
+                  "id": "E4F6022C-E18B-4DDE-B6B8-C795E2C6B367",
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126",
+                  "weekdayRate": 19,
+                  "weekendRate": 22,
+                  "startDate": 785829600
+                },
+                {
+                  "weekdayRate": 15,
+                  "id": "B790AFAA-E25F-45A3-9400-4371E78013DD",
+                  "startDate": 767768400,
+                  "endDate": 768891600,
+                  "weekendRate": 17,
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126"
+                },
+                {
+                  "endDate": 761292000,
+                  "weekdayRate": 17,
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126",
+                  "startDate": 760082400,
+                  "weekendRate": 20,
+                  "id": "879956E8-82BB-42B1-97E4-FCB9A11B9C46"
+                },
+                {
+                  "startDate": 788248800,
+                  "id": "E12E5C4C-27BE-44A3-B0D5-610F39229A33",
+                  "weekendRate": 29,
+                  "endDate": 788853600,
+                  "weekdayRate": 27,
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126"
+                },
+                {
+                  "endDate": 780901200,
+                  "id": "7D182AAA-ED6B-4006-BC25-4C74E173EC79",
+                  "weekdayRate": 13,
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126",
+                  "startDate": 778395600,
+                  "weekendRate": 16
+                },
+                {
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126",
+                  "startDate": 757404000,
+                  "weekdayRate": 15,
+                  "id": "58E9F468-9659-4F41-94B6-16531F141D51",
+                  "endDate": 759996000,
+                  "weekendRate": 17
+                },
+                {
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126",
+                  "startDate": 786261600,
+                  "weekdayRate": 16,
+                  "weekendRate": 18,
+                  "endDate": 788162400,
+                  "id": "A5CF7B37-41F0-49D9-9787-C1BBE30003B9"
+                },
+                {
+                  "endDate": 786175200,
+                  "viewTypeId": "77311A48-0798-4B6A-A469-0D5F8C338126",
+                  "startDate": 786088800,
+                  "id": "D1BA646B-A5C5-41A6-93D5-79665B98775F",
+                  "weekdayRate": 19,
+                  "weekendRate": 20
+                }
+              ],
+              "order": 3,
+              "roomCapacity": 4
+            },
+            {
+              "pointValues": [
+                {
+                  "id": "CF1E5D10-B1B3-44E4-A812-59BBCFF4D946",
+                  "startDate": 768978000,
+                  "weekdayRate": 8,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965",
+                  "endDate": 771224400,
+                  "weekendRate": 12
+                },
+                {
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965",
+                  "endDate": 785743200,
+                  "startDate": 780987600,
+                  "weekdayRate": 10,
+                  "id": "D056F4B9-8ED4-4527-B83B-623A984E291E",
+                  "weekendRate": 13
+                },
+                {
+                  "endDate": 786175200,
+                  "startDate": 786088800,
+                  "id": "C0E7546F-DE06-4CBF-83F7-6A65B5FCD46C",
+                  "weekdayRate": 10,
+                  "weekendRate": 13,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965"
+                },
+                {
+                  "weekdayRate": 9,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965",
+                  "weekendRate": 12,
+                  "id": "1A9E4E1A-7AB6-4F42-B20B-C9CF9121B41D",
+                  "startDate": 760082400,
+                  "endDate": 761292000
+                },
+                {
+                  "id": "D4DDD7BE-1CD5-4F9D-B7FD-283CFEB7656E",
+                  "startDate": 766904400,
+                  "weekdayRate": 12,
+                  "endDate": 767682000,
+                  "weekendRate": 14,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965"
+                },
+                {
+                  "endDate": 788853600,
+                  "weekdayRate": 16,
+                  "startDate": 788248800,
+                  "id": "6E492A0E-2388-46E4-BE69-7B9157B93046",
+                  "weekendRate": 17,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965"
+                },
+                {
+                  "startDate": 771310800,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965",
+                  "weekdayRate": 9,
+                  "endDate": 778309200,
+                  "id": "67DE6B76-94A3-4CF5-8940-23FC8A080B6B",
+                  "weekendRate": 12
+                },
+                {
+                  "weekdayRate": 8,
+                  "weekendRate": 11,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965",
+                  "id": "FF6915C4-5384-48AE-B7AC-B9D5E49403F9",
+                  "startDate": 767768400,
+                  "endDate": 768891600
+                },
+                {
+                  "weekendRate": 10,
+                  "id": "AAF2CF60-DF3B-4DD3-82D6-BE7F21C4C625",
+                  "weekdayRate": 7,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965",
+                  "startDate": 778395600,
+                  "endDate": 780901200
+                },
+                {
+                  "weekdayRate": 12,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965",
+                  "endDate": 786002400,
+                  "id": "C427F78D-15FD-4B5D-A053-1D8D47110C15",
+                  "weekendRate": 14,
+                  "startDate": 785829600
+                },
+                {
+                  "endDate": 766126800,
+                  "startDate": 761378400,
+                  "id": "158FEC83-7A06-4AAD-B03C-795A637F990F",
+                  "weekdayRate": 12,
+                  "weekendRate": 14,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965"
+                },
+                {
+                  "weekendRate": 12,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965",
+                  "id": "FED622EE-DA10-4BD3-850D-D4CC6FA2812F",
+                  "endDate": 788162400,
+                  "weekdayRate": 8,
+                  "startDate": 786261600
+                },
+                {
+                  "weekdayRate": 16,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965",
+                  "startDate": 766213200,
+                  "weekendRate": 17,
+                  "endDate": 766818000,
+                  "id": "2BBE5424-01D2-4CDA-B6C6-82EA981D7B0E"
+                },
+                {
+                  "endDate": 759996000,
+                  "weekendRate": 11,
+                  "viewTypeId": "E2DCE630-9E4C-434C-BD98-CF6F333C1965",
+                  "id": "491FD2FF-ADBD-4788-BA64-E0BA38A9EC85",
+                  "weekdayRate": 8,
+                  "startDate": 757404000
+                }
+              ],
+              "viewName": "Value",
+              "order": 1,
+              "roomCapacity": 4,
+              "id": "E2DCE630-9E4C-434C-BD98-CF6F333C1965",
+              "roomTypeId": "90763A37-CEF3-4554-8FBE-9D6F5623D418"
+            }
+          ],
+          "id": "90763A37-CEF3-4554-8FBE-9D6F5623D418",
+          "roomName": "Deluxe Studio",
+          "roomCategory": "Studio"
+        },
+        {
+          "viewTypes": [
+            {
+              "id": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+              "viewName": "Standard",
+              "roomCapacity": 9,
+              "roomTypeId": "0417D23F-2612-4D3F-A6FE-33CEE2CBE87E",
+              "pointValues": [
+                {
+                  "startDate": 786088800,
+                  "weekdayRate": 36,
+                  "weekendRate": 44,
+                  "endDate": 786175200,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "id": "74B87A8B-F6E6-4267-9824-04E62F32578C"
+                },
+                {
+                  "weekendRate": 44,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "endDate": 785743200,
+                  "weekdayRate": 36,
+                  "startDate": 780987600,
+                  "id": "0B65C6EA-27A9-48AC-A505-984E9C3EEE13"
+                },
+                {
+                  "weekdayRate": 55,
+                  "weekendRate": 60,
+                  "endDate": 788853600,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "startDate": 788248800,
+                  "id": "EE4DBBC3-44AF-413A-BF1D-5CC93B87DC54"
+                },
+                {
+                  "weekendRate": 40,
+                  "id": "E30379B6-4436-4760-975A-50F9DCCE49FF",
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "startDate": 771310800,
+                  "endDate": 778309200,
+                  "weekdayRate": 35
+                },
+                {
+                  "id": "0111867E-486D-4C82-A226-36FDEF050192",
+                  "startDate": 760082400,
+                  "weekdayRate": 35,
+                  "weekendRate": 40,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "endDate": 761292000
+                },
+                {
+                  "weekendRate": 37,
+                  "weekdayRate": 31,
+                  "startDate": 767768400,
+                  "endDate": 768891600,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "id": "79DEB5FC-85E1-4D59-8C4F-DE3E8196EC12"
+                },
+                {
+                  "endDate": 786002400,
+                  "weekendRate": 48,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "id": "1A24E82B-BD0A-4758-AD51-342FF8FAB432",
+                  "weekdayRate": 40,
+                  "startDate": 785829600
+                },
+                {
+                  "endDate": 780901200,
+                  "weekdayRate": 28,
+                  "weekendRate": 34,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "id": "DC91F4C6-5A90-4624-96EF-88B5119E4F82",
+                  "startDate": 778395600
+                },
+                {
+                  "weekendRate": 60,
+                  "startDate": 766213200,
+                  "id": "8D3ECA1D-1316-40CC-AF3E-C2D7CAB2A74D",
+                  "endDate": 766818000,
+                  "weekdayRate": 55,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B"
+                },
+                {
+                  "endDate": 788162400,
+                  "weekendRate": 39,
+                  "id": "310A957B-BD2C-429A-B8DE-E1FCA0832EDC",
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "startDate": 786261600,
+                  "weekdayRate": 32
+                },
+                {
+                  "endDate": 766126800,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "id": "93A589F6-ECD4-4B31-BF00-1045C0812723",
+                  "weekdayRate": 40,
+                  "weekendRate": 48,
+                  "startDate": 761378400
+                },
+                {
+                  "endDate": 759996000,
+                  "id": "8AABA2B3-3D36-4DA7-B199-4AE0C853F2D3",
+                  "weekendRate": 37,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "weekdayRate": 31,
+                  "startDate": 757404000
+                },
+                {
+                  "id": "F0C75D57-2F29-4F64-88CA-BEBBD2147D7A",
+                  "weekendRate": 48,
+                  "weekdayRate": 40,
+                  "endDate": 767682000,
+                  "startDate": 766904400,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B"
+                },
+                {
+                  "startDate": 768978000,
+                  "id": "C6AEAD9F-453A-40E8-A34C-F99606F56BDE",
+                  "weekdayRate": 32,
+                  "weekendRate": 39,
+                  "viewTypeId": "CC404B69-FAFD-4219-ACDA-4107E98B784B",
+                  "endDate": 771224400
+                }
+              ],
+              "order": 2
+            },
+            {
+              "roomTypeId": "0417D23F-2612-4D3F-A6FE-33CEE2CBE87E",
+              "roomCapacity": 9,
+              "order": 3,
+              "viewName": "Savanna",
+              "id": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5",
+              "pointValues": [
+                {
+                  "id": "77EF19C6-F2D7-401F-AA95-A67E8BFCD39A",
+                  "weekendRate": 43,
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5",
+                  "weekdayRate": 35,
+                  "startDate": 778395600,
+                  "endDate": 780901200
+                },
+                {
+                  "endDate": 788853600,
+                  "startDate": 788248800,
+                  "weekendRate": 76,
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5",
+                  "weekdayRate": 70,
+                  "id": "99FA135B-3B6C-4941-92BB-F4A41A242E32"
+                },
+                {
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5",
+                  "endDate": 778309200,
+                  "weekdayRate": 43,
+                  "id": "4B2575E4-8524-4E39-B68F-568AD827AA23",
+                  "startDate": 771310800,
+                  "weekendRate": 52
+                },
+                {
+                  "endDate": 786175200,
+                  "startDate": 786088800,
+                  "id": "B8ACC460-4DAF-4BC7-90D1-35C920DE35EA",
+                  "weekendRate": 57,
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5",
+                  "weekdayRate": 47
+                },
+                {
+                  "startDate": 780987600,
+                  "id": "DC989121-4C39-4029-9DF7-31369629D95C",
+                  "weekdayRate": 47,
+                  "endDate": 785743200,
+                  "weekendRate": 57,
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5"
+                },
+                {
+                  "weekdayRate": 43,
+                  "startDate": 760082400,
+                  "weekendRate": 52,
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5",
+                  "endDate": 761292000,
+                  "id": "98C96DEA-9B15-4F46-A6FE-091FBA635471"
+                },
+                {
+                  "weekdayRate": 42,
+                  "endDate": 788162400,
+                  "id": "AB44CD4E-14B7-4A2A-A0FB-4165B386A4D3",
+                  "startDate": 786261600,
+                  "weekendRate": 50,
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5"
+                },
+                {
+                  "weekdayRate": 39,
+                  "id": "00F69C9C-1814-4B68-A5B6-204B2CF8AFFF",
+                  "startDate": 757404000,
+                  "weekendRate": 48,
+                  "endDate": 759996000,
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5"
+                },
+                {
+                  "startDate": 766904400,
+                  "weekendRate": 61,
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5",
+                  "id": "8D78DA1D-C204-4DDB-9673-332111ED0115",
+                  "weekdayRate": 52,
+                  "endDate": 767682000
+                },
+                {
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5",
+                  "weekdayRate": 70,
+                  "weekendRate": 76,
+                  "startDate": 766213200,
+                  "id": "E17832C6-69C3-4A7E-8A3B-B70BC0952BB4",
+                  "endDate": 766818000
+                },
+                {
+                  "id": "77D53877-43CC-4C86-BFF0-B7E76197A538",
+                  "weekdayRate": 42,
+                  "endDate": 771224400,
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5",
+                  "startDate": 768978000,
+                  "weekendRate": 50
+                },
+                {
+                  "weekendRate": 61,
+                  "endDate": 786002400,
+                  "id": "246689CF-C826-41F1-8B65-AB641BC58839",
+                  "weekdayRate": 52,
+                  "startDate": 785829600,
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5"
+                },
+                {
+                  "startDate": 767768400,
+                  "id": "5911C144-14AA-4953-96DC-29551763CCC2",
+                  "weekdayRate": 39,
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5",
+                  "weekendRate": 48,
+                  "endDate": 768891600
+                },
+                {
+                  "viewTypeId": "F03A4C54-E3E8-4DB5-8743-9A915A033DA5",
+                  "endDate": 766126800,
+                  "weekdayRate": 52,
+                  "startDate": 761378400,
+                  "id": "58DF238B-FB7F-4997-961F-B1B6C5B28418",
+                  "weekendRate": 61
+                }
+              ]
+            },
+            {
+              "pointValues": [
+                {
+                  "weekdayRate": 27,
+                  "weekendRate": 32,
+                  "endDate": 771224400,
+                  "startDate": 768978000,
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D",
+                  "id": "C9216DBD-A9C1-4FC9-98F2-906BDE2479CA"
+                },
+                {
+                  "weekendRate": 36,
+                  "id": "66944996-F6D8-4C6E-8EF3-06624911D5B1",
+                  "startDate": 785829600,
+                  "endDate": 786002400,
+                  "weekdayRate": 31,
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D"
+                },
+                {
+                  "endDate": 788162400,
+                  "startDate": 786261600,
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D",
+                  "weekdayRate": 27,
+                  "weekendRate": 32,
+                  "id": "230E37B4-BF85-42E3-83A9-991AC3BB9002"
+                },
+                {
+                  "id": "A0A562B7-428F-43F6-BFBC-90E03BF2B3D8",
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D",
+                  "startDate": 788248800,
+                  "weekendRate": 48,
+                  "endDate": 788853600,
+                  "weekdayRate": 43
+                },
+                {
+                  "startDate": 761378400,
+                  "weekdayRate": 31,
+                  "weekendRate": 36,
+                  "id": "B66EE98A-54D6-4EB0-877A-FB62353188AD",
+                  "endDate": 766126800,
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D"
+                },
+                {
+                  "weekdayRate": 29,
+                  "id": "2D2293B8-37F2-4727-A789-FAB6CC4DAA6C",
+                  "endDate": 778309200,
+                  "startDate": 771310800,
+                  "weekendRate": 34,
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D"
+                },
+                {
+                  "endDate": 768891600,
+                  "startDate": 767768400,
+                  "weekendRate": 31,
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D",
+                  "id": "DCBB89E2-6424-4B3F-84DE-E26B92DEC7F3",
+                  "weekdayRate": 25
+                },
+                {
+                  "weekendRate": 31,
+                  "id": "6BEF7B03-AFA7-4208-BFEE-3680750074E7",
+                  "endDate": 759996000,
+                  "weekdayRate": 25,
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D",
+                  "startDate": 757404000
+                },
+                {
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D",
+                  "id": "0EACD632-EA94-4831-A3E1-6EE70D331522",
+                  "startDate": 778395600,
+                  "endDate": 780901200,
+                  "weekdayRate": 22,
+                  "weekendRate": 28
+                },
+                {
+                  "weekendRate": 36,
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D",
+                  "id": "3BC4EC9D-AA74-4B7A-9DB1-60C03D603F2C",
+                  "startDate": 766904400,
+                  "endDate": 767682000,
+                  "weekdayRate": 31
+                },
+                {
+                  "endDate": 786175200,
+                  "id": "982C3FC9-6351-44EB-B453-A89CB98163D3",
+                  "weekendRate": 35,
+                  "weekdayRate": 30,
+                  "startDate": 786088800,
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D"
+                },
+                {
+                  "id": "AADFC9CF-0A7A-4CF0-BBAD-780284D32529",
+                  "weekdayRate": 29,
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D",
+                  "startDate": 760082400,
+                  "endDate": 761292000,
+                  "weekendRate": 34
+                },
+                {
+                  "startDate": 766213200,
+                  "endDate": 766818000,
+                  "weekdayRate": 43,
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D",
+                  "weekendRate": 48,
+                  "id": "84D0BF2E-67DE-4A1A-9A0A-A7C32A8845B1"
+                },
+                {
+                  "viewTypeId": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D",
+                  "startDate": 780987600,
+                  "weekendRate": 35,
+                  "endDate": 785743200,
+                  "weekdayRate": 30,
+                  "id": "F55EDF1D-6402-4864-B2FF-9D5383907BE7"
+                }
+              ],
+              "order": 1,
+              "viewName": "Value",
+              "id": "2808C11C-3AB0-46C4-BB9C-9C4B15CBD16D",
+              "roomTypeId": "0417D23F-2612-4D3F-A6FE-33CEE2CBE87E",
+              "roomCapacity": 9
+            },
+            {
+              "id": "2A43FA83-259B-4068-869B-E86C0331FC02",
+              "order": 4,
+              "roomCapacity": 9,
+              "pointValues": [
+                {
+                  "weekdayRate": 60,
+                  "endDate": 761292000,
+                  "startDate": 760082400,
+                  "id": "E0AE120D-C511-4ABC-B26D-9C8C0B723729",
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02",
+                  "weekendRate": 66
+                },
+                {
+                  "startDate": 767768400,
+                  "endDate": 768891600,
+                  "weekendRate": 63,
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02",
+                  "weekdayRate": 55,
+                  "id": "71871191-65ED-4B79-A252-465CA4141CA3"
+                },
+                {
+                  "id": "B73E1D7F-739A-4767-ABC7-66C01F24C1C6",
+                  "weekdayRate": 66,
+                  "weekendRate": 77,
+                  "startDate": 761378400,
+                  "endDate": 766126800,
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02"
+                },
+                {
+                  "id": "AC3436CD-AB5C-422D-8A16-22FF92F4B22D",
+                  "endDate": 788162400,
+                  "weekdayRate": 58,
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02",
+                  "weekendRate": 66,
+                  "startDate": 786261600
+                },
+                {
+                  "id": "A6A2743F-404E-4F58-8A2A-A50BA830E348",
+                  "startDate": 785829600,
+                  "weekdayRate": 66,
+                  "endDate": 786002400,
+                  "weekendRate": 77,
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02"
+                },
+                {
+                  "startDate": 788248800,
+                  "endDate": 788853600,
+                  "weekendRate": 98,
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02",
+                  "weekdayRate": 88,
+                  "id": "D8A74C68-3EF7-4D11-A0B5-6FEC26207B78"
+                },
+                {
+                  "endDate": 778309200,
+                  "weekdayRate": 60,
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02",
+                  "startDate": 771310800,
+                  "id": "A6B2A6B9-6A4E-4FDD-A776-8015AD5E9DC6",
+                  "weekendRate": 66
+                },
+                {
+                  "weekdayRate": 61,
+                  "weekendRate": 71,
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02",
+                  "endDate": 785743200,
+                  "id": "FAC4A254-121C-4977-871E-C952E7B81C76",
+                  "startDate": 780987600
+                },
+                {
+                  "weekdayRate": 66,
+                  "endDate": 767682000,
+                  "weekendRate": 77,
+                  "startDate": 766904400,
+                  "id": "C26DD3C5-8018-474E-BC0F-9EA2FD22305E",
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02"
+                },
+                {
+                  "weekdayRate": 58,
+                  "id": "F1D35018-5898-4474-B0EC-CEA486529525",
+                  "weekendRate": 66,
+                  "endDate": 771224400,
+                  "startDate": 768978000,
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02"
+                },
+                {
+                  "weekdayRate": 55,
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02",
+                  "id": "D2637F64-6EB3-45DC-B2D5-CADCFCA6ACD4",
+                  "endDate": 759996000,
+                  "weekendRate": 63,
+                  "startDate": 757404000
+                },
+                {
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02",
+                  "endDate": 780901200,
+                  "weekdayRate": 51,
+                  "weekendRate": 58,
+                  "id": "0E950079-915A-473B-9D7A-BE43957000DA",
+                  "startDate": 778395600
+                },
+                {
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02",
+                  "startDate": 786088800,
+                  "weekdayRate": 61,
+                  "endDate": 786175200,
+                  "weekendRate": 71,
+                  "id": "4CC0E492-E926-4F4D-9C5F-1ED7264F3902"
+                },
+                {
+                  "startDate": 766213200,
+                  "id": "0E0EBF4B-90A7-4B0B-97F6-F8E67B599763",
+                  "endDate": 766818000,
+                  "weekdayRate": 88,
+                  "weekendRate": 98,
+                  "viewTypeId": "2A43FA83-259B-4068-869B-E86C0331FC02"
+                }
+              ],
+              "roomTypeId": "0417D23F-2612-4D3F-A6FE-33CEE2CBE87E",
+              "viewName": "Kilimanjaro Club Concierge"
+            }
+          ],
+          "order": 4,
+          "roomCategory": "Two-Bedroom",
+          "id": "0417D23F-2612-4D3F-A6FE-33CEE2CBE87E",
+          "resortId": "F0A10E95-5502-4C3A-AFE2-C7A0EF82D501",
+          "roomName": "Two-Bedroom Villa"
+        },
+        {
+          "roomName": "Three-Bedroom Grand Villa",
+          "resortId": "F0A10E95-5502-4C3A-AFE2-C7A0EF82D501",
+          "viewTypes": [
+            {
+              "pointValues": [
+                {
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+                  "id": "07AF61AD-4E10-4117-AA77-2A65D8240ECC",
+                  "startDate": 771310800,
+                  "endDate": 778309200,
+                  "weekdayRate": 89,
+                  "weekendRate": 100
+                },
+                {
+                  "weekdayRate": 127,
+                  "weekendRate": 144,
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+                  "endDate": 788853600,
+                  "startDate": 788248800,
+                  "id": "8340B00A-F6AA-4028-834B-18373C2CEFF5"
+                },
+                {
+                  "id": "88173C13-8BB4-47B8-A281-E90018B1BECD",
+                  "endDate": 785743200,
+                  "weekdayRate": 96,
+                  "weekendRate": 110,
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+                  "startDate": 780987600
+                },
+                {
+                  "weekendRate": 96,
+                  "endDate": 788162400,
+                  "startDate": 786261600,
+                  "weekdayRate": 86,
+                  "id": "8D76E15B-0B6E-4C52-A42A-72641080EDE8",
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D"
+                },
+                {
+                  "endDate": 759996000,
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+                  "id": "814D61E6-8F07-462F-A575-A762EB086B8C",
+                  "weekendRate": 89,
+                  "weekdayRate": 79,
+                  "startDate": 757404000
+                },
+                {
+                  "endDate": 766818000,
+                  "id": "EAC92562-882C-466D-837B-96C14A9B7CDE",
+                  "startDate": 766213200,
+                  "weekendRate": 144,
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+                  "weekdayRate": 127
+                },
+                {
+                  "startDate": 785829600,
+                  "weekdayRate": 107,
+                  "weekendRate": 121,
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+                  "id": "C5E0DFA8-38D9-4084-BDFD-B032438ABA99",
+                  "endDate": 786002400
+                },
+                {
+                  "weekdayRate": 86,
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+                  "id": "64F9D9A4-C329-42DE-ADA1-6D773CF08A69",
+                  "endDate": 771224400,
+                  "startDate": 768978000,
+                  "weekendRate": 96
+                },
+                {
+                  "startDate": 767768400,
+                  "weekdayRate": 79,
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+                  "weekendRate": 89,
+                  "id": "8C2A1DA0-9F1F-403E-80D7-16DD8D2B040C",
+                  "endDate": 768891600
+                },
+                {
+                  "weekendRate": 121,
+                  "startDate": 766904400,
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+                  "id": "351899AF-FE4F-4F51-B1CE-D388AD116DEC",
+                  "weekdayRate": 107,
+                  "endDate": 767682000
+                },
+                {
+                  "endDate": 780901200,
+                  "startDate": 778395600,
+                  "id": "EFEBF7C4-324E-488A-8752-E6036B2FD487",
+                  "weekdayRate": 73,
+                  "weekendRate": 85,
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D"
+                },
+                {
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+                  "startDate": 761378400,
+                  "endDate": 766126800,
+                  "id": "11B74ADC-8830-4B04-8D07-CEFA843476E1",
+                  "weekdayRate": 107,
+                  "weekendRate": 121
+                },
+                {
+                  "weekendRate": 100,
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+                  "startDate": 760082400,
+                  "weekdayRate": 89,
+                  "id": "B05A9A31-55EF-4B6C-A94A-D8ED01CC216B",
+                  "endDate": 761292000
+                },
+                {
+                  "weekdayRate": 96,
+                  "weekendRate": 110,
+                  "startDate": 786088800,
+                  "id": "E4BFF8C2-4EB3-49E9-BE94-3E1817B5F205",
+                  "endDate": 786175200,
+                  "viewTypeId": "1788E610-22A7-4B95-A63C-E01195E7F67D"
+                }
+              ],
+              "order": 2,
+              "id": "1788E610-22A7-4B95-A63C-E01195E7F67D",
+              "viewName": "Savanna",
+              "roomTypeId": "B1A76C5C-2760-460B-9596-A4892D60A2AE",
+              "roomCapacity": 12
+            },
+            {
+              "roomCapacity": 12,
+              "pointValues": [
+                {
+                  "id": "B250D648-A8B1-4A00-A0E1-CC3FE721B75B",
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+                  "startDate": 768978000,
+                  "weekendRate": 88,
+                  "weekdayRate": 78,
+                  "endDate": 771224400
+                },
+                {
+                  "endDate": 780901200,
+                  "weekdayRate": 68,
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+                  "weekendRate": 78,
+                  "id": "9AF6BBF7-EBB9-470B-B664-CB58EB17A0D6",
+                  "startDate": 778395600
+                },
+                {
+                  "id": "D28DC7CB-AD0C-41B6-A66A-C201DB1F8553",
+                  "weekendRate": 135,
+                  "weekdayRate": 117,
+                  "endDate": 788853600,
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+                  "startDate": 788248800
+                },
+                {
+                  "endDate": 786002400,
+                  "weekdayRate": 97,
+                  "id": "335906D2-7B69-4D5E-B8B3-29D05BFD48A6",
+                  "startDate": 785829600,
+                  "weekendRate": 111,
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57"
+                },
+                {
+                  "startDate": 786088800,
+                  "weekdayRate": 88,
+                  "endDate": 786175200,
+                  "weekendRate": 100,
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+                  "id": "ECBE84A8-2E08-4161-B5FB-5EA869D78BBC"
+                },
+                {
+                  "weekendRate": 111,
+                  "id": "41191975-CD15-4776-808E-C8329EB65B0B",
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+                  "startDate": 761378400,
+                  "endDate": 766126800,
+                  "weekdayRate": 97
+                },
+                {
+                  "weekdayRate": 88,
+                  "id": "CDAAFE8D-66CE-44C7-B0C0-158C5B68A217",
+                  "endDate": 785743200,
+                  "startDate": 780987600,
+                  "weekendRate": 100,
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57"
+                },
+                {
+                  "weekendRate": 88,
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+                  "id": "8A960BE9-2B80-481D-8909-00E734500081",
+                  "startDate": 786261600,
+                  "endDate": 788162400,
+                  "weekdayRate": 78
+                },
+                {
+                  "weekdayRate": 73,
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+                  "weekendRate": 82,
+                  "startDate": 757404000,
+                  "endDate": 759996000,
+                  "id": "8B28335F-8855-4B0F-B9DE-8B6E08E5044B"
+                },
+                {
+                  "endDate": 778309200,
+                  "weekendRate": 91,
+                  "weekdayRate": 81,
+                  "startDate": 771310800,
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+                  "id": "6ECCDAD6-EC98-4207-8D51-C117AA77CFFC"
+                },
+                {
+                  "weekdayRate": 81,
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+                  "weekendRate": 91,
+                  "endDate": 761292000,
+                  "startDate": 760082400,
+                  "id": "22FE838A-3EF3-403A-9F0E-476AA38D4A4B"
+                },
+                {
+                  "weekdayRate": 117,
+                  "endDate": 766818000,
+                  "startDate": 766213200,
+                  "weekendRate": 135,
+                  "id": "D7385929-6D5F-48C7-9CE7-BAA8E16C016D",
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57"
+                },
+                {
+                  "startDate": 767768400,
+                  "endDate": 768891600,
+                  "weekendRate": 82,
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+                  "weekdayRate": 73,
+                  "id": "0339CBB2-E287-4384-8168-214B02284560"
+                },
+                {
+                  "startDate": 766904400,
+                  "weekdayRate": 97,
+                  "weekendRate": 111,
+                  "viewTypeId": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+                  "id": "79941A36-70DB-4D3F-8A57-6339D7C93FEB",
+                  "endDate": 767682000
+                }
+              ],
+              "roomTypeId": "B1A76C5C-2760-460B-9596-A4892D60A2AE",
+              "viewName": "Standard",
+              "id": "22F404FA-95ED-43E0-BFD9-9EAB46C07C57",
+              "order": 1
+            }
+          ],
+          "order": 5,
+          "roomCategory": "Three-Bedroom",
+          "id": "B1A76C5C-2760-460B-9596-A4892D60A2AE"
+        },
+        {
+          "roomCategory": "One-Bedroom",
+          "resortId": "F0A10E95-5502-4C3A-AFE2-C7A0EF82D501",
+          "roomName": "One-Bedroom Villa",
+          "id": "3DBAE1AD-B91D-443B-B987-142DE61AC58C",
+          "viewTypes": [
+            {
+              "roomTypeId": "3DBAE1AD-B91D-443B-B987-142DE61AC58C",
+              "pointValues": [
+                {
+                  "weekdayRate": 47,
+                  "weekendRate": 52,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "startDate": 788248800,
+                  "endDate": 788853600,
+                  "id": "C7E01931-974C-46FA-AD95-3526DC416053"
+                },
+                {
+                  "id": "E5BD79F5-4FDE-4286-A0CE-FF4FB2AEAF30",
+                  "weekendRate": 34,
+                  "endDate": 768891600,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "startDate": 767768400,
+                  "weekdayRate": 31
+                },
+                {
+                  "weekendRate": 35,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "id": "FE643035-052A-441E-8524-12ED8D5F917B",
+                  "startDate": 768978000,
+                  "weekdayRate": 33,
+                  "endDate": 771224400
+                },
+                {
+                  "weekdayRate": 35,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "startDate": 780987600,
+                  "weekendRate": 39,
+                  "id": "150865F2-0638-48C6-B3AE-9BE4BC2CB61F",
+                  "endDate": 785743200
+                },
+                {
+                  "weekendRate": 41,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "endDate": 767682000,
+                  "startDate": 766904400,
+                  "weekdayRate": 38,
+                  "id": "8A0D9DFA-3761-4728-A6AA-3A2E432AE31F"
+                },
+                {
+                  "endDate": 780901200,
+                  "weekendRate": 31,
+                  "startDate": 778395600,
+                  "weekdayRate": 27,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "id": "154ECF9E-5700-45AE-A408-D1246757B2F6"
+                },
+                {
+                  "weekdayRate": 35,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "weekendRate": 39,
+                  "startDate": 786088800,
+                  "id": "95FDE58B-F804-4590-AED9-D0AEE94ACEE5",
+                  "endDate": 786175200
+                },
+                {
+                  "id": "A0373C6D-0DBF-43D1-A893-1B176A1A00B5",
+                  "weekdayRate": 34,
+                  "startDate": 760082400,
+                  "weekendRate": 36,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "endDate": 761292000
+                },
+                {
+                  "startDate": 766213200,
+                  "weekdayRate": 47,
+                  "weekendRate": 52,
+                  "id": "688A8CB3-E850-40AB-8638-6468017D0528",
+                  "endDate": 766818000,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9"
+                },
+                {
+                  "id": "074D96B9-D638-4035-BA8F-FE0D4590429A",
+                  "endDate": 786002400,
+                  "weekdayRate": 38,
+                  "weekendRate": 41,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "startDate": 785829600
+                },
+                {
+                  "startDate": 786261600,
+                  "weekendRate": 35,
+                  "endDate": 788162400,
+                  "weekdayRate": 33,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "id": "4FC80E76-D4F4-432A-9EDA-3D483887392B"
+                },
+                {
+                  "weekendRate": 41,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "id": "469673CF-56A3-447A-BA4D-61B32C7C9AD6",
+                  "endDate": 766126800,
+                  "startDate": 761378400,
+                  "weekdayRate": 38
+                },
+                {
+                  "weekendRate": 34,
+                  "startDate": 757404000,
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "endDate": 759996000,
+                  "id": "53A793E2-B341-43CC-A400-85FF121233FF",
+                  "weekdayRate": 31
+                },
+                {
+                  "weekdayRate": 34,
+                  "endDate": 778309200,
+                  "id": "B4D8DA6B-1181-4ADE-8400-A9E855E1F822",
+                  "viewTypeId": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+                  "startDate": 771310800,
+                  "weekendRate": 36
+                }
+              ],
+              "order": 3,
+              "id": "A543BB63-EC8D-4F0C-9804-0E1DCF5C7CC9",
+              "viewName": "Savanna",
+              "roomCapacity": 5
+            },
+            {
+              "id": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+              "pointValues": [
+                {
+                  "endDate": 785743200,
+                  "startDate": 780987600,
+                  "weekendRate": 53,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "id": "6A5C283B-F6C5-451D-AC1C-135EA2EC8B10",
+                  "weekdayRate": 46
+                },
+                {
+                  "endDate": 786002400,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "startDate": 785829600,
+                  "weekdayRate": 49,
+                  "id": "5936264A-84EA-41BC-9EF2-C872AE2CDA0A",
+                  "weekendRate": 56
+                },
+                {
+                  "weekendRate": 46,
+                  "id": "CA4F43DD-DBDA-4EDC-8900-B62A84F6AAAC",
+                  "endDate": 759996000,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "startDate": 757404000,
+                  "weekdayRate": 41
+                },
+                {
+                  "weekdayRate": 44,
+                  "weekendRate": 50,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "endDate": 761292000,
+                  "startDate": 760082400,
+                  "id": "CAD4E0CB-1FB9-43E1-A8E0-5FBA017866B2"
+                },
+                {
+                  "weekendRate": 46,
+                  "id": "43599A5B-A1F9-4AB9-B683-1D28F7AE30D4",
+                  "endDate": 768891600,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "weekdayRate": 41,
+                  "startDate": 767768400
+                },
+                {
+                  "startDate": 788248800,
+                  "endDate": 788853600,
+                  "id": "7DD8F827-0096-41E2-917A-6CDEB6ECFFB6",
+                  "weekendRate": 73,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "weekdayRate": 65
+                },
+                {
+                  "id": "1E4016B4-C40D-4424-A2E4-B02808EC0DEA",
+                  "endDate": 766126800,
+                  "weekdayRate": 49,
+                  "weekendRate": 56,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "startDate": 761378400
+                },
+                {
+                  "id": "79B2754E-CD2C-4393-B3E2-FAD41025AFA4",
+                  "endDate": 771224400,
+                  "weekdayRate": 43,
+                  "weekendRate": 49,
+                  "startDate": 768978000,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC"
+                },
+                {
+                  "weekdayRate": 49,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "endDate": 767682000,
+                  "startDate": 766904400,
+                  "weekendRate": 56,
+                  "id": "8EBCE964-C117-49B9-AF33-F020BA63F547"
+                },
+                {
+                  "weekendRate": 43,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "endDate": 780901200,
+                  "startDate": 778395600,
+                  "weekdayRate": 38,
+                  "id": "372E82FE-BDF2-4CC2-872B-84D293D8763A"
+                },
+                {
+                  "startDate": 786261600,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "id": "7529B4B1-3171-4654-A6FB-52B676106B54",
+                  "endDate": 788162400,
+                  "weekdayRate": 43,
+                  "weekendRate": 49
+                },
+                {
+                  "weekdayRate": 65,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "id": "CC270EE4-D6BF-4361-A1A6-A1A3124AF0E7",
+                  "startDate": 766213200,
+                  "endDate": 766818000,
+                  "weekendRate": 73
+                },
+                {
+                  "id": "48FDD756-D6B4-41B1-9D05-2F8301C2C624",
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC",
+                  "weekendRate": 50,
+                  "startDate": 771310800,
+                  "weekdayRate": 44,
+                  "endDate": 778309200
+                },
+                {
+                  "startDate": 786088800,
+                  "endDate": 786175200,
+                  "id": "FFD908D1-A29A-4360-A62D-891CB60A1794",
+                  "weekdayRate": 46,
+                  "weekendRate": 53,
+                  "viewTypeId": "FCE7A806-C805-4454-85F6-C465A8F589CC"
+                }
+              ],
+              "order": 4,
+              "viewName": "Kilimanjaro Club Concierge",
+              "roomCapacity": 5,
+              "roomTypeId": "3DBAE1AD-B91D-443B-B987-142DE61AC58C"
+            },
+            {
+              "id": "00FFE6AC-E975-44CC-AFD6-713C4E512764",
+              "viewName": "Standard",
+              "roomCapacity": 5,
+              "roomTypeId": "3DBAE1AD-B91D-443B-B987-142DE61AC58C",
+              "pointValues": [
+                {
+                  "weekdayRate": 29,
+                  "endDate": 786175200,
+                  "startDate": 786088800,
+                  "id": "DC985D18-8A55-4702-84AD-E93F6C9066FE",
+                  "weekendRate": 32,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764"
+                },
+                {
+                  "weekdayRate": 29,
+                  "weekendRate": 32,
+                  "startDate": 780987600,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764",
+                  "id": "94B6967A-10BD-4755-9535-A6ED76BCDE05",
+                  "endDate": 785743200
+                },
+                {
+                  "startDate": 771310800,
+                  "weekdayRate": 27,
+                  "weekendRate": 30,
+                  "id": "9A3D5779-AE48-496E-97AB-BBA1672983B6",
+                  "endDate": 778309200,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764"
+                },
+                {
+                  "endDate": 771224400,
+                  "startDate": 768978000,
+                  "weekendRate": 29,
+                  "id": "523EA529-1F5A-4109-B5B2-0A548847194B",
+                  "weekdayRate": 26,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764"
+                },
+                {
+                  "id": "AA0D0F81-9E68-4786-AB37-08E0FE59ED14",
+                  "endDate": 766818000,
+                  "weekdayRate": 38,
+                  "startDate": 766213200,
+                  "weekendRate": 45,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764"
+                },
+                {
+                  "weekendRate": 45,
+                  "weekdayRate": 38,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764",
+                  "id": "F4C32AA7-C71C-41FA-81C8-BF4CE2B4D660",
+                  "startDate": 788248800,
+                  "endDate": 788853600
+                },
+                {
+                  "startDate": 760082400,
+                  "weekendRate": 30,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764",
+                  "id": "05BADA58-8093-4AB1-9D09-178928B173DB",
+                  "weekdayRate": 27,
+                  "endDate": 761292000
+                },
+                {
+                  "id": "91564525-6AF2-46C5-A6BE-4C02B7339E09",
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764",
+                  "startDate": 785829600,
+                  "weekdayRate": 32,
+                  "endDate": 786002400,
+                  "weekendRate": 35
+                },
+                {
+                  "id": "105F3551-6A75-40C3-AF2B-D2DFA86354FF",
+                  "endDate": 780901200,
+                  "weekdayRate": 20,
+                  "startDate": 778395600,
+                  "weekendRate": 25,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764"
+                },
+                {
+                  "startDate": 761378400,
+                  "weekendRate": 35,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764",
+                  "endDate": 766126800,
+                  "id": "7BC05F6A-A260-4311-96F1-427EA13CDF16",
+                  "weekdayRate": 32
+                },
+                {
+                  "startDate": 786261600,
+                  "endDate": 788162400,
+                  "weekendRate": 29,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764",
+                  "weekdayRate": 26,
+                  "id": "CCC59E51-9FE3-4940-9FE3-0B3C8574C95B"
+                },
+                {
+                  "endDate": 768891600,
+                  "weekdayRate": 24,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764",
+                  "startDate": 767768400,
+                  "weekendRate": 28,
+                  "id": "9245E1AF-A2EC-4600-AF58-C623AE1A1339"
+                },
+                {
+                  "endDate": 767682000,
+                  "startDate": 766904400,
+                  "weekendRate": 35,
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764",
+                  "weekdayRate": 32,
+                  "id": "0B4F6EDF-E4B3-4528-8094-8726618D2ED4"
+                },
+                {
+                  "viewTypeId": "00FFE6AC-E975-44CC-AFD6-713C4E512764",
+                  "weekdayRate": 24,
+                  "startDate": 757404000,
+                  "id": "32E20288-DDE4-472F-9D6F-46536006E6EF",
+                  "endDate": 759996000,
+                  "weekendRate": 28
+                }
+              ],
+              "order": 2
+            },
+            {
+              "roomCapacity": 5,
+              "viewName": "Value",
+              "pointValues": [
+                {
+                  "weekdayRate": 19,
+                  "id": "A5FE8D4B-1E07-4645-B5C5-49722DB5D583",
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97",
+                  "endDate": 768891600,
+                  "startDate": 767768400,
+                  "weekendRate": 21
+                },
+                {
+                  "weekdayRate": 24,
+                  "id": "024C7478-C7BF-44DC-A074-072A416556A1",
+                  "endDate": 786002400,
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97",
+                  "weekendRate": 27,
+                  "startDate": 785829600
+                },
+                {
+                  "weekdayRate": 31,
+                  "endDate": 766818000,
+                  "id": "8C345A79-0034-4272-90F0-95D48E09A5C0",
+                  "startDate": 766213200,
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97",
+                  "weekendRate": 35
+                },
+                {
+                  "endDate": 766126800,
+                  "startDate": 761378400,
+                  "weekdayRate": 24,
+                  "id": "99F33193-7D17-485C-B603-727ACFAB7E1E",
+                  "weekendRate": 27,
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97"
+                },
+                {
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97",
+                  "startDate": 778395600,
+                  "endDate": 780901200,
+                  "weekendRate": 20,
+                  "id": "8735BCA7-FC4A-45FA-8797-8587D55BC63E",
+                  "weekdayRate": 17
+                },
+                {
+                  "weekdayRate": 20,
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97",
+                  "endDate": 788162400,
+                  "weekendRate": 22,
+                  "id": "E94E27A3-D06D-47B0-83F2-A0C1380E1C6A",
+                  "startDate": 786261600
+                },
+                {
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97",
+                  "id": "7FB5B3F8-9BE8-49FF-B9FF-507CB0526B60",
+                  "endDate": 759996000,
+                  "weekdayRate": 19,
+                  "startDate": 757404000,
+                  "weekendRate": 21
+                },
+                {
+                  "weekdayRate": 21,
+                  "weekendRate": 24,
+                  "id": "C85B3938-170C-44E0-9CF3-E7642898E486",
+                  "startDate": 760082400,
+                  "endDate": 761292000,
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97"
+                },
+                {
+                  "weekdayRate": 24,
+                  "startDate": 766904400,
+                  "weekendRate": 27,
+                  "id": "5224B5FE-6003-4DF5-8FB5-667E85E8C11B",
+                  "endDate": 767682000,
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97"
+                },
+                {
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97",
+                  "weekdayRate": 31,
+                  "weekendRate": 35,
+                  "id": "948642CA-2E02-42F3-B9AF-D59F0F41E4F2",
+                  "endDate": 788853600,
+                  "startDate": 788248800
+                },
+                {
+                  "startDate": 771310800,
+                  "endDate": 778309200,
+                  "weekendRate": 24,
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97",
+                  "id": "338D5152-B242-4DC9-88DA-D0441172D31D",
+                  "weekdayRate": 21
+                },
+                {
+                  "weekdayRate": 23,
+                  "id": "7E98B9B7-AB5C-4738-B7E8-6A5F7A3E5CCA",
+                  "weekendRate": 26,
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97",
+                  "endDate": 785743200,
+                  "startDate": 780987600
+                },
+                {
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97",
+                  "endDate": 771224400,
+                  "id": "9604DB7A-B00A-47A4-A0E0-240E846F8D78",
+                  "startDate": 768978000,
+                  "weekdayRate": 20,
+                  "weekendRate": 22
+                },
+                {
+                  "viewTypeId": "F3EAAA18-C9A4-4908-999E-B668A617CA97",
+                  "weekdayRate": 23,
+                  "id": "C3D8422D-4E79-46D7-8F90-579A6AE4D5CD",
+                  "startDate": 786088800,
+                  "weekendRate": 26,
+                  "endDate": 786175200
+                }
+              ],
+              "roomTypeId": "3DBAE1AD-B91D-443B-B987-142DE61AC58C",
+              "order": 1,
+              "id": "F3EAAA18-C9A4-4908-999E-B668A617CA97"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "shortName": "Jambo House",
+      "resortName": "Disney's Animal Kingdome Villas - Jambo House",
+      "expireYear": 2057
+    }
 ]

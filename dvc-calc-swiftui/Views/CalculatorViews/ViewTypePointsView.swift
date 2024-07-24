@@ -16,7 +16,7 @@ struct ViewTypePointsView: View {
     var checkOutDate: Date
     
     @State private var dateRange: [Date] = []
-    @State private var totalPointsForStay: Int16 = 0
+    @State private var totalPointsForStay: Int = 0
     @State private var showDetails = true
     @State private var showSaveTrip = false
     

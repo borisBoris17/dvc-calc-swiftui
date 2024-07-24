@@ -114,4 +114,13 @@ extension Date {
     var numericFormattedDate: String {
         self.formatted(date: .numeric, time: .omitted)
     }
+    
+    func daysUntil(date: Date) -> Int {
+        let currentCalendar = Calendar.current
+
+        guard let start = currentCalendar.ordinality(of: .day, in: .era, for: self) else { return 0 }
+        guard let end = currentCalendar.ordinality(of: .day, in: .era, for: date) else { return 0 }
+
+        return end - start
+    }
 }

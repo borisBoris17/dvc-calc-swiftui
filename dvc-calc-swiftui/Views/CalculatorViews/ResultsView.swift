@@ -19,7 +19,7 @@ struct ResultsView: View {
     @Binding var checkOutDate: Date?
     
     var body: some View {
-        ScrollView {
+        VStack {
             ScrollView(.horizontal) {
                 HStack {
                     Button {
@@ -63,25 +63,28 @@ struct ResultsView: View {
                             Text("Room Types")
                         }
                         .foregroundStyle(Color.background)
-                            .fontWeight(.bold)
-                            .padding()
-                            .background(
-                                RoundedRectangle(cornerRadius: 15)
-                                    .fill(.accent)
-                            )
+                        .fontWeight(.bold)
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 15)
+                                .fill(.accent)
+                        )
                     }
                     .buttonStyle(PlainButtonStyle())
                 }
             }
-            .padding(.horizontal)
+            .scrollIndicators(.hidden)
+            .padding(.leading)
             
-            ForEach(resorts.sorted(by: { $0.key.resortName < $1.key.resortName }), id: \.key) { (key, value) in
-                if value && checkInDate != nil && checkOutDate != nil {
-                    ResortPointsView(resort: key, roomCategorie: $roomCategories, roomCategory: roomCategory, checkInDate: checkInDate!, checkOutDate: checkOutDate!)
+            ScrollView {
+                ForEach(resorts.sorted(by: { $0.key.resortName < $1.key.resortName }), id: \.key) { (key, value) in
+                    if value && checkInDate != nil && checkOutDate != nil {
+                        ResortPointsView(resort: key, roomCategorie: $roomCategories, roomCategory: roomCategory, checkInDate: checkInDate!, checkOutDate: checkOutDate!)
+                    }
                 }
             }
+            .scrollIndicators(.hidden)
         }
-        .scrollIndicators(.hidden)
         .sheet(isPresented: $showDateInput) {
             CalendarView(checkInDate: $checkInDate, checkOutDate: $checkOutDate)
                 .presentationDetents([.medium])

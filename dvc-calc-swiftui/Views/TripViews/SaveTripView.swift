@@ -11,7 +11,7 @@ import SwiftData
 struct SaveTripView: View {
     var checkInDate: Date
     var checkOutDate: Date
-    var points: Int16
+    var points: Int
     var resortId: UUID
     var roomTypeId: UUID
     var viewTypeId: UUID
@@ -78,7 +78,7 @@ struct SaveTripView: View {
                         
                         // TODO: update the VacationPoints on the Contract
                         if let selectedContract = selectedContract {
-                            let activeUseYear = selectedContract.useYear.pointAllotmentYear
+                            let activeUseYear = selectedContract.useYear.getAllotmentYearByDate(date: Date())
                             for vacationPoints in selectedContract.vactionPointsYears.sorted() {
                                 if vacationPoints.year >= activeUseYear - 1 && vacationPoints.year <= activeUseYear + 1 {
                                     if vacationPoints.year == activeUseYear - 1 {

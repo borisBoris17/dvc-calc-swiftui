@@ -11,9 +11,13 @@ import SwiftData
 struct TripView: View {
     var trip: Trip
     
+    @State private var showDeleteAlert = false
+    
     @Query private var resorts: [Resort]
     @Query private var roomTypes: [RoomType]
     @Query private var viewTypes: [ViewType]
+    
+    @Environment(\.modelContext) var modelContext
     
     init(trip: Trip) {
         self.trip = trip
@@ -34,8 +38,19 @@ struct TripView: View {
         })
     }
     
+    var countDownString: String {
+        let daysUntil = Date().startOfDay.daysUntil(date: trip.checkInDate)
+        if daysUntil > 0 {
+            return "\(daysUntil) Days"
+        } else if daysUntil == 0 {
+            return "Disney Day!"
+        } else {
+            return ""
+        }
+    }
+    
     var body: some View {
-        HStack {
+        VStack {
             VStack(alignment: .leading) {
                 HStack(alignment: .top) {
                     if let resort = resorts.first {
@@ -52,8 +67,9 @@ struct TripView: View {
                  
                     Spacer()
                     
-                    Text("365 Days")
+                    Text(countDownString)
                 }
+                .padding(.top)
                 
                 VStack(spacing: -10) {
                     HStack {
@@ -131,11 +147,45 @@ struct TripView: View {
                             .font(.subheadline)
                             .padding(.bottom)
                     }
+                    
+                    HStack {
+                        Spacer()
+                        
+                        Button("Remove", role: .destructive) {
+                            showDeleteAlert = true
+                        }
+                        .padding(.bottom)
+                        .alert(isPresented: $showDeleteAlert) {
+                            Alert(
+                                title: Text("Are you sure you want to delete this Trip?"),
+                                message: Text(trip.contract != nil ? "This is a permanent action and will effect the Contract on this Trip." : "This is a permanent action"),
+                                primaryButton: .destructive(Text("Delete")) {
+                                    if let contract = trip.contract {
+                                        let allotmentYear = contract.useYear.getAllotmentYearByDate(date: trip.checkInDate)
+                                        
+                                        for vacatioPoints in contract.vactionPointsYears.sorted() {
+                                            if vacatioPoints.year == allotmentYear - 1 {
+                                                vacatioPoints.points = vacatioPoints.points + trip.borrowedFromLastYear
+                                            } else if vacatioPoints.year == allotmentYear {
+                                                vacatioPoints.points = vacatioPoints.points + (Int(trip.points) - trip.borrowedFromLastYear - trip.borrowedFromNextYear)
+                                            } else if vacatioPoints.year == allotmentYear + 1 {
+                                                vacatioPoints.points = vacatioPoints.points + trip.borrowedFromNextYear
+                                            }
+                                        }
+                                    }
+                                    withAnimation() {
+                                        modelContext.delete(trip)
+                                    }
+                                },
+                                secondaryButton: .cancel()
+                            )
+                        }
+                    }
                 }
             }
-            .padding()
+            .padding(.horizontal)
             
-            Spacer()
+            
         }
         .background(
             RoundedRectangle(cornerRadius: 10, style: .continuous)
