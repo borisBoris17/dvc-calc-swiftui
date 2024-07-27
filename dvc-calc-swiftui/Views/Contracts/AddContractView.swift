@@ -47,13 +47,13 @@ struct AddContractView: View {
                         Picker(selection: $selectedResort, label: EmptyView()) {
                             Text("Select a Resort").tag(nil as Resort?)
                             ForEach(resorts.sorted()) { resort in
-                                Text(resort.resortName)
+                                Text(resort.shortName)
                                     .lineLimit(1)
                                     .tag(resort as Resort?)
                             }
                         }
                     } label: {
-                        Text(selectedResort?.resortName ?? "Select a Resort")
+                        Text(selectedResort?.shortName ?? "Select a Resort")
                             .lineLimit(1)
                     }
                 }
