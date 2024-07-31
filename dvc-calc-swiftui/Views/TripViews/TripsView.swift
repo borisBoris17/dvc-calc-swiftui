@@ -16,6 +16,7 @@ struct TripsView: View {
             Text("Trips")
                 .font(.title)
                 .fontWeight(.bold)
+                .foregroundStyle(Color.font)
             
             ScrollView {
                 ForEach(trips) { trip in

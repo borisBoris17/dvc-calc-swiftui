@@ -23,6 +23,8 @@ struct CalculatorView: View {
     @State private var selectedRoomCategories: [RoomCategory: Bool] = [:]
     @State private var selectedResortIndicies: [Bool] = []
     
+    @Environment(\.colorScheme) var colorScheme
+    
     let roomTypeCategories = [RoomCategory(name: "Studio", order: 0), RoomCategory(name: "One-Bedroom", order: 1), RoomCategory(name: "Two-Bedroom", order: 2), RoomCategory(name: "Three-Bedroom", order: 3)]
     
     var formatedCheckInDate: String {
@@ -56,11 +58,22 @@ struct CalculatorView: View {
     var body: some View {
         NavigationStack(path: $path) {
             VStack {
-                Image("logo")
+                Spacer()
+                
+                Image(colorScheme == .dark ? "logoDark" : "logo")
+                
+                Spacer()
+                
+                Spacer()
+                
+                Spacer()
+                
+                Spacer()
                 
                 VStack {
                     HStack {
                         Text("Dates")
+                            .foregroundStyle(Color.font)
                             .fontWeight(.bold)
                         
                         Spacer()
@@ -73,30 +86,32 @@ struct CalculatorView: View {
                             
                             HStack {
                                 Text("\(formatedCheckInDate) - \(formatedCheckOutDate)")
+                                    .foregroundStyle(Color.constantFont)
+                                    .padding([.leading, .top])
                                 
                                 Spacer()
                             }
-                            .padding([.leading, .top])
                             
                             Divider()
                                 .frame(height: 3)
                                 .padding(.leading)
-                                .background(Color.black)
+                                .background(Color.font)
                         }
                         .frame(maxWidth: .infinity)
                         .background(
                             Rectangle()
-                                .foregroundStyle(.white.opacity(0.5))
+                                .foregroundStyle(Color.secondaryBackground)
                         )
                     }
                     .buttonStyle(PlainButtonStyle())
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
-                .padding([.horizontal, .bottom])
+                .padding(.horizontal)
                 
                 VStack {
                     HStack {
                         Text("Resorts")
+                            .foregroundStyle(Color.font)
                             .fontWeight(.bold)
                         
                         Spacer()
@@ -107,6 +122,7 @@ struct CalculatorView: View {
                             VStack {
                                 HStack {
                                     Text(numSelectedResorts() == 0 ? "Select Resorts..." : numSelectedResorts() == 1 ? "1 Resort Selected" : "\(numSelectedResorts()) Resorts Selected")
+                                        .foregroundStyle(Color.constantFont)
                                         .padding([.leading, .top])
                                     
                                     Spacer()
@@ -115,7 +131,7 @@ struct CalculatorView: View {
                                 Divider()
                                     .frame(height: 3)
                                     .padding(.leading)
-                                    .background(Color.black)
+                                    .background(Color.font)
                             }
                         }
                         .buttonStyle(PlainButtonStyle())
@@ -123,18 +139,19 @@ struct CalculatorView: View {
                     .frame(maxWidth: .infinity)
                     .background(
                         Rectangle()
-                            .foregroundStyle(.white.opacity(0.5))
+                            .foregroundStyle(Color.secondaryBackground)
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .onTapGesture {
                         path.append("Resorts")
                     }
                 }
-                .padding([.horizontal, .bottom])
+                .padding(.horizontal)
                 
                 VStack {
                     HStack {
                         Text("Room Types")
+                            .foregroundStyle(Color.font)
                             .fontWeight(.bold)
                         
                         Spacer()
@@ -145,6 +162,7 @@ struct CalculatorView: View {
                             VStack {
                                 HStack {
                                     Text(numSelectedRoomTypes() == 0 ? "Select Room Types..." : numSelectedRoomTypes() == 1 ? "1 Room Type Selected" : "\(numSelectedRoomTypes()) Room Types Selected")
+                                        .foregroundStyle(Color.constantFont)
                                         .padding([.leading, .top])
                                     
                                     Spacer()
@@ -152,8 +170,7 @@ struct CalculatorView: View {
                                 
                                 Divider()
                                     .frame(height: 3)
-                                    .padding(.leading)
-                                    .background(Color.black)
+                                    .background(Color.font)
                             }
                         }
                         .buttonStyle(PlainButtonStyle())
@@ -161,24 +178,34 @@ struct CalculatorView: View {
                     .frame(maxWidth: .infinity)
                     .background(
                         Rectangle()
-                            .foregroundStyle(.white.opacity(0.5))
+                            .foregroundStyle(Color.secondaryBackground)
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .onTapGesture {
                         path.append("Room Types")
                     }
                 }
-                .padding([.horizontal, .bottom])
+                .padding(.horizontal)
+                
+                Spacer()
+                
+                Spacer()
                 
                 NavigationLink(value: "Results") {
                     Text("Calculate")
-                        .foregroundStyle(.white)
-                        .padding()
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .foregroundStyle(Color.secondaryFont)
+                        .frame(maxWidth: .infinity)
+                        .padding(7)
                         .background(
-                            RoundedRectangle(cornerRadius: 15)
+                            RoundedRectangle(cornerRadius: 10)
                                 .fill(.accent)
                         )
+                        .padding(.horizontal)
                 }
+                
+                Spacer()
             }
             .navigationDestination(for: String.self) { destination in
                 if destination == "Resorts" {

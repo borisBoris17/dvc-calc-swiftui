@@ -21,17 +21,31 @@ struct ContractsView: View {
             Text("Contracts")
                 .font(.title)
                 .fontWeight(.bold)
+                .foregroundStyle(Color.font)
             
             ScrollView {
                 ForEach(contracts) { contract in
                     ContractView(contract: contract, pointAllotmentYear: contract.useYear.getAllotmentYearByDate(date: Date()))
                         .padding()
                 }
-                
-                Button("Add Contract") {
-                    showAddContract = true
-                }
             }
+            
+            Button {
+                showAddContract = true
+            } label: {
+                Text("Add Contract")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .foregroundStyle(Color.secondaryFont)
+                    .frame(maxWidth: .infinity)
+                    .padding(7)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(.accent)
+                    )
+                    .padding(.horizontal)
+            }
+            .padding(.bottom)
         }
         .sheet(isPresented: $showAddContract) {
             AddContractView()

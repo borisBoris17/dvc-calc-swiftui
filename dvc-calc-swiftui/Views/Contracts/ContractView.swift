@@ -51,7 +51,7 @@ struct ContractView: View {
                 
                 Text("\(contract.points) pts")
             }
-            .foregroundColor(Color.font)
+            .foregroundColor(Color.constantFont)
             .font(.title)
             .fontWeight(.bold)
             .padding([.horizontal, .top])
@@ -81,7 +81,7 @@ struct ContractView: View {
                     }
                 }
             }
-            .foregroundColor(Color.font)
+            .foregroundColor(Color.constantFont)
             .padding(.horizontal)
             
             HStack {
@@ -103,12 +103,12 @@ struct ContractView: View {
                             print("Error Updating Vacation Point Ammounts", error)
                         }
                     }
-                    .foregroundColor(Color.font)
+                    .foregroundColor(Color.constantFont)
                     
                     Button("Edit Name") {
                         showEditContractName.toggle()
                     }
-                    .foregroundColor(Color.font)
+                    .foregroundColor(Color.constantFont)
                     .alert("Enter new contract name", isPresented: $showEditContractName) {
                         TextField("Enter new contract name", text: $newName)
                         Button("Okay") {
@@ -126,7 +126,7 @@ struct ContractView: View {
                             isEditMode.toggle()
                         }
                     }
-                    .foregroundColor(Color.font)
+                    .foregroundColor(Color.constantFont)
                 }
                 
                 Spacer()
@@ -137,7 +137,7 @@ struct ContractView: View {
                             isEditMode.toggle()
                         }
                     }
-                    .foregroundColor(Color.font)
+                    .foregroundColor(Color.constantFont)
                 } else {
                     Button("Remove", role: .destructive) {
                         showDeleteAlert = true
@@ -170,7 +170,6 @@ struct ContractView: View {
         .background(
             RoundedRectangle(cornerRadius: 10, style: .continuous)
                 .foregroundColor(Color.secondaryBackground)
-                .shadow(radius: 5)
         )
     }
 }

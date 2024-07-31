@@ -66,6 +66,7 @@ struct ViewTypePointsView: View {
             }
             .padding(.leading)
         }
+        .foregroundStyle(Color.constantFont)
         .onAppear() {
             if dateRange.count == 0 {
                 var night = checkInDate

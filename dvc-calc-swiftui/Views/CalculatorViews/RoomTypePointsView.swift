@@ -36,8 +36,7 @@ struct RoomTypePointsView: View {
                                     .padding(10)
                                     .background(
                                         RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                            .foregroundColor(.white)
-                                            .shadow(radius: 5)
+                                            .foregroundColor(Color.secondaryBackground)
                                     )
                                     .padding(.bottom, roomType.viewTypes.sorted()[roomType.viewTypes.sorted().count - 1] == viewType ? 0 : nil)
                             }

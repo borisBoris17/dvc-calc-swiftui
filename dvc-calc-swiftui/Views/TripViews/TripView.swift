@@ -54,22 +54,23 @@ struct TripView: View {
             VStack(alignment: .leading) {
                 HStack(alignment: .top) {
                     if let resort = resorts.first {
-                        Text(resort.resortName)
+                        Text(resort.shortName)
                             .font(.title)
                             .fontWeight(.bold)
-                            .padding(.bottom)
                     } else {
                         Text("No resort found.")
                             .font(.title)
                             .fontWeight(.bold)
-                            .padding(.bottom)
                     }
                  
                     Spacer()
                     
                     Text(countDownString)
+                        .font(.subheadline)
+                        .fontWeight(.bold)
                 }
-                .padding(.top)
+                .padding(.vertical)
+                .foregroundColor(Color.constantFont)
                 
                 VStack(spacing: -10) {
                     HStack {
@@ -147,7 +148,10 @@ struct TripView: View {
                             .font(.subheadline)
                             .padding(.bottom)
                     }
-                    
+                }
+                .foregroundColor(Color.constantFont)
+                
+                VStack {
                     HStack {
                         Spacer()
                         
@@ -189,8 +193,7 @@ struct TripView: View {
         }
         .background(
             RoundedRectangle(cornerRadius: 10, style: .continuous)
-                .foregroundColor(.white)
-                .shadow(radius: 5)
+                .foregroundColor(.secondaryBackground)
         )
     }
 }
