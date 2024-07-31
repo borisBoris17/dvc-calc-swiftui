@@ -12,6 +12,8 @@ struct ContractView: View {
     @State private var showDeleteAlert = false
     @State private var isEditMode = false
     @State private var updatedPointValues: [String] = []
+    @State private var showEditContractName = false
+    @State private var newName = ""
     
     var contract: Contract
     var pointAllotmentYear: Int
@@ -32,9 +34,13 @@ struct ContractView: View {
     var body: some View {
         VStack {
             HStack(alignment: .top) {
+                
                 if resorts.count > 0 {
                     VStack(alignment: .leading) {
+                        Text(contract.name)
                         Text(resorts[0].resortName)
+                            .font(.footnote)
+                            .fontWeight(.none)
                         Text("\(contract.useYear.rawValue)")
                             .font(.footnote)
                             .fontWeight(.none)
@@ -45,6 +51,7 @@ struct ContractView: View {
                 
                 Text("\(contract.points) pts")
             }
+            .foregroundColor(Color.font)
             .font(.title)
             .fontWeight(.bold)
             .padding([.horizontal, .top])
@@ -68,13 +75,13 @@ struct ContractView: View {
                                         .keyboardType(.numberPad)
                                 } else {
                                     Text("\(contract.vactionPointsYears.sorted()[index].points)")
-                                        .padding(7)
                                 }
                             }
                         }
                     }
                 }
             }
+            .foregroundColor(Color.font)
             .padding(.horizontal)
             
             HStack {
@@ -86,31 +93,51 @@ struct ContractView: View {
                                     contract.vactionPointsYears.sorted()[index].points = Int(updatedPointValues[index]) ?? 0
                                 }
                             }
+                            contract.name = newName
                             try modelContext.save()
                             
-                            isEditMode.toggle()
+                            withAnimation() {
+                                isEditMode.toggle()
+                            }
                         } catch {
                             print("Error Updating Vacation Point Ammounts", error)
                         }
                     }
+                    .foregroundColor(Color.font)
+                    
+                    Button("Edit Name") {
+                        showEditContractName.toggle()
+                    }
+                    .foregroundColor(Color.font)
+                    .alert("Enter new contract name", isPresented: $showEditContractName) {
+                        TextField("Enter new contract name", text: $newName)
+                        Button("Okay") {
+                            
+                        }
+                    }
                 } else {
-                    Button("Edit Vacation Points") {
+                    Button("Edit") {
                         for vacationPoints in contract.vactionPointsYears.sorted() {
                             if vacationPoints.year >= pointAllotmentYear - 1 && vacationPoints.year <= pointAllotmentYear + 1 {
                                 updatedPointValues.append("\(vacationPoints.points)")
                             }
                         }
-                        
-                        isEditMode.toggle()
+                        withAnimation() {
+                            isEditMode.toggle()
+                        }
                     }
+                    .foregroundColor(Color.font)
                 }
                 
                 Spacer()
                 
                 if isEditMode {
                     Button("Cancel") {
-                        isEditMode.toggle()
+                        withAnimation() {
+                            isEditMode.toggle()
+                        }
                     }
+                    .foregroundColor(Color.font)
                 } else {
                     Button("Remove", role: .destructive) {
                         showDeleteAlert = true
@@ -142,7 +169,7 @@ struct ContractView: View {
         }
         .background(
             RoundedRectangle(cornerRadius: 10, style: .continuous)
-                .foregroundColor(.white)
+                .foregroundColor(Color.secondaryBackground)
                 .shadow(radius: 5)
         )
     }
