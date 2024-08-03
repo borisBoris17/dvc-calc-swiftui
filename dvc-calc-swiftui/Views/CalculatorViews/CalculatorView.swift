@@ -22,6 +22,8 @@ struct CalculatorView: View {
     @State private var selectedResorts: [Resort: Bool] = [:]
     @State private var selectedRoomCategories: [RoomCategory: Bool] = [:]
     @State private var selectedResortIndicies: [Bool] = []
+    @State private var showSelectResort = false
+    @State private var showSelectRoomType = false
     
     @Environment(\.colorScheme) var colorScheme
     
@@ -83,8 +85,11 @@ struct CalculatorView: View {
                         showDateInput.toggle()
                     } label: {
                         VStack {
-                            
-                            HStack {
+                            HStack(alignment: .center) {
+                                Image(systemName: "calendar")
+                                    .offset(x: 12, y: 0)
+                                    .alignmentGuide(VerticalAlignment.center) { d in d[VerticalAlignment.top] }
+                                
                                 Text("\(formatedCheckInDate) - \(formatedCheckOutDate)")
                                     .foregroundStyle(Color.constantFont)
                                     .padding([.leading, .top])
@@ -118,9 +123,15 @@ struct CalculatorView: View {
                     }
                     
                     VStack {
-                        NavigationLink(value: "Resorts") {
+                        Button {
+                            
+                        } label: {
                             VStack {
-                                HStack {
+                                HStack(alignment: .center) {
+                                    Image(systemName: "building.2")
+                                        .offset(x: 12, y: 0)
+                                        .alignmentGuide(VerticalAlignment.center) { d in d[VerticalAlignment.top] }
+                                    
                                     Text(numSelectedResorts() == 0 ? "Select Resorts..." : numSelectedResorts() == 1 ? "1 Resort Selected" : "\(numSelectedResorts()) Resorts Selected")
                                         .foregroundStyle(Color.constantFont)
                                         .padding([.leading, .top])
@@ -143,13 +154,13 @@ struct CalculatorView: View {
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .onTapGesture {
-                        path.append("Resorts")
+                        showSelectResort.toggle()
                     }
                 }
                 .padding(.horizontal)
                 
                 VStack {
-                    HStack {
+                    HStack(alignment: .center) {
                         Text("Room Types")
                             .foregroundStyle(Color.font)
                             .fontWeight(.bold)
@@ -158,9 +169,15 @@ struct CalculatorView: View {
                     }
                     
                     VStack {
-                        NavigationLink(value: "Room Types") {
+                        Button {
+                            showSelectRoomType.toggle()
+                        } label: {
                             VStack {
-                                HStack {
+                                HStack(alignment: .center) {
+                                    Image(systemName: "bed.double")
+                                        .offset(x: 12, y: 0)
+                                        .alignmentGuide(VerticalAlignment.center) { d in d[VerticalAlignment.top] }
+                                    
                                     Text(numSelectedRoomTypes() == 0 ? "Select Room Types..." : numSelectedRoomTypes() == 1 ? "1 Room Type Selected" : "\(numSelectedRoomTypes()) Room Types Selected")
                                         .foregroundStyle(Color.constantFont)
                                         .padding([.leading, .top])
@@ -182,7 +199,7 @@ struct CalculatorView: View {
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .onTapGesture {
-                        path.append("Room Types")
+                        showSelectRoomType.toggle()
                     }
                 }
                 .padding(.horizontal)
@@ -208,11 +225,7 @@ struct CalculatorView: View {
                 Spacer()
             }
             .navigationDestination(for: String.self) { destination in
-                if destination == "Resorts" {
-                    MultiSelectView(options: $selectedResorts, title: destination)
-                } else if destination == "Room Types" {
-                    MultiSelectView(options: $selectedRoomCategories, title: destination)
-                } else if destination == "Results" {
+                if destination == "Results" {
                     ResultsView(resorts: $selectedResorts, roomCategories: $selectedRoomCategories, roomCategory: $selectedRoomCategory, checkInDate: $checkInDate, checkOutDate: $checkOutDate)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .background(Color("BackgroundColor"))
@@ -236,6 +249,17 @@ struct CalculatorView: View {
         .sheet(isPresented: $showDateInput) {
             CalendarView(checkInDate: $checkInDate, checkOutDate: $checkOutDate)
                 .presentationDetents([.medium])
+                .presentationBackground(Color.background)
+        }
+        .sheet(isPresented: $showSelectResort) {
+            SheetListView(options: $selectedResorts, title: "Resorts")
+                .presentationDetents([.large])
+                .presentationBackground(Color.background)
+        }
+        .sheet(isPresented: $showSelectRoomType) {
+            SheetListView(options: $selectedRoomCategories, title: "Room Types")
+                .presentationDetents([.medium])
+                .presentationBackground(Color.background)
         }
     }
 }

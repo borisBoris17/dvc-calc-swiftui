@@ -78,7 +78,7 @@ struct CalendarView: View {
                             Text(day.formatted(.dateTime.day()))
                                 .fontWeight(.bold)
                                 .foregroundStyle(checkInDate?.startOfDay == day.startOfDay || checkOutDate?.startOfDay == day.startOfDay
-                                                 ? Color.background
+                                                 ? Color.secondaryBackground
                                                  : .primary)
                                 .frame(maxWidth: .infinity, minHeight: 40)
                                 .background(
@@ -86,15 +86,15 @@ struct CalendarView: View {
                                         if checkInDate != nil && checkOutDate != nil {
                                             if day == checkInDate {
                                                 Rectangle()
-                                                    .foregroundStyle(Color.background)
+                                                    .foregroundStyle(Color.secondaryBackground)
                                                     .offset(x: 20)
                                             } else if day == checkOutDate {
                                                 Rectangle()
-                                                    .foregroundStyle(Color.background)
+                                                    .foregroundStyle(Color.secondaryBackground)
                                                     .offset(x: -20)
                                             } else if day > checkInDate! && day < checkOutDate! {
                                                 Rectangle()
-                                                    .foregroundStyle(Color.background)
+                                                    .foregroundStyle(Color.secondaryBackground)
                                                     .containerRelativeFrame(.horizontal) { size, axis in
                                                         size * 1/6
                                                     }

@@ -50,6 +50,7 @@ struct MultiSelectView<T: HashableDisplayable>: View {
                     }
                 }
             }
+            .listRowBackground(Color.secondaryBackground)
             
             ForEach(options.sorted(by: { $0.key < $1.key }), id: \.key) { key, value in
                 HStack {
@@ -68,6 +69,7 @@ struct MultiSelectView<T: HashableDisplayable>: View {
                     .toggleStyle(iOSCheckboxToggleStyle())
                     .accentColor(.primary)
                 }
+                .listRowBackground(Color.secondaryBackground)
             }
         }
         .onAppear() {
@@ -80,7 +82,9 @@ struct MultiSelectView<T: HashableDisplayable>: View {
                 selectAll = true
             }
         }
-        .navigationTitle(title)
+        .scrollContentBackground(.hidden)
+        .background(Color.background)
+        //        .edgesIgnoringSafeArea(.all)
     }
 }
 
