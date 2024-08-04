@@ -89,6 +89,7 @@ struct CalculatorView: View {
                                 Image(systemName: "calendar")
                                     .offset(x: 12, y: 0)
                                     .alignmentGuide(VerticalAlignment.center) { d in d[VerticalAlignment.top] }
+                                    .foregroundStyle(Color.constantFont)
                                 
                                 Text("\(formatedCheckInDate) - \(formatedCheckOutDate)")
                                     .foregroundStyle(Color.constantFont)
@@ -112,6 +113,7 @@ struct CalculatorView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
                 .padding(.horizontal)
+                .padding(.bottom, 10)
                 
                 VStack {
                     HStack {
@@ -131,6 +133,7 @@ struct CalculatorView: View {
                                     Image(systemName: "building.2")
                                         .offset(x: 12, y: 0)
                                         .alignmentGuide(VerticalAlignment.center) { d in d[VerticalAlignment.top] }
+                                        .foregroundStyle(Color.constantFont)
                                     
                                     Text(numSelectedResorts() == 0 ? "Select Resorts..." : numSelectedResorts() == 1 ? "1 Resort Selected" : "\(numSelectedResorts()) Resorts Selected")
                                         .foregroundStyle(Color.constantFont)
@@ -158,6 +161,7 @@ struct CalculatorView: View {
                     }
                 }
                 .padding(.horizontal)
+                .padding(.bottom, 10)
                 
                 VStack {
                     HStack(alignment: .center) {
@@ -177,6 +181,7 @@ struct CalculatorView: View {
                                     Image(systemName: "bed.double")
                                         .offset(x: 12, y: 0)
                                         .alignmentGuide(VerticalAlignment.center) { d in d[VerticalAlignment.top] }
+                                        .foregroundStyle(Color.constantFont)
                                     
                                     Text(numSelectedRoomTypes() == 0 ? "Select Room Types..." : numSelectedRoomTypes() == 1 ? "1 Room Type Selected" : "\(numSelectedRoomTypes()) Room Types Selected")
                                         .foregroundStyle(Color.constantFont)
@@ -203,6 +208,7 @@ struct CalculatorView: View {
                     }
                 }
                 .padding(.horizontal)
+                .padding(.bottom, 10)
                 
                 Spacer()
                 
@@ -253,12 +259,12 @@ struct CalculatorView: View {
         }
         .sheet(isPresented: $showSelectResort) {
             SheetListView(options: $selectedResorts, title: "Resorts")
-                .presentationDetents([.large])
+//                .presentationDetents([.large])
                 .presentationBackground(Color.background)
         }
         .sheet(isPresented: $showSelectRoomType) {
             SheetListView(options: $selectedRoomCategories, title: "Room Types")
-                .presentationDetents([.medium])
+//                .presentationDetents([.large])
                 .presentationBackground(Color.background)
         }
     }

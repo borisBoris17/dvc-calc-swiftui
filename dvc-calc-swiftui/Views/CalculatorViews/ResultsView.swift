@@ -14,6 +14,8 @@ struct ResultsView: View {
     @Binding var roomCategory: String
     
     @State var showDateInput = false
+    @State private var showSelectResort = false
+    @State private var showSelectRoomType = false
     
     @Binding var checkInDate: Date?
     @Binding var checkOutDate: Date?
@@ -40,7 +42,9 @@ struct ResultsView: View {
                             .fill(.accent)
                     )
                     
-                    NavigationLink(value: "Resorts") {
+                    Button {
+                        showSelectResort.toggle()
+                    } label: {
                         HStack {
                             Image(systemName: "slider.vertical.3")
                             
@@ -56,7 +60,9 @@ struct ResultsView: View {
                     }
                     .buttonStyle(PlainButtonStyle())
                     
-                    NavigationLink(value: "Room Types") {
+                    Button {
+                        showSelectRoomType.toggle()
+                    } label: {
                         HStack {
                             Image(systemName: "slider.vertical.3")
                             
@@ -88,6 +94,16 @@ struct ResultsView: View {
         .sheet(isPresented: $showDateInput) {
             CalendarView(checkInDate: $checkInDate, checkOutDate: $checkOutDate)
                 .presentationDetents([.medium])
+        }
+        .sheet(isPresented: $showSelectResort) {
+            SheetListView(options: $resorts, title: "Resorts")
+                .presentationDetents([.large])
+                .presentationBackground(Color.background)
+        }
+        .sheet(isPresented: $showSelectRoomType) {
+            SheetListView(options: $roomCategories, title: "Room Types")
+                .presentationDetents([.large])
+                .presentationBackground(Color.background)
         }
     }
 }

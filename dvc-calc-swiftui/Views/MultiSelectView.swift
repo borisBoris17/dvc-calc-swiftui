@@ -28,11 +28,13 @@ struct MultiSelectView<T: HashableDisplayable>: View {
                 } label: {
                     HStack {
                         Text(isAllOptionsSelected() ? "Deselect All" : "Select All")
+                            .foregroundStyle(Color.constantFont)
                         
                         Spacer()
                         
                         HStack {
                             Image(systemName: isAllOptionsSelected() ? "checkmark.square" : "square")
+                                .foregroundStyle(Color.constantFont)
                         }
                     }
                     .contentShape(Rectangle())
@@ -55,6 +57,7 @@ struct MultiSelectView<T: HashableDisplayable>: View {
             ForEach(options.sorted(by: { $0.key < $1.key }), id: \.key) { key, value in
                 HStack {
                     Text(key.display())
+                        .foregroundStyle(Color.constantFont)
                     
                     Spacer()
                     
@@ -67,7 +70,7 @@ struct MultiSelectView<T: HashableDisplayable>: View {
                         // Empty label
                     }
                     .toggleStyle(iOSCheckboxToggleStyle())
-                    .accentColor(.primary)
+                    .accentColor(Color.constantFont)
                 }
                 .listRowBackground(Color.secondaryBackground)
             }
