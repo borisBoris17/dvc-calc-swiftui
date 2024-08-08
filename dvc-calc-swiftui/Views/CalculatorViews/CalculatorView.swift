@@ -259,19 +259,18 @@ struct CalculatorView: View {
         }
         .sheet(isPresented: $showSelectResort) {
             SheetListView(options: $selectedResorts, title: "Resorts")
-//                .presentationDetents([.large])
                 .presentationBackground(Color.background)
         }
         .sheet(isPresented: $showSelectRoomType) {
             SheetListView(options: $selectedRoomCategories, title: "Room Types")
-//                .presentationDetents([.large])
+                .presentationDetents([.medium])
                 .presentationBackground(Color.background)
         }
     }
 }
 
 #Preview {
-    @State var path = NavigationPath()
+    @Previewable @State var path = NavigationPath()
     
     return CalculatorView(path: $path)
 }
