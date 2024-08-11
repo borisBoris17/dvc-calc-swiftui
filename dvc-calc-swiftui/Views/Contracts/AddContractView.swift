@@ -96,7 +96,7 @@ struct AddContractView: View {
                         let contractExpireYear = Int(selectedResort!.expireYear)
                         let contractName = name.count > 0 ? name : "\(selectedResort!.shortName)-\(selectedUseYear!.rawValue.prefix(3))-\(points)"
                         let contract = Contract(resortId: selectedResort!.id, points: contractSize, useYear: selectedUseYear!, name: contractName)
-                        modelContext.insert(contract)
+                        
                         
                         var vactionPointsYears: [VacationPoints] = []
                         let currentYear = selectedUseYear?.getAllotmentYearByDate(date: Date()) ?? Calendar.current.component(.year, from: Date())
@@ -104,8 +104,9 @@ struct AddContractView: View {
                             let vacationPoints = VacationPoints(year: year, contract: contract, points: contractSize)
                             
                             vactionPointsYears.append(vacationPoints)
-                            modelContext.insert(vacationPoints)
                         }
+                        contract.vactionPointsYears = vactionPointsYears
+                        modelContext.insert(contract)
                         
                         try? modelContext.save()
                         dismiss()
