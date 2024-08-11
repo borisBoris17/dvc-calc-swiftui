@@ -93,7 +93,6 @@ struct ContractView: View {
                                     contract.vactionPointsYears.sorted()[index].points = Int(updatedPointValues[index]) ?? 0
                                 }
                             }
-                            contract.name = newName
                             try modelContext.save()
                             
                             withAnimation() {
@@ -112,7 +111,12 @@ struct ContractView: View {
                     .alert("Enter new contract name", isPresented: $showEditContractName) {
                         TextField("Enter new contract name", text: $newName)
                         Button("Okay") {
-                            
+                            do {
+                                contract.name = newName
+                                try modelContext.save()
+                            } catch {
+                                print("Error Updating Contract Name", error)
+                            }
                         }
                     }
                 } else {
