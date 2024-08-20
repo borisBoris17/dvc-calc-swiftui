@@ -7,7 +7,7 @@ struct dvc_calc_swiftuiApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .modelContainer(for: [Resort.self, PointValue.self, Trip.self, Contract.self, VacationPoints.self]) { result in
+                .modelContainer(for: [ResortArea.self, Resort.self, PointValue.self, Trip.self, Contract.self, VacationPoints.self]) { result in
                     do {
                         let container = try result.get()
                         
@@ -22,12 +22,13 @@ struct dvc_calc_swiftuiApp: App {
                         }
                         
                         let data = try Data(contentsOf: url)
-                        let resorts = try JSONDecoder().decode([Resort].self, from: data)
+                        let resortAreas = try JSONDecoder().decode([ResortArea].self, from: data)
                         
                         // Add all our data to the context.
-                        for resort in resorts {
-                            container.mainContext.insert(resort)
+                        for area in resortAreas {
+                            container.mainContext.insert(area)
                         }
+                        
                         
                         try container.mainContext.save()
                     } catch {

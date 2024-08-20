@@ -20,10 +20,6 @@ struct ContentView: View {
             if tappedTab == self.selection {
                 if tappedTab == 1 {
                     calculatorPath = NavigationPath()
-                } else if tappedTab == 2 {
-                    //                 activitiesPath = NavigationPath()
-                } else {
-                    //                 peoplePath = NavigationPath()
                 }
             }
             self.selection = tappedTab

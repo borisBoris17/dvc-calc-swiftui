@@ -10,8 +10,7 @@ import SwiftUI
 struct ResortPointsView: View {
     var resort: Resort
     @Binding var roomCategorie: [RoomCategory : Bool]
-
-    var roomCategory: String
+    
     var checkInDate: Date
     var checkOutDate: Date
     
@@ -22,15 +21,10 @@ struct ResortPointsView: View {
             if hasRoomsToShow {
                 Section {
                     ForEach(resort.roomTypes.sorted()) { roomType in
-                        VStack {
-                            if roomType.roomCategory == roomCategory || roomCategory == "" {
-                                VStack {
-                                    RoomTypePointsView(roomType: roomType, roomCategorie: $roomCategorie, roomCategory: roomCategory, checkInDate: checkInDate, checkOutDate: checkOutDate)
-                                }
-                            }
-                        }
+                        RoomTypePointsView(roomType: roomType, roomCategorie: $roomCategorie, checkInDate: checkInDate, checkOutDate: checkOutDate)
                     }
-                    .padding()
+                    .padding(.horizontal)
+                    .padding(.vertical, 10)
                 } header: {
                     HStack {
                         Text(resort.resortName)
@@ -48,8 +42,10 @@ struct ResortPointsView: View {
         }
         .onAppear() {
             for roomType in resort.roomTypes {
-                if roomType.roomCategory == roomCategory || roomCategory == "" {
-                    hasRoomsToShow = true
+                for (roomCat, selected) in roomCategorie {
+                    if roomType.roomCategory == roomCat.name && selected {
+                        hasRoomsToShow = true
+                    }
                 }
             }
         }

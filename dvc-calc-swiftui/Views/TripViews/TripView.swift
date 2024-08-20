@@ -10,6 +10,7 @@ import SwiftData
 
 struct TripView: View {
     var trip: Trip
+    @State private var countDownString = ""
     
     @State private var showDeleteAlert = false
     
@@ -38,11 +39,12 @@ struct TripView: View {
         })
     }
     
-    var countDownString: String {
+    func getCountDownString() -> String {
         let daysUntil = Date().startOfDay.daysUntil(date: trip.checkInDate)
+        let onTrip = Date().startOfDay >= trip.checkInDate && Date().startOfDay <= trip.checkOutDate
         if daysUntil > 0 {
             return "\(daysUntil) Days"
-        } else if daysUntil == 0 {
+        } else if daysUntil == 0 || onTrip {
             return "Disney Day!"
         } else {
             return ""
@@ -195,6 +197,9 @@ struct TripView: View {
             RoundedRectangle(cornerRadius: 10, style: .continuous)
                 .foregroundColor(.secondaryBackground)
         )
+        .onAppear() {
+            countDownString = getCountDownString()
+        }
     }
 }
 

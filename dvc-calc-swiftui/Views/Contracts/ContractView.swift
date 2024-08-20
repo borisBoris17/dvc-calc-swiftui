@@ -61,7 +61,7 @@ struct ContractView: View {
                     .font(.headline)
                 
                 if contract.vactionPointsYears.count > 0 {
-                    ForEach(contract.vactionPointsYears.sorted().indices) { index in
+                    ForEach(contract.vactionPointsYears.sorted().indices, id: \.self) { index in
                         if contract.vactionPointsYears.sorted()[index].year >= pointAllotmentYear - 1 && contract.vactionPointsYears.sorted()[index].year <= pointAllotmentYear + 1 {
                             HStack {
                                 Text("\(String(contract.vactionPointsYears.sorted()[index].year))")

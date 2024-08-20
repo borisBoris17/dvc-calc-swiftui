@@ -10,7 +10,6 @@ import SwiftUI
 struct RoomTypePointsView: View {
     var roomType: RoomType
     @Binding var roomCategorie: [RoomCategory : Bool]
-    var roomCategory: String
     var checkInDate: Date
     var checkOutDate: Date
     

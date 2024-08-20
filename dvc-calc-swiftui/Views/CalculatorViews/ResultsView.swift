@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct ResultsView: View {
-    @Binding var resorts: [Resort : Bool]
+    @Binding var resorts: [ResortArea :[Resort : Bool]]
     @Binding var roomCategories: [RoomCategory : Bool]
-    
-    @Binding var roomCategory: String
     
     @State var showDateInput = false
     @State private var showSelectResort = false
@@ -83,10 +81,14 @@ struct ResultsView: View {
             .padding(.leading)
             
             ScrollView {
-                ForEach(resorts.sorted(by: { $0.key.resortName < $1.key.resortName }), id: \.key) { (key, value) in
-                    if value && checkInDate != nil && checkOutDate != nil {
-                        ResortPointsView(resort: key, roomCategorie: $roomCategories, roomCategory: roomCategory, checkInDate: checkInDate!, checkOutDate: checkOutDate!)
-                    }
+                ForEach(resorts.sorted(by: { $0.key < $1.key }), id: \.key) { key1, _ in
+//                    VStack {
+                        ForEach(resorts[key1]?.sorted(by: { $0.key.resortName < $1.key.resortName }) ?? [], id: \.key) { (key2, value) in
+                            if value && checkInDate != nil && checkOutDate != nil {
+                                ResortPointsView(resort: key2, roomCategorie: $roomCategories, checkInDate: checkInDate!, checkOutDate: checkOutDate!)
+                            }
+                        }
+//                    }
                 }
             }
             .scrollIndicators(.hidden)
@@ -96,7 +98,7 @@ struct ResultsView: View {
                 .presentationDetents([.medium])
         }
         .sheet(isPresented: $showSelectResort) {
-            SheetListView(options: $resorts, title: "Resorts")
+            SheetGroupedListView(options: $resorts, title: "Resorts")
                 .presentationDetents([.large])
                 .presentationBackground(Color.background)
         }

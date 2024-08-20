@@ -11,6 +11,7 @@ import SwiftData
 struct CalculatorView: View {
     
     @Query var resorts: [Resort]
+    @Query var resortAreas: [ResortArea]
     
     @Binding var path: NavigationPath
     
@@ -18,8 +19,8 @@ struct CalculatorView: View {
     @State private var checkInDate: Date? = nil
     @State private var checkOutDate: Date? = nil
     @State private var selectedResort: Resort? = nil
-    @State private var selectedRoomCategory = ""
-    @State private var selectedResorts: [Resort: Bool] = [:]
+//    @State private var selectedRoomCategory = ""
+    @State private var selectedResorts: [ResortArea : [Resort: Bool]] = [:]
     @State private var selectedRoomCategories: [RoomCategory: Bool] = [:]
     @State private var selectedResortIndicies: [Bool] = []
     @State private var showSelectResort = false
@@ -40,8 +41,10 @@ struct CalculatorView: View {
     func numSelectedResorts() -> Int {
         var countSelectedResorts = 0
         for value in selectedResorts.values {
-            if value {
-                countSelectedResorts += 1
+            for (_, selected) in value {
+                if selected {
+                    countSelectedResorts += 1
+                }
             }
         }
         return countSelectedResorts
@@ -126,7 +129,7 @@ struct CalculatorView: View {
                     
                     VStack {
                         Button {
-                            
+                            showSelectResort.toggle()
                         } label: {
                             VStack {
                                 HStack(alignment: .center) {
@@ -232,7 +235,7 @@ struct CalculatorView: View {
             }
             .navigationDestination(for: String.self) { destination in
                 if destination == "Results" {
-                    ResultsView(resorts: $selectedResorts, roomCategories: $selectedRoomCategories, roomCategory: $selectedRoomCategory, checkInDate: $checkInDate, checkOutDate: $checkOutDate)
+                    ResultsView(resorts: $selectedResorts, roomCategories: $selectedRoomCategories, checkInDate: $checkInDate, checkOutDate: $checkOutDate)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .background(Color("BackgroundColor"))
                 }
@@ -241,8 +244,12 @@ struct CalculatorView: View {
             .background(Color("BackgroundColor"))
             .onAppear() {
                 if selectedResorts.count == 0 {
-                    for resort in resorts {
-                        selectedResorts[resort] = true
+                    for resortArea in resortAreas {
+                        selectedResorts[resortArea] = [:]
+                        for resort in resortArea.resorts {
+                            
+                            selectedResorts[resortArea]?[resort] = true
+                        }
                     }
                 }
                 if selectedRoomCategories.count == 0 {
@@ -258,7 +265,7 @@ struct CalculatorView: View {
                 .presentationBackground(Color.background)
         }
         .sheet(isPresented: $showSelectResort) {
-            SheetListView(options: $selectedResorts, title: "Resorts")
+            SheetGroupedListView(options: $selectedResorts, title: "Resorts")
                 .presentationBackground(Color.background)
         }
         .sheet(isPresented: $showSelectRoomType) {
