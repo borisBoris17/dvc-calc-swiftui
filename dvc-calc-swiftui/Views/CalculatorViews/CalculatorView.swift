@@ -19,12 +19,12 @@ struct CalculatorView: View {
     @State private var checkInDate: Date? = nil
     @State private var checkOutDate: Date? = nil
     @State private var selectedResort: Resort? = nil
-//    @State private var selectedRoomCategory = ""
     @State private var selectedResorts: [ResortArea : [Resort: Bool]] = [:]
     @State private var selectedRoomCategories: [RoomCategory: Bool] = [:]
     @State private var selectedResortIndicies: [Bool] = []
     @State private var showSelectResort = false
     @State private var showSelectRoomType = false
+    @State private var numberOfSelectedResorts: Int = 0
     
     @Environment(\.colorScheme) var colorScheme
     
@@ -229,7 +229,9 @@ struct CalculatorView: View {
                                 .fill(.accent)
                         )
                         .padding(.horizontal)
+                        .opacity(checkInDate == nil || checkOutDate == nil || numSelectedResorts() == 0 || numSelectedRoomTypes() == 0 ? 0.5 : 1)
                 }
+                .disabled(checkInDate == nil || checkOutDate == nil || numSelectedResorts() == 0 || numSelectedRoomTypes() == 0)
                 
                 Spacer()
             }
@@ -247,8 +249,8 @@ struct CalculatorView: View {
                     for resortArea in resortAreas {
                         selectedResorts[resortArea] = [:]
                         for resort in resortArea.resorts {
-                            
                             selectedResorts[resortArea]?[resort] = true
+                            numberOfSelectedResorts += 1
                         }
                     }
                 }

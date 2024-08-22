@@ -70,9 +70,18 @@ struct ContractView: View {
                                 
                                 if isEditMode {
                                     TextField("Points", text: $updatedPointValues[index])
-                                        .textFieldStyle(.roundedBorder)
+                                        .padding(.horizontal)
+                                        .padding(.vertical, 5)
+                                        .background(Color.secondaryBackground)
+                                        .foregroundColor(Color.constantFont)
+                                        .cornerRadius(4)
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 4)
+                                                .stroke(Color.constantFont, lineWidth: 1)
+                                        )
                                         .multilineTextAlignment(.trailing)
                                         .keyboardType(.numberPad)
+                                    
                                 } else {
                                     Text("\(contract.vactionPointsYears.sorted()[index].points)")
                                 }
