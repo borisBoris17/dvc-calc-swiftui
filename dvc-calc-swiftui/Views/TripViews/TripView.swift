@@ -11,6 +11,7 @@ import SwiftData
 struct TripView: View {
     var trip: Trip
     @State private var countDownString = ""
+    @Environment(\.scenePhase) var scenePhase
     
     @State private var showDeleteAlert = false
     
@@ -199,6 +200,11 @@ struct TripView: View {
         )
         .onAppear() {
             countDownString = getCountDownString()
+        }
+        .onChange(of: scenePhase) { _, newPhase in
+            if newPhase == .active {
+                countDownString = getCountDownString()
+            }
         }
     }
 }
