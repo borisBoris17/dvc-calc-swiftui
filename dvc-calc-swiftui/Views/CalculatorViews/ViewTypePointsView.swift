@@ -81,6 +81,7 @@ struct ViewTypePointsView: View {
         }
         .sheet(isPresented: $showSaveTrip) {
             SaveTripView(checkInDate: checkInDate, checkOutDate: checkOutDate, points: totalPointsForStay, resortId: roomType.resortId, roomTypeId: roomType.id, viewTypeId: viewType.id)
+                .presentationDetents([.medium])
         }
     }
 }

@@ -111,6 +111,7 @@ struct AddContractView: View {
                         try? modelContext.save()
                         dismiss()
                     }
+                    .disabled(points.count == 0 || selectedResort == nil || selectedUseYear == nil)
                 }
             }
         }

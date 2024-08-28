@@ -34,7 +34,7 @@ struct SaveTripView: View {
                     
                     Menu {
                         Picker(selection: $selectedContract, label: EmptyView()) {
-                            Text("Select a Contract").tag(nil as Contract?)
+                            Text("Save Without Contract").tag(nil as Contract?)
                             ForEach(contracts.sorted()) { contract in
                                 Text(contract.name)
                                     .lineLimit(1)
@@ -42,7 +42,7 @@ struct SaveTripView: View {
                             }
                         }
                     } label: {
-                        Text(selectedContract?.name ?? "Select a Contract")
+                        Text(selectedContract?.name ?? "Save Without Contract")
                             .lineLimit(1)
                     }
                 }
@@ -67,6 +67,7 @@ struct SaveTripView: View {
                         .keyboardType(.numberPad)
                 }
             }
+            .foregroundStyle(Color.constantFont)
             .navigationTitle("Save Trip")
             .toolbar {
                 ToolbarItem {
@@ -95,6 +96,7 @@ struct SaveTripView: View {
                         try? modelContext.save()
                         dismiss()
                     }
+                    .foregroundStyle(Color.constantFont)
                 }
             }
         }
