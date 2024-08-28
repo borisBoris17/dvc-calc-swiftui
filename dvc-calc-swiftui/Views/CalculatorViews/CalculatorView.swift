@@ -263,7 +263,7 @@ struct CalculatorView: View {
         }
         .sheet(isPresented: $showDateInput) {
             CalendarView(checkInDate: $checkInDate, checkOutDate: $checkOutDate)
-                .presentationDetents([.medium])
+//                .presentationDetents([.fraction(0.9)])
                 .presentationBackground(Color.background)
         }
         .sheet(isPresented: $showSelectResort) {

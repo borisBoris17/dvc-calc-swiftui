@@ -136,7 +136,7 @@ struct ResultsView: View {
             isLoading = false
         }) {
             CalendarView(checkInDate: $checkInDate, checkOutDate: $checkOutDate)
-                .presentationDetents([.medium])
+                .presentationBackground(Color.background)
         }
         .sheet(isPresented: $showSelectResort, onDismiss: {
             isLoading = false
@@ -149,7 +149,7 @@ struct ResultsView: View {
             isLoading = false
         }) {
             SheetListView(options: $roomCategories, title: "Room Types")
-                .presentationDetents([.large])
+                .presentationDetents([.medium])
                 .presentationBackground(Color.background)
         }
     }

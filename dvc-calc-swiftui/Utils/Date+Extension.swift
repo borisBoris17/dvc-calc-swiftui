@@ -49,6 +49,11 @@ extension Date {
         return dayInPreviousMonth.startOfMonth
     }
     
+    var startOfNextMonth: Date {
+        let dayInNextMonth = Calendar.current.date(byAdding: .month, value: 1, to: self)!
+        return dayInNextMonth.startOfMonth
+    }
+    
     var numberOfDaysInMonth: Int {
         Calendar.current.component(.day, from: endOfMonth)
     }
