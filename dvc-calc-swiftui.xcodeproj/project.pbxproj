@@ -26,7 +26,6 @@
 		E6A100552C3A43AC006BCE1E /* ContractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100542C3A43AC006BCE1E /* ContractView.swift */; };
 		E6A100572C3CD5CE006BCE1E /* VacationPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100562C3CD5CE006BCE1E /* VacationPoints.swift */; };
 		E6A100592C3E3AA3006BCE1E /* AddContractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A100582C3E3AA3006BCE1E /* AddContractView.swift */; };
-		E6AC8AF62C0EB6490052A91A /* dvc-old.store in Resources */ = {isa = PBXBuildFile; fileRef = E6AC8AF52C0EB6490052A91A /* dvc-old.store */; };
 		E6AC8AF92C0EBDC00052A91A /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AF82C0EBDC00052A91A /* Resort.swift */; };
 		E6AC8AFB2C0EBDFA0052A91A /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */; };
 		E6AC8AFD2C0EBE170052A91A /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8AFC2C0EBE170052A91A /* ViewType.swift */; };
@@ -37,7 +36,6 @@
 		E6AC8B0B2C0FFF6D0052A91A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8B0A2C0FFF6D0052A91A /* CalendarView.swift */; };
 		E6AC8B0D2C0FFFB60052A91A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC8B0C2C0FFFB60052A91A /* Date+Extension.swift */; };
 		E6B2725E2C47761C0030B632 /* SaveTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B2725D2C47761C0030B632 /* SaveTripView.swift */; };
-		E6B272602C477D180030B632 /* dvc.store in Resources */ = {isa = PBXBuildFile; fileRef = E6B2725F2C477D180030B632 /* dvc.store */; };
 		E6B272642C48DA3A0030B632 /* dvc.json in Resources */ = {isa = PBXBuildFile; fileRef = E6B272632C48DA390030B632 /* dvc.json */; };
 		E6B272662C4CBD7C0030B632 /* UseYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B272652C4CBD7C0030B632 /* UseYear.swift */; };
 		E6B2726C2C5DD36C0030B632 /* SheetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B2726B2C5DD36C0030B632 /* SheetListView.swift */; };
@@ -67,7 +65,6 @@
 		E6A100542C3A43AC006BCE1E /* ContractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractView.swift; sourceTree = "<group>"; };
 		E6A100562C3CD5CE006BCE1E /* VacationPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationPoints.swift; sourceTree = "<group>"; };
 		E6A100582C3E3AA3006BCE1E /* AddContractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContractView.swift; sourceTree = "<group>"; };
-		E6AC8AF52C0EB6490052A91A /* dvc-old.store */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dvc-old.store"; sourceTree = "<group>"; };
 		E6AC8AF82C0EBDC00052A91A /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
 		E6AC8AFA2C0EBDFA0052A91A /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
 		E6AC8AFC2C0EBE170052A91A /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
@@ -78,7 +75,6 @@
 		E6AC8B0A2C0FFF6D0052A91A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		E6AC8B0C2C0FFFB60052A91A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		E6B2725D2C47761C0030B632 /* SaveTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTripView.swift; sourceTree = "<group>"; };
-		E6B2725F2C477D180030B632 /* dvc.store */ = {isa = PBXFileReference; lastKnownFileType = file; path = dvc.store; sourceTree = "<group>"; };
 		E6B272632C48DA390030B632 /* dvc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dvc.json; sourceTree = "<group>"; };
 		E6B272652C4CBD7C0030B632 /* UseYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseYear.swift; sourceTree = "<group>"; };
 		E6B2726B2C5DD36C0030B632 /* SheetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetListView.swift; sourceTree = "<group>"; };
@@ -199,8 +195,6 @@
 				E6A1003D2C213B80006BCE1E /* Utils */,
 				E6AC8B042C0EC4CA0052A91A /* Views */,
 				E6AC8AF72C0EBDA70052A91A /* Models */,
-				E6AC8AF52C0EB6490052A91A /* dvc-old.store */,
-				E6B2725F2C477D180030B632 /* dvc.store */,
 				E6B272632C48DA390030B632 /* dvc.json */,
 				E6D8F60A2BF70063004C6916 /* dvc_calc_swiftuiApp.swift */,
 				E6D8F60E2BF70067004C6916 /* Assets.xcassets */,
@@ -280,8 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6D8F6122BF70067004C6916 /* Preview Assets.xcassets in Resources */,
-				E6B272602C477D180030B632 /* dvc.store in Resources */,
-				E6AC8AF62C0EB6490052A91A /* dvc-old.store in Resources */,
 				E6B272642C48DA3A0030B632 /* dvc.json in Resources */,
 				E6D8F60F2BF70067004C6916 /* Assets.xcassets in Resources */,
 			);
