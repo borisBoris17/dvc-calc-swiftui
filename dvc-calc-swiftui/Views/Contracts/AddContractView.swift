@@ -88,7 +88,9 @@ struct AddContractView: View {
                     }
                 }
             }
+            .foregroundStyle(Color.font)
             .navigationTitle("Add a Contract")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem {
                     Button("Save") {
@@ -111,6 +113,7 @@ struct AddContractView: View {
                         try? modelContext.save()
                         dismiss()
                     }
+                    .foregroundStyle(Color.font)
                     .disabled(points.count == 0 || selectedResort == nil || selectedUseYear == nil)
                 }
             }

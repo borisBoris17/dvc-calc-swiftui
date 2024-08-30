@@ -71,6 +71,7 @@ struct MultiSelectInGroupsView<T: HashableDisplayable, U: HashableDisplayable>: 
                         .foregroundStyle(Color.constantFont)
                         .fontWeight(.bold)
                 }
+                .listRowSeparator(.hidden)
                 .listRowBackground(Color.secondaryBackground)
                 
                 ForEach(options[key1]?.sorted(by: { $0.key < $1.key }) ?? [], id: \.key) { key2, value in

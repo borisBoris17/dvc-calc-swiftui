@@ -67,8 +67,9 @@ struct SaveTripView: View {
                         .keyboardType(.numberPad)
                 }
             }
-            .foregroundStyle(Color.constantFont)
+            .foregroundStyle(Color.font)
             .navigationTitle("Save Trip")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem {
                     Button("Save") {
@@ -77,7 +78,6 @@ struct SaveTripView: View {
                         let trip = Trip(resortId: resortId, roomTypeId: roomTypeId, viewTypeId: viewTypeId, checkInDate: checkInDate, checkOutDate: checkOutDate, points: points, borrowedFromLastYear: fromLastYear, borrowedFromNextYear: fromNextYear, contract: selectedContract)
                         modelContext.insert(trip)
                         
-                        // TODO: update the VacationPoints on the Contract
                         if let selectedContract = selectedContract {
                             let activeUseYear = selectedContract.useYear.getAllotmentYearByDate(date: Date())
                             for vacationPoints in selectedContract.vactionPointsYears.sorted() {
@@ -96,7 +96,7 @@ struct SaveTripView: View {
                         try? modelContext.save()
                         dismiss()
                     }
-                    .foregroundStyle(Color.constantFont)
+                    .foregroundStyle(Color.font)
                 }
             }
         }
